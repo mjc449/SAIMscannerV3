@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="addcustomdialog.cpp" />
+    <ClCompile Include="calibratorcamera.cpp" />
+    <ClCompile Include="calibratordevice.cpp" />
+    <ClCompile Include="errordialog.cpp" />
+    <ClCompile Include="hidinterfacedialog.cpp" />
+    <ClCompile Include="generaldialog.cpp" />
+    <ClCompile Include="hidterminal.cpp" />
+    <ClCompile Include="loggwindow.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pgstream.cpp" />
+    <ClCompile Include="profileadddlg.cpp" />
+    <ClCompile Include="resetdialog.cpp" />
+    <ClCompile Include="setcalibrationvaluesdialog.cpp" />
+    <ClCompile Include="ssv3controlpanel.cpp" />
+    <ClCompile Include="stepadddlg.cpp" />
+    <ClCompile Include="sysstream.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="addcustomdialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="addcustomdialog.ui" />
+    <QtUic Include="calibratorcamera.ui" />
+    <QtUic Include="calibratordevice.ui" />
+    <QtUic Include="errordialog.ui" />
+    <QtUic Include="hidinterfacedialog.ui" />
+    <QtUic Include="generaldialog.ui" />
+    <QtUic Include="hidterminal.ui" />
+    <QtUic Include="loggwindow.ui" />
+    <QtUic Include="profileadddlg.ui" />
+    <QtUic Include="resetdialog.ui" />
+    <QtUic Include="setcalibrationvaluesdialog.ui" />
+    <QtUic Include="ssv3controlpanel.ui" />
+    <QtUic Include="stepadddlg.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="errordialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="hidinterfacedialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="generaldialog.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_USE_TBB;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="hidterminal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="profileadddlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="resetdialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="sysstream.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OPENCV320_DIR)\..\..\include;$(BOOST_1_66_0_DIR)\.;$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtMultimediaWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_USE_TBB;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB;QT_MULTIMEDIAWIDGETS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(BOOST_1_66_0_DIR)\.;$(OPENCV320_DIR)\..\..\include;$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtMultimediaWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB;QT_MULTIMEDIAWIDGETS_LIB</Define>
+    </QtMoc>
+    <QtMoc Include="calibratordevice.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(BOOST_1_66_0_DIR)\.;$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_USE_TBB;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+    </QtMoc>
+    <QtMoc Include="calibratorcamera.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OPENCV320_DIR)\..\..\include;$(BOOST_1_66_0_DIR)\.;$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_USE_TBB;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(BOOST_1_66_0_DIR)\.;$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB</Define>
+    </QtMoc>
+    <ClInclude Include="LogFile.h" />
+    <QtMoc Include="loggwindow.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(BOOST_1_66_0_DIR)\.;$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_USE_TBB;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+    </QtMoc>
+    <QtMoc Include="pgstream.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OPENCV320_DIR)\..\..\include;$(BOOST_1_66_0_DIR)\.;$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_USE_TBB;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(BOOST_1_66_0_DIR)\.;$(SolutionDir)\.;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB</Define>
+    </QtMoc>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <QtMoc Include="stepadddlg.h" />
+    <QtMoc Include="ssv3controlpanel.h" />
+    <QtMoc Include="setcalibrationvaluesdialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SSv3_control_panel.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon1.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseIntelTBB>true</UseIntelTBB>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_USE_TBB;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB;QT_MULTIMEDIAWIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OPENCV320_DIR)/../../include;$(BOOST_1_66_0_DIR);$(SolutionDir);.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtMultimediaWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OPENCV320_DIR)/lib;$(BOOST_1_66_0_DIR)stage_x64\lib;$(SolutionDir)x64\Debug\SSv3_driver;$(SolutionDir)x64\Debug\PGCam;$(SolutionDir)x64\Debug\1D_fitter;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>1D_fitter_d.lib;PGCam_d.lib;opencv_world320d.lib;SSv3_driver_d.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Multimediad.lib;Qt5Chartsd.lib;Qt5MultimediaWidgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>$(OPENCV320_DIR)/../../include;$(BOOST_1_66_0_DIR);$(SolutionDir);.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtMultimediaWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>_USE_TBB;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB;QT_MULTIMEDIAWIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(OutDir)..\SSv3_driver\SSv3_driver_d.dll" "$(OutDir)"
+xcopy /Y "$(OutDir)..\SSv3_driver\hidapi_d.dll" "$(OutDir)"
+xcopy /Y "$(OutDir)..\PGCam\PGCam_d.dll" "$(OutDir)"
+xcopy /Y "$(OutDir)..\PGCam\FlyCapture2d_v140.dll" "$(OutDir)"
+xcopy /Y "$(OutDir)..\PGCam\PtGreyVideoEncoderd_v140.dll" "$(OutDir)"
+xcopy /Y "$(OutDir)..\1D_fitter\1D_fitter_d.dll" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB;QT_MULTIMEDIAWIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(BOOST_1_66_0_DIR);$(OPENCV320_DIR)\..\..\include;$(SolutionDir);.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtMultimediaWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OPENCV320_DIR)\lib;$(SolutionDir)x64\Release\PGCam;$(BOOST_1_66_0_DIR)\stage_x64\lib;$(SolutionDir)x64\Release\SSv3_driver;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_world320.lib;PGCam.lib;SSv3_driver.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Charts.lib;Qt5Multimedia.lib;Qt5MultimediaWidgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>$(BOOST_1_66_0_DIR);$(OPENCV320_DIR)\..\..\include;$(SolutionDir);.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtMultimediaWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB;QT_MULTIMEDIAWIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(OutDir)..\SSv3_driver\hidapi.dll" "$(OutDir)"
+xcopy /Y "$(OutDir)..\SSv3_driver\SSv3_driver.dll" "$(OutDir)"
+xcopy /Y "$(OutDir)..\PGCam\PGCam.dll" "$(OutDir)"
+xcopy /Y "$(OutDir)..\PGCam\FlyCapture2_v140.dll" "$(OutDir)"
+xcopy /Y "$(OutDir)..\PGCam\PtGreyVideoEncoder_v140.dll" "$(OutDir)"
+xcopy /Y "$(OPENCV320_DIR)\bin\opencv_world320.dll" "$(OutDir)"
+xcopy /Y "$(FC2API)\bin64\vs2015\libiomp5md.dll" "$(OutDir)"
+xcopy /Y "$(FC2API)\bin64\vs2015\avcodec-57.dll" "$(OutDir)"
+xcopy /Y "$(FC2API)\bin64\vs2015\avformat-57.dll" "$(OutDir)"
+xcopy /Y "$(FC2API)\bin64\vs2015\avutil-55.dll" "$(OutDir)"
+xcopy /Y "$(FC2API)\bin64\vs2015\swscale-4.dll" "$(OutDir)"
+xcopy /Y "$(FC2API)\bin64\vs2015\swresample-2.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_x64="msvc2017_64" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

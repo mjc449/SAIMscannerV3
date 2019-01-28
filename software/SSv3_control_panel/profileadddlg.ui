@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProfileAddDlg</class>
+ <widget class="QDialog" name="ProfileAddDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>186</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ProfileAddDlg</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>501</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spin445">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="spin488">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QSpinBox" name="spin405">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QSpinBox" name="spin515">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QSpinBox" name="spin535">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QSpinBox" name="spin560">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QSpinBox" name="spin642">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="radio405">
+        <property name="text">
+         <string>405 nm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="radio445">
+        <property name="text">
+         <string>445 nm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QCheckBox" name="radio488">
+        <property name="text">
+         <string>488 nm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QCheckBox" name="radio515">
+        <property name="text">
+         <string>515 nm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QCheckBox" name="radio535">
+        <property name="text">
+         <string>535 nm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QCheckBox" name="radio560">
+        <property name="text">
+         <string>560 nm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QCheckBox" name="radio642">
+        <property name="text">
+         <string>642 nm</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="okButton">
+        <property name="text">
+         <string>OK</string>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="clearButton">
+        <property name="text">
+         <string>Clear</string>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cancelButton">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>radio405</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spin405</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>22</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>29</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio445</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spin445</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio488</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spin488</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>46</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>172</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio515</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spin515</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio535</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spin535</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>314</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio560</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spin560</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio642</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spin642</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>455</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>okButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ProfileAddDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ProfileAddDlg</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>354</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

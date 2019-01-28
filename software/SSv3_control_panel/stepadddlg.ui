@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>stepadddlg</class>
+ <widget class="QDialog" name="stepadddlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>271</width>
+    <height>165</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Add Experiment Step</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>221</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="stepAddLabel">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Select step, sequence, and laser profile to add</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="sequenceSpinBox">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>32</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="profileLabel">
+        <property name="text">
+         <string>Excitation Profile:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="profileSpinBox">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>32</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="sequenceLabel">
+        <property name="text">
+         <string>Angle Sequence:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="stepNumLabel">
+        <property name="text">
+         <string>Step Number:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="stepSpinBox">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="stepCancelButton">
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="toolTip">
+         <string>Cancel without adding step</string>
+        </property>
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="stepOkButton">
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="toolTip">
+         <string>Add the step to the experiment list</string>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>stepOkButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stepadddlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>270</x>
+     <y>-105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stepCancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stepadddlg</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>166</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>-119</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

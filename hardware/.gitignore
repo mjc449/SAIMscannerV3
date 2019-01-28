@@ -1,0 +1,9 @@
+
+## Ignore all but the board, schematic and library files
+
+*
+!.gitignore
+!*.brd
+!*.sch
+!*.lbr
+!*/

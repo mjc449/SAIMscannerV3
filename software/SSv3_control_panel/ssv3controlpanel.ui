@@ -1,0 +1,3682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SSv3ControlPanelClass</class>
+ <widget class="QMainWindow" name="SSv3ControlPanelClass">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1013</width>
+    <height>1093</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>256</width>
+    <height>256</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>2048</width>
+    <height>2048</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>SSv3ControlPanel</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_12">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>993</width>
+         <height>1041</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>972</width>
+         <height>969</height>
+        </size>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="4,5">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,0,0">
+          <item>
+           <widget class="QGroupBox" name="controllerGroup">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+            <property name="title">
+             <string>Controller Communications</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>40</y>
+               <width>391</width>
+               <height>255</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetNoConstraint</enum>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <property name="sizeConstraint">
+                 <enum>QLayout::SetNoConstraint</enum>
+                </property>
+                <item>
+                 <widget class="QTableWidget" name="controllerTable">
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="editTriggers">
+                   <set>QAbstractItemView::NoEditTriggers</set>
+                  </property>
+                  <property name="selectionBehavior">
+                   <enum>QAbstractItemView::SelectRows</enum>
+                  </property>
+                  <property name="rowCount">
+                   <number>0</number>
+                  </property>
+                  <property name="columnCount">
+                   <number>3</number>
+                  </property>
+                  <attribute name="horizontalHeaderDefaultSectionSize">
+                   <number>100</number>
+                  </attribute>
+                  <attribute name="verticalHeaderVisible">
+                   <bool>false</bool>
+                  </attribute>
+                  <column>
+                   <property name="text">
+                    <string>Manufacturer</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Product</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Serial Number</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <property name="sizeConstraint">
+                   <enum>QLayout::SetNoConstraint</enum>
+                  </property>
+                  <item>
+                   <widget class="QPushButton" name="connectControllerButton">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Connect to the selected controller</string>
+                    </property>
+                    <property name="text">
+                     <string>Connect</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="refreshControllerListButton">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Refresh the controller list</string>
+                    </property>
+                    <property name="text">
+                     <string>Refresh</string>
+                    </property>
+                    <property name="default">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="disconnectControllerButton">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Disconnect from the selected controller</string>
+                    </property>
+                    <property name="text">
+                     <string>Disconnect</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="visorButton">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Displays a visor across the panel LEDs</string>
+                    </property>
+                    <property name="text">
+                     <string>Identify</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_3">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="usbInterfaceButton">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>HID interface</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="resetButton">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Reset</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>1</number>
+                </property>
+                <layout class="QFormLayout" name="formLayout">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="connectedLabel">
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Connection:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="controllerStatusLabel">
+                   <property name="palette">
+                    <palette>
+                     <active>
+                      <colorrole role="WindowText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Button">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Light">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>127</green>
+                         <blue>127</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Midlight">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>63</green>
+                         <blue>63</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Dark">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>127</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Mid">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>170</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Text">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="BrightText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>255</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ButtonText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Base">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>255</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Window">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Shadow">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="AlternateBase">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>127</green>
+                         <blue>127</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ToolTipBase">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>220</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ToolTipText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                     </active>
+                     <inactive>
+                      <colorrole role="WindowText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Button">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Light">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>127</green>
+                         <blue>127</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Midlight">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>63</green>
+                         <blue>63</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Dark">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>127</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Mid">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>170</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Text">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="BrightText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>255</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ButtonText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Base">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>255</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Window">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Shadow">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="AlternateBase">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>127</green>
+                         <blue>127</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ToolTipBase">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>220</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ToolTipText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                     </inactive>
+                     <disabled>
+                      <colorrole role="WindowText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>127</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Button">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Light">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>127</green>
+                         <blue>127</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Midlight">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>63</green>
+                         <blue>63</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Dark">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>127</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Mid">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>170</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Text">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>127</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="BrightText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>255</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ButtonText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>127</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Base">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Window">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Shadow">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="AlternateBase">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ToolTipBase">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>220</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ToolTipText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>0</red>
+                         <green>0</green>
+                         <blue>0</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                     </disabled>
+                    </palette>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="text">
+                    <string>TextLabel</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="errorLabel">
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Status:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="controllerErrorLabel">
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="experimentGroup">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+            <property name="title">
+             <string>Experiment Design</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>40</y>
+               <width>391</width>
+               <height>251</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetNoConstraint</enum>
+              </property>
+              <item>
+               <widget class="QListWidget" name="experimentList">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="mouseTracking">
+                 <bool>true</bool>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                 <widget class="QPushButton" name="stepAddButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Brings up the add step dialog</string>
+                  </property>
+                  <property name="text">
+                   <string>Add</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="stepUpButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Move the selected step up 1 position</string>
+                  </property>
+                  <property name="text">
+                   <string>Up</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="stepDownButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Move the selected step down 1 position</string>
+                  </property>
+                  <property name="text">
+                   <string>Down</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="stepDeleteButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Deletes the selected step</string>
+                  </property>
+                  <property name="text">
+                   <string>Delete</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="clearExperimentButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Deletes all steps and clears the loop</string>
+                  </property>
+                  <property name="text">
+                   <string>Clear All</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="loopButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Add a loop to the experiment.  At the end of the list the experiment will continue from the selected (*) step</string>
+                  </property>
+                  <property name="text">
+                   <string>Loop</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="startExperimentButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Start the current experiment</string>
+                  </property>
+                  <property name="text">
+                   <string>Start</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="stopExperimentButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Stop the current experiment</string>
+                  </property>
+                  <property name="text">
+                   <string>Stop</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="sequenceGroup">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+            <property name="title">
+             <string>Scan Angle Sequences</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>50</y>
+               <width>391</width>
+               <height>241</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QTableWidget" name="sequenceTable">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::SingleSelection</enum>
+                </property>
+                <property name="selectionBehavior">
+                 <enum>QAbstractItemView::SelectRows</enum>
+                </property>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>76</number>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>Type</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>First</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Last</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Count</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <spacer name="verticalSpacer_9">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="newSequenceButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Add a new angle sequence</string>
+                  </property>
+                  <property name="text">
+                   <string>New</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="modifySequenceButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Change the selected sequence type or values</string>
+                  </property>
+                  <property name="text">
+                   <string>Modify</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="setCalibrationButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Update the degrees per DAC unit conversion factors</string>
+                  </property>
+                  <property name="text">
+                   <string>Set Cal.</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="degreesButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Display units</string>
+                  </property>
+                  <property name="text">
+                   <string>Degrees</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="dacButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Display units</string>
+                  </property>
+                  <property name="text">
+                   <string>DAC</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_7">
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="testSequenceButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Runs the selected sequence with the selected laser profile</string>
+                  </property>
+                  <property name="text">
+                   <string>Test</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_8" stretch="0,0,0">
+          <item>
+           <widget class="QGroupBox" name="scanGroup">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+            <property name="title">
+             <string>Scanning Controls</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>30</y>
+               <width>481</width>
+               <height>291</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_11" stretch="4,5">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetNoConstraint</enum>
+              </property>
+              <item>
+               <layout class="QGridLayout" name="gridLayout" columnstretch="1,4,1,1">
+                <property name="sizeConstraint">
+                 <enum>QLayout::SetNoConstraint</enum>
+                </property>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_3">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Y-park</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <spacer name="verticalSpacer_11">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>88</width>
+                    <height>18</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>X-park</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="3">
+                 <widget class="QPushButton" name="locationParkButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Location Park</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QPushButton" name="scanButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Scan</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QSlider" name="xParkSlider">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="minimum">
+                   <number>-7000</number>
+                  </property>
+                  <property name="maximum">
+                   <number>7000</number>
+                  </property>
+                  <property name="singleStep">
+                   <number>128</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="tickPosition">
+                   <enum>QSlider::TicksBelow</enum>
+                  </property>
+                  <property name="tickInterval">
+                   <number>500</number>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QSlider" name="yParkSlider">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="minimum">
+                   <number>-7000</number>
+                  </property>
+                  <property name="maximum">
+                   <number>7000</number>
+                  </property>
+                  <property name="singleStep">
+                   <number>128</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="tickPosition">
+                   <enum>QSlider::TicksBelow</enum>
+                  </property>
+                  <property name="tickInterval">
+                   <number>500</number>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <spacer name="verticalSpacer_12">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>18</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="3" column="0">
+                 <spacer name="verticalSpacer_10">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>18</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="1" column="3">
+                 <widget class="QPushButton" name="centerParkButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Center Park</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Radius</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="3">
+                 <widget class="QPushButton" name="tirButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>TIR</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QDoubleSpinBox" name="yParkSpin">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                  <property name="keyboardTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="minimum">
+                   <double>-70.000000000000000</double>
+                  </property>
+                  <property name="maximum">
+                   <double>70.000000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.250000000000000</double>
+                  </property>
+                  <property name="value">
+                   <double>0.000000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QDoubleSpinBox" name="xParkSpin">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                  <property name="keyboardTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="minimum">
+                   <double>-70.000000000000000</double>
+                  </property>
+                  <property name="maximum">
+                   <double>70.000000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.250000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QDoubleSpinBox" name="radiusSpin">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                  <property name="keyboardTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="minimum">
+                   <double>0.000000000000000</double>
+                  </property>
+                  <property name="maximum">
+                   <double>70.000000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.250000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QSlider" name="radiusSlider">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="maximum">
+                   <number>0</number>
+                  </property>
+                  <property name="singleStep">
+                   <number>0</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="tickPosition">
+                   <enum>QSlider::TicksBelow</enum>
+                  </property>
+                  <property name="tickInterval">
+                   <number>100</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="advancedScanGroup">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="title">
+                 <string>Advanced</string>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+                <widget class="QWidget" name="layoutWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>461</width>
+                   <height>137</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3" rowstretch="0,0,0,0,0" columnstretch="1,5,1,1">
+                  <property name="sizeConstraint">
+                   <enum>QLayout::SetNoConstraint</enum>
+                  </property>
+                  <property name="verticalSpacing">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="1">
+                   <widget class="QSlider" name="tirSlider">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="mouseTracking">
+                     <bool>true</bool>
+                    </property>
+                    <property name="toolTip">
+                     <string>Sets the TIR radius in internal storage</string>
+                    </property>
+                    <property name="maximum">
+                     <number>16896</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>128</number>
+                    </property>
+                    <property name="value">
+                     <number>16384</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>256</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="xCenterLabel">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>X-center</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QSlider" name="xCenterSlider">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="toolTip">
+                     <string>Sets the x-offset in internal memory</string>
+                    </property>
+                    <property name="maximum">
+                     <number>65535</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>256</number>
+                    </property>
+                    <property name="value">
+                     <number>32767</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1024</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QSpinBox" name="xCenterSpin">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Sets the x-offset in internal memory</string>
+                    </property>
+                    <property name="keyboardTracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>65535</number>
+                    </property>
+                    <property name="value">
+                     <number>32767</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="yCenterLabel">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Y-center</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QSlider" name="yCenterSlider">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="toolTip">
+                     <string>Sets the y-offset in internal memory</string>
+                    </property>
+                    <property name="maximum">
+                     <number>65535</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>256</number>
+                    </property>
+                    <property name="value">
+                     <number>32767</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1024</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QSpinBox" name="yCenterSpin">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Sets the y-offset in internal memory</string>
+                    </property>
+                    <property name="keyboardTracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>65535</number>
+                    </property>
+                    <property name="value">
+                     <number>32767</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="phaseLabel">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Phase</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QSlider" name="yScaleSlider">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="mouseTracking">
+                     <bool>true</bool>
+                    </property>
+                    <property name="toolTip">
+                     <string>Sets the relative scale factor of the y axis in internal memory</string>
+                    </property>
+                    <property name="maximum">
+                     <number>65535</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>1024</number>
+                    </property>
+                    <property name="value">
+                     <number>32767</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>1024</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QSpinBox" name="yScaleSpin">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Sets the relative scale factor of the y axis in internal memory</string>
+                    </property>
+                    <property name="keyboardTracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>65535</number>
+                    </property>
+                    <property name="value">
+                     <number>32767</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="yScaleLabel">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Y-scale</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QSlider" name="phaseSlider">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="toolTip">
+                     <string>Sets the phase difference between x and y galvos in internal memory</string>
+                    </property>
+                    <property name="maximum">
+                     <number>4095</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>16</number>
+                    </property>
+                    <property name="value">
+                     <number>1024</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>128</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QSpinBox" name="phaseSpin">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Sets the phase difference between x and y galvos in internal memory</string>
+                    </property>
+                    <property name="keyboardTracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>4095</number>
+                    </property>
+                    <property name="value">
+                     <number>1024</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="tirLabel">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>TIR</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QSpinBox" name="tirSpin">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Sets the TIR radius in internal storage</string>
+                    </property>
+                    <property name="keyboardTracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>16896</number>
+                    </property>
+                    <property name="value">
+                     <number>16384</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QPushButton" name="calibrateButton">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="mouseTracking">
+                     <bool>true</bool>
+                    </property>
+                    <property name="toolTip">
+                     <string>Coming soon!</string>
+                    </property>
+                    <property name="text">
+                     <string>Calibrate</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="3">
+                   <widget class="QPushButton" name="Refl">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Coming soon!</string>
+                    </property>
+                    <property name="text">
+                     <string>Beam Im.</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="3">
+                   <widget class="QLabel" name="label_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Output waveform (scan) frequency</string>
+                    </property>
+                    <property name="text">
+                     <string>Frequency (Hz)</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="3">
+                   <widget class="QSpinBox" name="frequencySpin">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Output waveform (scan) frequency</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+                    </property>
+                    <property name="keyboardTracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="minimum">
+                     <number>1</number>
+                    </property>
+                    <property name="maximum">
+                     <number>1100</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>10</number>
+                    </property>
+                    <property name="value">
+                     <number>1000</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="laserPropertiesGroup">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+            <property name="title">
+             <string>Laser Controls</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>40</y>
+               <width>471</width>
+               <height>261</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="9,0">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetNoConstraint</enum>
+              </property>
+              <item>
+               <widget class="QGroupBox" name="laserPowerGroup">
+                <property name="title">
+                 <string/>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="layoutWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>381</width>
+                   <height>261</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_2">
+                  <property name="sizeConstraint">
+                   <enum>QLayout::SetNoConstraint</enum>
+                  </property>
+                  <item row="1" column="1">
+                   <widget class="QSlider" name="laser1trackbar">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>5</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QSpinBox" name="laser4spinbox">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QSlider" name="laser0trackbar">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>5</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="laser4label">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <property name="text">
+                     <string>535 nm</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="laser3label">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <property name="text">
+                     <string>515 nm</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="laser0label">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <property name="text">
+                     <string>405 nm</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QSpinBox" name="laser1spinbox">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QSlider" name="laser2trackbar">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>5</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="laser1label">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <property name="text">
+                     <string>445 nm</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QSpinBox" name="laser2spinbox">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QSpinBox" name="laser3spinbox">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QSlider" name="laser4trackbar">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>5</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="laser5label">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <property name="text">
+                     <string>560 nm</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QSlider" name="laser5trackbar">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>5</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QSlider" name="laser3trackbar">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>5</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QSpinBox" name="laser0spinbox">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="2">
+                   <widget class="QSpinBox" name="laser5spinbox">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="laser6label">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <property name="text">
+                     <string>642 nm</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QSlider" name="laser6trackbar">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>5</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="2">
+                   <widget class="QSpinBox" name="laser6spinbox">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="maximum">
+                     <number>100</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="laser2label">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <property name="text">
+                     <string>488 nm</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_10">
+                <property name="sizeConstraint">
+                 <enum>QLayout::SetNoConstraint</enum>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="laserOnOffButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Toggles the lasers on/off</string>
+                  </property>
+                  <property name="text">
+                   <string>Off</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="fireOnOffButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Sets the lasers to exposure triggered</string>
+                  </property>
+                  <property name="text">
+                   <string>Fire Off</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="shutterOnOffButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Toggles the shutter open/closed</string>
+                  </property>
+                  <property name="text">
+                   <string>Shutter</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="useCurrentLasersButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Resets the lasers to the last stored values before loading a profile</string>
+                  </property>
+                  <property name="text">
+                   <string>Reset</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="zeroLasersButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Zero All</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="triggerLengthLabel">
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>time (ms)</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="triggerLengthSpinBox">
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Software trigger duration in ms</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="minimum">
+                   <number>1</number>
+                  </property>
+                  <property name="maximum">
+                   <number>32</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="swTriggerButton">
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>Send the software trigger to simulate a camera exposure</string>
+                  </property>
+                  <property name="text">
+                   <string>SW Trigger</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="laserProfileGroup">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+            <property name="title">
+             <string>Laser Profiles</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>50</y>
+               <width>521</width>
+               <height>241</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="5,1">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetNoConstraint</enum>
+              </property>
+              <item>
+               <widget class="QTableWidget" name="laserProfileTable">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="mouseTracking">
+                 <bool>true</bool>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::SingleSelection</enum>
+                </property>
+                <property name="selectionBehavior">
+                 <enum>QAbstractItemView::SelectRows</enum>
+                </property>
+                <property name="columnCount">
+                 <number>8</number>
+                </property>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>50</number>
+                </attribute>
+                <attribute name="horizontalHeaderHighlightSections">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="horizontalHeaderMinimumSectionSize">
+                 <number>50</number>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>405 nm</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>445 nm</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>488 nm</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>515 nm</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>535 nm</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>560 nm</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>642 nm</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NA</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <property name="sizeConstraint">
+                 <enum>QLayout::SetNoConstraint</enum>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="newProfileButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Create a new profile</string>
+                  </property>
+                  <property name="text">
+                   <string>New</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="addProfileButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Adds a new profile with the current laser settings</string>
+                  </property>
+                  <property name="text">
+                   <string>Add</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="updateProfileButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Sets the selected profile values to the current laser settings</string>
+                  </property>
+                  <property name="text">
+                   <string>Update</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="setProfileButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Sets the lasers to the selected profile values</string>
+                  </property>
+                  <property name="text">
+                   <string>Use Profile</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionFile">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionLog">
+   <property name="text">
+    <string>Log</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ssv3controlpanel.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>laser1spinbox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser1trackbar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>824</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser0spinbox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser0trackbar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>824</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>381</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser6trackbar</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>laser6spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>591</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>597</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser4spinbox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser4trackbar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>824</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>521</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser2trackbar</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>laser2spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>453</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser3trackbar</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>laser3spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>486</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser4trackbar</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>laser4spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>521</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>525</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser3spinbox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser3trackbar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>824</x>
+     <y>489</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>486</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser5trackbar</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>laser5spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>561</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser0trackbar</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>laser0spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>379</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser2spinbox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser2trackbar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>824</x>
+     <y>453</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>451</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser1trackbar</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>laser1spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser5spinbox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser5trackbar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>824</x>
+     <y>561</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>556</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser6spinbox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser6trackbar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>824</x>
+     <y>597</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>591</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser0trackbar</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser0spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>379</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser1trackbar</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser1spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser2trackbar</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser2spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>453</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser3trackbar</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser3spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>486</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser4trackbar</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser4spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>521</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>525</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser5trackbar</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser5spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>561</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>laser6trackbar</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>laser6spinbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>591</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>597</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

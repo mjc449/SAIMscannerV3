@@ -1,0 +1,18 @@
+
+## Ignore CCS C Compiler temporary files, build results, and
+## history files.
+
+# Build results
+__[Hh]istory/
+*.err
+*.esym
+*.xsym
+*.cof
+*.hex
+*.lst
+*.STA
+*.sym
+*.tre
+*.o
+*.osym
+*.rtf
