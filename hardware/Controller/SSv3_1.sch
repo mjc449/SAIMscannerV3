@@ -22110,6 +22110,10 @@ TRIGGER</description>
 <text x="235.712" y="140.97" size="1.778" layer="91">AOTF BUS
 RD0..9 DATA
 RD10..11 ADDRESS</text>
+<text x="187.96" y="12.7" size="1.778" layer="91">Copyright 2019 Marshall J. Colville
+mjc449@cornell.edu
+Distributed under the 2-Claus BSD License
+See LICENSE.txt in the project root directory for details</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -22866,6 +22870,10 @@ RD10..11 ADDRESS</text>
 <sheet>
 <description>DIO, POWER, MISC</description>
 <plain>
+<text x="185.42" y="12.7" size="1.778" layer="91">Copyright 2019 Marshall J. Colville
+mjc449@cornell.edu
+Distributed under the 2-Claus BSD License
+See LICENSE.txt in the project root directory for details</text>
 </plain>
 <instances>
 <instance part="FRAME8" gate="G$1" x="0" y="0"/>
@@ -23559,6 +23567,10 @@ RD10..11 ADDRESS</text>
 <plain>
 <text x="172.72" y="129.54" size="1.778" layer="91">For use with OEM MD SnC Driver:
 Connect +24 V supply</text>
+<text x="185.42" y="12.7" size="1.778" layer="91">Copyright 2019 Marshall J. Colville
+mjc449@cornell.edu
+Distributed under the 2-Claus BSD License
+See LICENSE.txt in the project root directory for details</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -24478,6 +24490,10 @@ Connect +24 V supply</text>
 <sheet>
 <description>AUX_DAC</description>
 <plain>
+<text x="185.42" y="12.7" size="1.778" layer="91">Copyright 2019 Marshall J. Colville
+mjc449@cornell.edu
+Distributed under the 2-Claus BSD License
+See LICENSE.txt in the project root directory for details</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -24975,6 +24991,10 @@ Connect +24 V supply</text>
 <text x="190.5" y="66.04" size="1.778" layer="91">VERTICAL TRIMPOTS: VISHAY SFERNICE TS63Y
 SMD PASSIVES: 0603 IMPERIAL
 SMD RESISTORS: 1% OR BETTER</text>
+<text x="185.42" y="12.7" size="1.778" layer="91">Copyright 2019 Marshall J. Colville
+mjc449@cornell.edu
+Distributed under the 2-Claus BSD License
+See LICENSE.txt in the project root directory for details</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
@@ -25064,7 +25084,7 @@ SMD RESISTORS: 1% OR BETTER</text>
 <instance part="R73" gate="G$1" x="193.04" y="99.06" rot="R90"/>
 <instance part="U$1" gate="G$1" x="203.2" y="43.18"/>
 <instance part="SUPPLY63" gate="G$1" x="48.26" y="78.74"/>
-<instance part="SUPPLY65" gate="G$1" x="190.5" y="22.86"/>
+<instance part="SUPPLY65" gate="G$1" x="177.8" y="25.4"/>
 </instances>
 <busses>
 <bus name="WAVEGEN_SCK,X_WAVEGEN_SDI,Y_WAVEGEN_SDI,WAVEGEN_SYNC">
@@ -25199,7 +25219,7 @@ SMD RESISTORS: 1% OR BETTER</text>
 <wire x1="213.36" y1="27.94" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="27.94" x2="190.5" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY65" gate="G$1" pin="AGND"/>
-<wire x1="190.5" y1="27.94" x2="190.5" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="27.94" x2="177.8" y2="27.94" width="0.1524" layer="91"/>
 <junction x="190.5" y="27.94"/>
 </segment>
 </net>
@@ -25719,6 +25739,10 @@ SMD RESISTORS: 1% OR BETTER</text>
 <description>GALVO_SIGNAL_CONDITIONING</description>
 <plain>
 <text x="127" y="175.26" size="1.778" layer="91">C56, C61 OPTIONAL COMPENSATING CAPS, APPLY IF NECESSARY FOR STABILITY</text>
+<text x="185.42" y="12.7" size="1.778" layer="91">Copyright 2019 Marshall J. Colville
+mjc449@cornell.edu
+Distributed under the 2-Claus BSD License
+See LICENSE.txt in the project root directory for details</text>
 </plain>
 <instances>
 <instance part="R66" gate="G$1" x="200.66" y="129.54" rot="R180"/>

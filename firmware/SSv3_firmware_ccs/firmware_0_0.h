@@ -1,6 +1,28 @@
 /*
 Firmware for the SAIMscannerV3.0 embedded microscope controller.
-Copyright 20160726 by Marshall Colville (mjc449@cornell.edu)
+
+Copyright 2019 Marshall J. Colville (mjc449@cornell.edu)
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation and/or
+other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
 #include <24FJ256GB210.h>
@@ -24,6 +46,12 @@ Copyright 20160726 by Marshall Colville (mjc449@cornell.edu)
 #define USB_CONFIG_VID 0x04D8
 #define USB_CONFIG_PID 0xF11A
 #define USB_STRINGS_OVERWRITTEN
+
+#define USB_CONFIG_HID_TX_SIZE 64
+#define USB_CONFIG_HID_RX_SIZE 64
+
+#define USB_CONFIG_HID_TX_POLL 1
+#define USB_CONFIG_HID_RX_POLL 1
 
 char USB_STRING_DESC_OFFSET[]={0,4,12,22};
 
@@ -57,11 +85,8 @@ const char const USB_STRING_DESC[]={
 };
 
 
-#define USB_CONFIG_HID_TX_SIZE 64
-#define USB_CONFIG_HID_RX_SIZE 64
-
 #include <pic24_usb.h>
-#include <SSV3_usb_desc_hid.h>
+#include <usb_desc_hid.h>
 #include <usb.c>
 #include <stdlib.h>
 #include <stddef.h>

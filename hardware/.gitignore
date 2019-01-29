@@ -1,9 +1,13 @@
 
-## Ignore all but the board, schematic and library files
-
+## Ignore everything
 *
+
+##Except the board, schematic, library, and PDFs
 !.gitignore
 !*.brd
 !*.sch
 !*.lbr
+!*.pdf
+
+##include subdirs
 !*/

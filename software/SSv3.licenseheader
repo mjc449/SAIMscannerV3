@@ -1,0 +1,15 @@
+﻿extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+// Copyright 2019 Marshall J. Colville mjc449@cornell.edu
+// Distributed under the 2-Claus BSD License
+// See LICENSE.txt in the project root directory for details
+extensions: .aspx .ascx
+<%-- 
+Copyright 2019 Marshall J. Colville mjc449@cornell.edu. Distributed under the 2-Claus BSD License. See LICENSE.txt in the project root directory for details
+--%>
+extensions: .vb
+'Sample license text.
+extensions:  .xml .config .xsd
+<!--
+Copyright 2019 Marshall J. Colville mjc449@cornell.edu. Distributed under the 2-Claus BSD Licensel. See LICENSE.txt in the project root directory for details
+-->

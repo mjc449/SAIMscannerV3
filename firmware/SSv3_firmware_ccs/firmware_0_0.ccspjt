@@ -20,7 +20,7 @@ D1_L=9
 D1_L1=[59281]Project Opened.
 D1_L2=[59386]Started Editing.
 D1_L3=[59767]Stopped Editing.
-TotalEdit=5130
+TotalEdit=5137
 TotalDebug=578
 D1_E=2
 D1_D=0
@@ -1021,16 +1021,29 @@ D89_E=13
 D89_D=0
 D89_L12=[61915]Project Closed.
 D90=28-01-2019
-D90_L=2
+D90_L=13
 D90_L1=[63766]Project Opened.
 D90_L2=[63930]Project Closed.
+D90_L3=[66753]Project Opened.
+D90_L4=[66806]Started Editing.
+D90_L5=[67194]Stopped Editing.
+D90_E=7
+D90_D=0
+D90_L6=[67194]Project Closed.
+D90_L7=[67209]Project Opened.
+D90_L8=[67265]Project Closed.
+D90_L9=[67273]Project Opened.
+D90_L10=[67299]Project Closed.
+D90_L11=[67690]Project Opened.
+D90_L12=[67697]Project Closed.
+D90_L13=[67702]Project Opened.
 
 [Opened Files]
 1=firmware_0_0.c
 t1=1
 2=firmware_0_0.h
 t2=1
-Count=5
+Count=2
 3=SAIM_utilities.c
 t3=1
 4=AD9833_dual_drvr.c
@@ -1053,7 +1066,7 @@ t11=16
 Type=4
 
 [defines]
-buildcount=327
+buildcount=332
 
 [debugperif]
 selected=Analog to Digital Converter 1
