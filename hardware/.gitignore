@@ -8,6 +8,7 @@
 !*.sch
 !*.lbr
 !*.pdf
+!*.fpd
 
 ##include subdirs
 !*/
