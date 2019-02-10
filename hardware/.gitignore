@@ -9,6 +9,7 @@
 !*.lbr
 !*.pdf
 !*.fpd
+!*.csv
 
 ##include subdirs
 !*/
