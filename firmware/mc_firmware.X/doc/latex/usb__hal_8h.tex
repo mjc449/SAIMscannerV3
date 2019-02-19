@@ -1,0 +1,503 @@
+\hypertarget{usb__hal_8h}{}\section{C\+:/\+Users/\+Marshall/\+M\+P\+L\+A\+B\+X\+Projects/mc\+\_\+firmware.X/usb/usb\+\_\+hal.h File Reference}
+\label{usb__hal_8h}\index{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/usb/usb\_hal.h@{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/usb/usb\_hal.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a9784d9afb7cf902870a37f32f31a3b88}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+U\+P\+\_\+\+D\+\_\+\+P\+L\+US}}~0x80
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_ad2d1cf6890c87e763254e7d37ba91b3d}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+U\+P\+\_\+\+D\+\_\+\+M\+I\+N\+US}}~0x40
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a90ae5402d752ffe3a6d72e2806716124}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+D\+N\+\_\+\+D\+\_\+\+P\+L\+US}}~0x20
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_acd8d962ea1e842ba8636509c89086b48}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+D\+N\+\_\+\+D\+\_\+\+M\+I\+N\+US}}~0x10
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a0d72b8754dc33ebf509360c7624038d7}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+D\+E\+V\+\_\+\+C\+O\+N\+N\+\_\+\+F\+U\+L\+L\+\_\+\+S\+PD}}~\mbox{\hyperlink{usb__hal_8h_a9784d9afb7cf902870a37f32f31a3b88}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+U\+P\+\_\+\+D\+\_\+\+P\+L\+US}}
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_af070f01cb8572ebfff3988bb091f17de}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+D\+E\+V\+\_\+\+C\+O\+N\+N\+\_\+\+L\+O\+W\+\_\+\+S\+PD}}~\mbox{\hyperlink{usb__hal_8h_ad2d1cf6890c87e763254e7d37ba91b3d}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+U\+P\+\_\+\+D\+\_\+\+M\+I\+N\+US}}
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a4774a2cdf23fd66f649ea62fa80d45c8}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+D\+E\+V\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT}}~0
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a8fecd7408e3fa4334673b5f4d5ab0569}{U\+S\+B\+\_\+\+V\+B\+U\+S\+\_\+\+D\+I\+S\+C\+H\+A\+R\+GE}}~0
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a73fafd853420e4fc2f7666723237dbcd}{U\+S\+B\+\_\+\+V\+B\+U\+S\+\_\+\+C\+H\+A\+R\+GE}}~1
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a0a160f8372044b95b337522eae17a7b9}{U\+S\+B\+\_\+\+V\+B\+U\+S\+\_\+\+P\+O\+W\+E\+R\+\_\+\+ON}}~3
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a2f75d50eaec4aabb9826888ea9274cb5}{U\+S\+B\+\_\+\+V\+B\+U\+S\+\_\+\+P\+O\+W\+E\+R\+\_\+\+O\+FF}}~4
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a9512a3fd038d1617a0c9e36884914bd5}{U\+S\+B\+H\+A\+L\+\_\+\+P\+I\+D\+\_\+\+E\+RR}}~0x00000001
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_abcb7945a4992d7c8b0ba442793096f97}{U\+S\+B\+H\+A\+L\+\_\+\+C\+R\+C5}}~0x00000002
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a11fa6a9733b3c1c7453977920a9bf1fd}{U\+S\+B\+H\+A\+L\+\_\+\+H\+O\+S\+T\+\_\+\+E\+OF}}~0x00000002
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a3a4d6cbfd7fe37964dd89a231d23380c}{U\+S\+B\+H\+A\+L\+\_\+\+C\+R\+C16}}~0x00000004
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_ac3debd8d53dd72c2247692f8e784d6f5}{U\+S\+B\+H\+A\+L\+\_\+\+D\+F\+N8}}~0x00000008
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a102f814a4cc10526aee1cf2ff04d93d2}{U\+S\+B\+H\+A\+L\+\_\+\+B\+T\+O\+\_\+\+E\+RR}}~0x00000010
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a82df52a5dd918fbe54170312779c09d3}{U\+S\+B\+H\+A\+L\+\_\+\+D\+M\+A\+\_\+\+E\+RR}}~0x00000020
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_ac2e59998b72dfd8b882ff76ef9e9e4a5}{U\+S\+B\+H\+A\+L\+\_\+\+B\+T\+S\+\_\+\+E\+RR}}~0x00000080
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a36d0cfffd54d6a71090bb9ccd1b6a205}{U\+S\+B\+H\+A\+L\+\_\+\+X\+F\+E\+R\+\_\+\+ID}}~0x00000100
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a4ac7d818e4294eed3514491ea052acf0}{U\+S\+B\+H\+A\+L\+\_\+\+N\+O\+\_\+\+EP}}~0x00000200
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_ac63164776896e6da6825c5fa17b1ae07}{U\+S\+B\+H\+A\+L\+\_\+\+D\+M\+A\+\_\+\+E\+R\+R2}}~0x00000400
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a2fd666bfd826c03b3099d4e8c7f29c46}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+T\+R\+A\+N\+S\+M\+IT}}~0x0400
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_ab0b21a1a41fd7ebb75c954df3a9dcc4b}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+R\+E\+C\+E\+I\+VE}}~0x0800
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_ad69a16f5fbfeccfc40545372f706edf8}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+H\+A\+N\+D\+S\+H\+A\+KE}}~0x0100
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a1f74237bd0bca8fa7d4c2bfac21fa65d}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+A\+L\+L\+O\+W\+\_\+\+H\+UB}}~0x8000
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a1d1f64ef5eee26b73b8ddea284362353}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+N\+O\+\_\+\+R\+E\+T\+RY}}~0x4000
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a574b1af26d913e704d94d1144f0f6cc1}{U\+S\+B\+H\+A\+L\+Set\+Bus\+Address}}~O\+T\+G\+C\+O\+R\+E\+\_\+\+Set\+Device\+Addr
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a5611f81d4eacaea2190dae5160df5ad7}{U\+S\+B\+H\+A\+L\+Control\+Usb\+Resistors}}~O\+T\+G\+C\+O\+R\+E\+\_\+\+Control\+Usb\+Resistors
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_a7e3ad39276d155d454d2e22e8d3820fc}{U\+S\+B\+H\+A\+L\+Stall\+Pipe}}~O\+T\+G\+C\+O\+R\+E\+\_\+\+Stall\+Pipe
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_af283a37db6cdd1f92ac14ffd007f53b5}{U\+S\+B\+H\+A\+L\+Unstall\+Pipe}}~O\+T\+G\+C\+O\+R\+E\+\_\+\+Unstall\+Pipe
+\item 
+\#define \mbox{\hyperlink{usb__hal_8h_aa3a1d30a6055722f686a807586091289}{U\+S\+B\+H\+A\+L\+Get\+Stalled\+Endpoints}}~O\+T\+G\+C\+O\+R\+E\+\_\+\+Get\+Stalled\+Endpoints
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{usb__hal_8h_aeb00aa39e55058cd8f13ed133bec30b5}{U\+S\+B\+H\+A\+L\+Set\+Bus\+Address}} (uint8\+\_\+t addr)
+\item 
+void \mbox{\hyperlink{usb__hal_8h_a1e64c65c5c1f56f2eb0b2136d2c28ba7}{U\+S\+B\+H\+A\+L\+Control\+Usb\+Resistors}} (uint8\+\_\+t flags)
+\item 
+bool \mbox{\hyperlink{usb__hal_8h_aa3eebba987accf0a3ebb080352c69ca8}{U\+S\+B\+H\+A\+L\+Session\+Is\+Valid}} (void)
+\item 
+bool \mbox{\hyperlink{usb__hal_8h_a755935a7eb173d921180c4cc9edd2506}{U\+S\+B\+H\+A\+L\+Control\+Bus\+Power}} (uint8\+\_\+t cmd)
+\item 
+unsigned long \mbox{\hyperlink{usb__hal_8h_ae95264377af9aff04c2c18f2038fefcc}{U\+S\+B\+H\+A\+L\+Get\+Last\+Error}} (void)
+\item 
+void \mbox{\hyperlink{usb__hal_8h_a5b8b464217a3258ce370caa685cc674f}{U\+S\+B\+H\+A\+L\+Handle\+Bus\+Event}} (void)
+\item 
+bool \mbox{\hyperlink{usb__hal_8h_abe8091c79c8153b7f82f1074f7f09c69}{U\+S\+B\+H\+A\+L\+Stall\+Pipe}} (\mbox{\hyperlink{union_t_r_a_n_s_f_e_r___f_l_a_g_s}{T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+F\+L\+A\+GS}} pipe)
+\item 
+bool \mbox{\hyperlink{usb__hal_8h_a8ffe3a3c8cf43062cbbf74b57248438a}{U\+S\+B\+H\+A\+L\+Unstall\+Pipe}} (\mbox{\hyperlink{union_t_r_a_n_s_f_e_r___f_l_a_g_s}{T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+F\+L\+A\+GS}} pipe)
+\item 
+uint16\+\_\+t \mbox{\hyperlink{usb__hal_8h_aef39fe9ec71d6fbd5d322db8e9c2b2e2}{U\+S\+B\+H\+A\+L\+Get\+Stalled\+Endpoints}} (void)
+\item 
+bool \mbox{\hyperlink{usb__hal_8h_a3ffd0ca66a460d560877bbc61b189004}{U\+S\+B\+H\+A\+L\+Flush\+Pipe}} (\mbox{\hyperlink{union_t_r_a_n_s_f_e_r___f_l_a_g_s}{T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+F\+L\+A\+GS}} pipe)
+\item 
+bool \mbox{\hyperlink{usb__hal_8h_a4374c49f79d179aa96a018b1a5c61561}{U\+S\+B\+H\+A\+L\+Transfer\+Data}} (\mbox{\hyperlink{union_t_r_a_n_s_f_e_r___f_l_a_g_s}{T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+F\+L\+A\+GS}} flags, void $\ast$buffer, unsigned int size)
+\item 
+bool \mbox{\hyperlink{usb__hal_8h_ae206c40a3037ff818414b05f139f5382}{U\+S\+B\+H\+A\+L\+Set\+Ep\+Configuration}} (uint8\+\_\+t ep\+\_\+num, uint16\+\_\+t max\+\_\+pkt\+\_\+size, uint16\+\_\+t flags)
+\item 
+bool \mbox{\hyperlink{usb__hal_8h_adfd2cdb3fb57ceaa278fe303fe6422d2}{U\+S\+B\+H\+A\+L\+Initialize}} (unsigned long flags)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{usb__hal_8h_a1f74237bd0bca8fa7d4c2bfac21fa65d}\label{usb__hal_8h_a1f74237bd0bca8fa7d4c2bfac21fa65d}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_ALLOW\_HUB@{USB\_HAL\_ALLOW\_HUB}}
+\index{USB\_HAL\_ALLOW\_HUB@{USB\_HAL\_ALLOW\_HUB}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_ALLOW\_HUB}{USB\_HAL\_ALLOW\_HUB}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+A\+L\+L\+O\+W\+\_\+\+H\+UB~0x8000}
+
+
+
+Definition at line 115 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a0d72b8754dc33ebf509360c7624038d7}\label{usb__hal_8h_a0d72b8754dc33ebf509360c7624038d7}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_DEV\_CONN\_FULL\_SPD@{USB\_HAL\_DEV\_CONN\_FULL\_SPD}}
+\index{USB\_HAL\_DEV\_CONN\_FULL\_SPD@{USB\_HAL\_DEV\_CONN\_FULL\_SPD}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_DEV\_CONN\_FULL\_SPD}{USB\_HAL\_DEV\_CONN\_FULL\_SPD}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+D\+E\+V\+\_\+\+C\+O\+N\+N\+\_\+\+F\+U\+L\+L\+\_\+\+S\+PD~\mbox{\hyperlink{usb__hal_8h_a9784d9afb7cf902870a37f32f31a3b88}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+U\+P\+\_\+\+D\+\_\+\+P\+L\+US}}}
+
+
+
+Definition at line 73 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_af070f01cb8572ebfff3988bb091f17de}\label{usb__hal_8h_af070f01cb8572ebfff3988bb091f17de}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_DEV\_CONN\_LOW\_SPD@{USB\_HAL\_DEV\_CONN\_LOW\_SPD}}
+\index{USB\_HAL\_DEV\_CONN\_LOW\_SPD@{USB\_HAL\_DEV\_CONN\_LOW\_SPD}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_DEV\_CONN\_LOW\_SPD}{USB\_HAL\_DEV\_CONN\_LOW\_SPD}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+D\+E\+V\+\_\+\+C\+O\+N\+N\+\_\+\+L\+O\+W\+\_\+\+S\+PD~\mbox{\hyperlink{usb__hal_8h_ad2d1cf6890c87e763254e7d37ba91b3d}{U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+U\+P\+\_\+\+D\+\_\+\+M\+I\+N\+US}}}
+
+
+
+Definition at line 74 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a4774a2cdf23fd66f649ea62fa80d45c8}\label{usb__hal_8h_a4774a2cdf23fd66f649ea62fa80d45c8}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_DEV\_DISCONNECT@{USB\_HAL\_DEV\_DISCONNECT}}
+\index{USB\_HAL\_DEV\_DISCONNECT@{USB\_HAL\_DEV\_DISCONNECT}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_DEV\_DISCONNECT}{USB\_HAL\_DEV\_DISCONNECT}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+D\+E\+V\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT~0}
+
+
+
+Definition at line 75 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_ad69a16f5fbfeccfc40545372f706edf8}\label{usb__hal_8h_ad69a16f5fbfeccfc40545372f706edf8}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_HANDSHAKE@{USB\_HAL\_HANDSHAKE}}
+\index{USB\_HAL\_HANDSHAKE@{USB\_HAL\_HANDSHAKE}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_HANDSHAKE}{USB\_HAL\_HANDSHAKE}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+H\+A\+N\+D\+S\+H\+A\+KE~0x0100}
+
+
+
+Definition at line 109 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a1d1f64ef5eee26b73b8ddea284362353}\label{usb__hal_8h_a1d1f64ef5eee26b73b8ddea284362353}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_NO\_RETRY@{USB\_HAL\_NO\_RETRY}}
+\index{USB\_HAL\_NO\_RETRY@{USB\_HAL\_NO\_RETRY}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_NO\_RETRY}{USB\_HAL\_NO\_RETRY}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+N\+O\+\_\+\+R\+E\+T\+RY~0x4000}
+
+
+
+Definition at line 116 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_acd8d962ea1e842ba8636509c89086b48}\label{usb__hal_8h_acd8d962ea1e842ba8636509c89086b48}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_PULL\_DN\_D\_MINUS@{USB\_HAL\_PULL\_DN\_D\_MINUS}}
+\index{USB\_HAL\_PULL\_DN\_D\_MINUS@{USB\_HAL\_PULL\_DN\_D\_MINUS}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_PULL\_DN\_D\_MINUS}{USB\_HAL\_PULL\_DN\_D\_MINUS}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+D\+N\+\_\+\+D\+\_\+\+M\+I\+N\+US~0x10}
+
+
+
+Definition at line 69 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a90ae5402d752ffe3a6d72e2806716124}\label{usb__hal_8h_a90ae5402d752ffe3a6d72e2806716124}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_PULL\_DN\_D\_PLUS@{USB\_HAL\_PULL\_DN\_D\_PLUS}}
+\index{USB\_HAL\_PULL\_DN\_D\_PLUS@{USB\_HAL\_PULL\_DN\_D\_PLUS}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_PULL\_DN\_D\_PLUS}{USB\_HAL\_PULL\_DN\_D\_PLUS}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+D\+N\+\_\+\+D\+\_\+\+P\+L\+US~0x20}
+
+
+
+Definition at line 68 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_ad2d1cf6890c87e763254e7d37ba91b3d}\label{usb__hal_8h_ad2d1cf6890c87e763254e7d37ba91b3d}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_PULL\_UP\_D\_MINUS@{USB\_HAL\_PULL\_UP\_D\_MINUS}}
+\index{USB\_HAL\_PULL\_UP\_D\_MINUS@{USB\_HAL\_PULL\_UP\_D\_MINUS}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_PULL\_UP\_D\_MINUS}{USB\_HAL\_PULL\_UP\_D\_MINUS}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+U\+P\+\_\+\+D\+\_\+\+M\+I\+N\+US~0x40}
+
+
+
+Definition at line 67 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a9784d9afb7cf902870a37f32f31a3b88}\label{usb__hal_8h_a9784d9afb7cf902870a37f32f31a3b88}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_PULL\_UP\_D\_PLUS@{USB\_HAL\_PULL\_UP\_D\_PLUS}}
+\index{USB\_HAL\_PULL\_UP\_D\_PLUS@{USB\_HAL\_PULL\_UP\_D\_PLUS}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_PULL\_UP\_D\_PLUS}{USB\_HAL\_PULL\_UP\_D\_PLUS}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+P\+U\+L\+L\+\_\+\+U\+P\+\_\+\+D\+\_\+\+P\+L\+US~0x80}
+
+
+
+Definition at line 66 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_ab0b21a1a41fd7ebb75c954df3a9dcc4b}\label{usb__hal_8h_ab0b21a1a41fd7ebb75c954df3a9dcc4b}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_RECEIVE@{USB\_HAL\_RECEIVE}}
+\index{USB\_HAL\_RECEIVE@{USB\_HAL\_RECEIVE}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_RECEIVE}{USB\_HAL\_RECEIVE}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+R\+E\+C\+E\+I\+VE~0x0800}
+
+
+
+Definition at line 108 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a2fd666bfd826c03b3099d4e8c7f29c46}\label{usb__hal_8h_a2fd666bfd826c03b3099d4e8c7f29c46}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_HAL\_TRANSMIT@{USB\_HAL\_TRANSMIT}}
+\index{USB\_HAL\_TRANSMIT@{USB\_HAL\_TRANSMIT}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_HAL\_TRANSMIT}{USB\_HAL\_TRANSMIT}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+H\+A\+L\+\_\+\+T\+R\+A\+N\+S\+M\+IT~0x0400}
+
+
+
+Definition at line 107 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a73fafd853420e4fc2f7666723237dbcd}\label{usb__hal_8h_a73fafd853420e4fc2f7666723237dbcd}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_VBUS\_CHARGE@{USB\_VBUS\_CHARGE}}
+\index{USB\_VBUS\_CHARGE@{USB\_VBUS\_CHARGE}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_VBUS\_CHARGE}{USB\_VBUS\_CHARGE}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+V\+B\+U\+S\+\_\+\+C\+H\+A\+R\+GE~1}
+
+
+
+Definition at line 79 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a8fecd7408e3fa4334673b5f4d5ab0569}\label{usb__hal_8h_a8fecd7408e3fa4334673b5f4d5ab0569}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_VBUS\_DISCHARGE@{USB\_VBUS\_DISCHARGE}}
+\index{USB\_VBUS\_DISCHARGE@{USB\_VBUS\_DISCHARGE}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_VBUS\_DISCHARGE}{USB\_VBUS\_DISCHARGE}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+V\+B\+U\+S\+\_\+\+D\+I\+S\+C\+H\+A\+R\+GE~0}
+
+
+
+Definition at line 78 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a2f75d50eaec4aabb9826888ea9274cb5}\label{usb__hal_8h_a2f75d50eaec4aabb9826888ea9274cb5}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_VBUS\_POWER\_OFF@{USB\_VBUS\_POWER\_OFF}}
+\index{USB\_VBUS\_POWER\_OFF@{USB\_VBUS\_POWER\_OFF}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_VBUS\_POWER\_OFF}{USB\_VBUS\_POWER\_OFF}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+V\+B\+U\+S\+\_\+\+P\+O\+W\+E\+R\+\_\+\+O\+FF~4}
+
+
+
+Definition at line 81 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a0a160f8372044b95b337522eae17a7b9}\label{usb__hal_8h_a0a160f8372044b95b337522eae17a7b9}} 
+\index{usb\_hal.h@{usb\_hal.h}!USB\_VBUS\_POWER\_ON@{USB\_VBUS\_POWER\_ON}}
+\index{USB\_VBUS\_POWER\_ON@{USB\_VBUS\_POWER\_ON}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USB\_VBUS\_POWER\_ON}{USB\_VBUS\_POWER\_ON}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+V\+B\+U\+S\+\_\+\+P\+O\+W\+E\+R\+\_\+\+ON~3}
+
+
+
+Definition at line 80 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a102f814a4cc10526aee1cf2ff04d93d2}\label{usb__hal_8h_a102f814a4cc10526aee1cf2ff04d93d2}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_BTO\_ERR@{USBHAL\_BTO\_ERR}}
+\index{USBHAL\_BTO\_ERR@{USBHAL\_BTO\_ERR}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_BTO\_ERR}{USBHAL\_BTO\_ERR}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+B\+T\+O\+\_\+\+E\+RR~0x00000010}
+
+
+
+Definition at line 91 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_ac2e59998b72dfd8b882ff76ef9e9e4a5}\label{usb__hal_8h_ac2e59998b72dfd8b882ff76ef9e9e4a5}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_BTS\_ERR@{USBHAL\_BTS\_ERR}}
+\index{USBHAL\_BTS\_ERR@{USBHAL\_BTS\_ERR}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_BTS\_ERR}{USBHAL\_BTS\_ERR}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+B\+T\+S\+\_\+\+E\+RR~0x00000080}
+
+
+
+Definition at line 93 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a3a4d6cbfd7fe37964dd89a231d23380c}\label{usb__hal_8h_a3a4d6cbfd7fe37964dd89a231d23380c}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_CRC16@{USBHAL\_CRC16}}
+\index{USBHAL\_CRC16@{USBHAL\_CRC16}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_CRC16}{USBHAL\_CRC16}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+C\+R\+C16~0x00000004}
+
+
+
+Definition at line 89 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_abcb7945a4992d7c8b0ba442793096f97}\label{usb__hal_8h_abcb7945a4992d7c8b0ba442793096f97}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_CRC5@{USBHAL\_CRC5}}
+\index{USBHAL\_CRC5@{USBHAL\_CRC5}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_CRC5}{USBHAL\_CRC5}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+C\+R\+C5~0x00000002}
+
+
+
+Definition at line 87 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_ac3debd8d53dd72c2247692f8e784d6f5}\label{usb__hal_8h_ac3debd8d53dd72c2247692f8e784d6f5}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_DFN8@{USBHAL\_DFN8}}
+\index{USBHAL\_DFN8@{USBHAL\_DFN8}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_DFN8}{USBHAL\_DFN8}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+D\+F\+N8~0x00000008}
+
+
+
+Definition at line 90 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a82df52a5dd918fbe54170312779c09d3}\label{usb__hal_8h_a82df52a5dd918fbe54170312779c09d3}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_DMA\_ERR@{USBHAL\_DMA\_ERR}}
+\index{USBHAL\_DMA\_ERR@{USBHAL\_DMA\_ERR}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_DMA\_ERR}{USBHAL\_DMA\_ERR}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+D\+M\+A\+\_\+\+E\+RR~0x00000020}
+
+
+
+Definition at line 92 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_ac63164776896e6da6825c5fa17b1ae07}\label{usb__hal_8h_ac63164776896e6da6825c5fa17b1ae07}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_DMA\_ERR2@{USBHAL\_DMA\_ERR2}}
+\index{USBHAL\_DMA\_ERR2@{USBHAL\_DMA\_ERR2}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_DMA\_ERR2}{USBHAL\_DMA\_ERR2}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+D\+M\+A\+\_\+\+E\+R\+R2~0x00000400}
+
+
+
+Definition at line 96 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a11fa6a9733b3c1c7453977920a9bf1fd}\label{usb__hal_8h_a11fa6a9733b3c1c7453977920a9bf1fd}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_HOST\_EOF@{USBHAL\_HOST\_EOF}}
+\index{USBHAL\_HOST\_EOF@{USBHAL\_HOST\_EOF}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_HOST\_EOF}{USBHAL\_HOST\_EOF}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+H\+O\+S\+T\+\_\+\+E\+OF~0x00000002}
+
+
+
+Definition at line 88 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a4ac7d818e4294eed3514491ea052acf0}\label{usb__hal_8h_a4ac7d818e4294eed3514491ea052acf0}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_NO\_EP@{USBHAL\_NO\_EP}}
+\index{USBHAL\_NO\_EP@{USBHAL\_NO\_EP}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_NO\_EP}{USBHAL\_NO\_EP}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+N\+O\+\_\+\+EP~0x00000200}
+
+
+
+Definition at line 95 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a9512a3fd038d1617a0c9e36884914bd5}\label{usb__hal_8h_a9512a3fd038d1617a0c9e36884914bd5}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_PID\_ERR@{USBHAL\_PID\_ERR}}
+\index{USBHAL\_PID\_ERR@{USBHAL\_PID\_ERR}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_PID\_ERR}{USBHAL\_PID\_ERR}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+P\+I\+D\+\_\+\+E\+RR~0x00000001}
+
+
+
+Definition at line 86 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a36d0cfffd54d6a71090bb9ccd1b6a205}\label{usb__hal_8h_a36d0cfffd54d6a71090bb9ccd1b6a205}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHAL\_XFER\_ID@{USBHAL\_XFER\_ID}}
+\index{USBHAL\_XFER\_ID@{USBHAL\_XFER\_ID}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHAL\_XFER\_ID}{USBHAL\_XFER\_ID}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+\_\+\+X\+F\+E\+R\+\_\+\+ID~0x00000100}
+
+
+
+Definition at line 94 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a5611f81d4eacaea2190dae5160df5ad7}\label{usb__hal_8h_a5611f81d4eacaea2190dae5160df5ad7}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALControlUsbResistors@{USBHALControlUsbResistors}}
+\index{USBHALControlUsbResistors@{USBHALControlUsbResistors}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALControlUsbResistors}{USBHALControlUsbResistors}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+Control\+Usb\+Resistors~O\+T\+G\+C\+O\+R\+E\+\_\+\+Control\+Usb\+Resistors}
+
+
+
+Definition at line 205 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_aa3a1d30a6055722f686a807586091289}\label{usb__hal_8h_aa3a1d30a6055722f686a807586091289}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALGetStalledEndpoints@{USBHALGetStalledEndpoints}}
+\index{USBHALGetStalledEndpoints@{USBHALGetStalledEndpoints}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALGetStalledEndpoints}{USBHALGetStalledEndpoints}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+Get\+Stalled\+Endpoints~O\+T\+G\+C\+O\+R\+E\+\_\+\+Get\+Stalled\+Endpoints}
+
+
+
+Definition at line 436 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a574b1af26d913e704d94d1144f0f6cc1}\label{usb__hal_8h_a574b1af26d913e704d94d1144f0f6cc1}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALSetBusAddress@{USBHALSetBusAddress}}
+\index{USBHALSetBusAddress@{USBHALSetBusAddress}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALSetBusAddress}{USBHALSetBusAddress}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+Set\+Bus\+Address~O\+T\+G\+C\+O\+R\+E\+\_\+\+Set\+Device\+Addr}
+
+
+
+Definition at line 165 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_a7e3ad39276d155d454d2e22e8d3820fc}\label{usb__hal_8h_a7e3ad39276d155d454d2e22e8d3820fc}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALStallPipe@{USBHALStallPipe}}
+\index{USBHALStallPipe@{USBHALStallPipe}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALStallPipe}{USBHALStallPipe}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+Stall\+Pipe~O\+T\+G\+C\+O\+R\+E\+\_\+\+Stall\+Pipe}
+
+
+
+Definition at line 365 of file usb\+\_\+hal.\+h.
+
+\mbox{\Hypertarget{usb__hal_8h_af283a37db6cdd1f92ac14ffd007f53b5}\label{usb__hal_8h_af283a37db6cdd1f92ac14ffd007f53b5}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALUnstallPipe@{USBHALUnstallPipe}}
+\index{USBHALUnstallPipe@{USBHALUnstallPipe}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALUnstallPipe}{USBHALUnstallPipe}}
+{\footnotesize\ttfamily \#define U\+S\+B\+H\+A\+L\+Unstall\+Pipe~O\+T\+G\+C\+O\+R\+E\+\_\+\+Unstall\+Pipe}
+
+
+
+Definition at line 402 of file usb\+\_\+hal.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{usb__hal_8h_a755935a7eb173d921180c4cc9edd2506}\label{usb__hal_8h_a755935a7eb173d921180c4cc9edd2506}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALControlBusPower@{USBHALControlBusPower}}
+\index{USBHALControlBusPower@{USBHALControlBusPower}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALControlBusPower()}{USBHALControlBusPower()}}
+{\footnotesize\ttfamily bool U\+S\+B\+H\+A\+L\+Control\+Bus\+Power (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_a1e64c65c5c1f56f2eb0b2136d2c28ba7}\label{usb__hal_8h_a1e64c65c5c1f56f2eb0b2136d2c28ba7}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALControlUsbResistors@{USBHALControlUsbResistors}}
+\index{USBHALControlUsbResistors@{USBHALControlUsbResistors}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALControlUsbResistors()}{USBHALControlUsbResistors()}}
+{\footnotesize\ttfamily void U\+S\+B\+H\+A\+L\+Control\+Usb\+Resistors (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_a3ffd0ca66a460d560877bbc61b189004}\label{usb__hal_8h_a3ffd0ca66a460d560877bbc61b189004}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALFlushPipe@{USBHALFlushPipe}}
+\index{USBHALFlushPipe@{USBHALFlushPipe}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALFlushPipe()}{USBHALFlushPipe()}}
+{\footnotesize\ttfamily bool U\+S\+B\+H\+A\+L\+Flush\+Pipe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{union_t_r_a_n_s_f_e_r___f_l_a_g_s}{T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+F\+L\+A\+GS}}}]{pipe }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_ae95264377af9aff04c2c18f2038fefcc}\label{usb__hal_8h_ae95264377af9aff04c2c18f2038fefcc}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALGetLastError@{USBHALGetLastError}}
+\index{USBHALGetLastError@{USBHALGetLastError}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALGetLastError()}{USBHALGetLastError()}}
+{\footnotesize\ttfamily unsigned long U\+S\+B\+H\+A\+L\+Get\+Last\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_aef39fe9ec71d6fbd5d322db8e9c2b2e2}\label{usb__hal_8h_aef39fe9ec71d6fbd5d322db8e9c2b2e2}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALGetStalledEndpoints@{USBHALGetStalledEndpoints}}
+\index{USBHALGetStalledEndpoints@{USBHALGetStalledEndpoints}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALGetStalledEndpoints()}{USBHALGetStalledEndpoints()}}
+{\footnotesize\ttfamily uint16\+\_\+t U\+S\+B\+H\+A\+L\+Get\+Stalled\+Endpoints (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_a5b8b464217a3258ce370caa685cc674f}\label{usb__hal_8h_a5b8b464217a3258ce370caa685cc674f}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALHandleBusEvent@{USBHALHandleBusEvent}}
+\index{USBHALHandleBusEvent@{USBHALHandleBusEvent}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALHandleBusEvent()}{USBHALHandleBusEvent()}}
+{\footnotesize\ttfamily void U\+S\+B\+H\+A\+L\+Handle\+Bus\+Event (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_adfd2cdb3fb57ceaa278fe303fe6422d2}\label{usb__hal_8h_adfd2cdb3fb57ceaa278fe303fe6422d2}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALInitialize@{USBHALInitialize}}
+\index{USBHALInitialize@{USBHALInitialize}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALInitialize()}{USBHALInitialize()}}
+{\footnotesize\ttfamily bool U\+S\+B\+H\+A\+L\+Initialize (\begin{DoxyParamCaption}\item[{unsigned long}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_aa3eebba987accf0a3ebb080352c69ca8}\label{usb__hal_8h_aa3eebba987accf0a3ebb080352c69ca8}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALSessionIsValid@{USBHALSessionIsValid}}
+\index{USBHALSessionIsValid@{USBHALSessionIsValid}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALSessionIsValid()}{USBHALSessionIsValid()}}
+{\footnotesize\ttfamily bool U\+S\+B\+H\+A\+L\+Session\+Is\+Valid (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_aeb00aa39e55058cd8f13ed133bec30b5}\label{usb__hal_8h_aeb00aa39e55058cd8f13ed133bec30b5}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALSetBusAddress@{USBHALSetBusAddress}}
+\index{USBHALSetBusAddress@{USBHALSetBusAddress}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALSetBusAddress()}{USBHALSetBusAddress()}}
+{\footnotesize\ttfamily void U\+S\+B\+H\+A\+L\+Set\+Bus\+Address (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_ae206c40a3037ff818414b05f139f5382}\label{usb__hal_8h_ae206c40a3037ff818414b05f139f5382}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALSetEpConfiguration@{USBHALSetEpConfiguration}}
+\index{USBHALSetEpConfiguration@{USBHALSetEpConfiguration}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALSetEpConfiguration()}{USBHALSetEpConfiguration()}}
+{\footnotesize\ttfamily bool U\+S\+B\+H\+A\+L\+Set\+Ep\+Configuration (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{ep\+\_\+num,  }\item[{uint16\+\_\+t}]{max\+\_\+pkt\+\_\+size,  }\item[{uint16\+\_\+t}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_abe8091c79c8153b7f82f1074f7f09c69}\label{usb__hal_8h_abe8091c79c8153b7f82f1074f7f09c69}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALStallPipe@{USBHALStallPipe}}
+\index{USBHALStallPipe@{USBHALStallPipe}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALStallPipe()}{USBHALStallPipe()}}
+{\footnotesize\ttfamily bool U\+S\+B\+H\+A\+L\+Stall\+Pipe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{union_t_r_a_n_s_f_e_r___f_l_a_g_s}{T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+F\+L\+A\+GS}}}]{pipe }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_a4374c49f79d179aa96a018b1a5c61561}\label{usb__hal_8h_a4374c49f79d179aa96a018b1a5c61561}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALTransferData@{USBHALTransferData}}
+\index{USBHALTransferData@{USBHALTransferData}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALTransferData()}{USBHALTransferData()}}
+{\footnotesize\ttfamily bool U\+S\+B\+H\+A\+L\+Transfer\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{union_t_r_a_n_s_f_e_r___f_l_a_g_s}{T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+F\+L\+A\+GS}}}]{flags,  }\item[{void $\ast$}]{buffer,  }\item[{unsigned int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{usb__hal_8h_a8ffe3a3c8cf43062cbbf74b57248438a}\label{usb__hal_8h_a8ffe3a3c8cf43062cbbf74b57248438a}} 
+\index{usb\_hal.h@{usb\_hal.h}!USBHALUnstallPipe@{USBHALUnstallPipe}}
+\index{USBHALUnstallPipe@{USBHALUnstallPipe}!usb\_hal.h@{usb\_hal.h}}
+\subsubsection{\texorpdfstring{USBHALUnstallPipe()}{USBHALUnstallPipe()}}
+{\footnotesize\ttfamily bool U\+S\+B\+H\+A\+L\+Unstall\+Pipe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{union_t_r_a_n_s_f_e_r___f_l_a_g_s}{T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+F\+L\+A\+GS}}}]{pipe }\end{DoxyParamCaption})}
+

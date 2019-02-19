@@ -1,0 +1,186 @@
+\hypertarget{system_8h}{}\section{C\+:/\+Users/\+Marshall/\+M\+P\+L\+A\+B\+X\+Projects/mc\+\_\+firmware.X/system/system.h File Reference}
+\label{system_8h}\index{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/system/system.h@{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/system/system.h}}
+{\ttfamily \#include $<$p24\+F\+J256\+G\+B210.\+h$>$}\newline
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}traps.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{system_8h_a024148e99a7143db044a48216664d03d}{\+\_\+\+X\+T\+A\+L\+\_\+\+F\+R\+EQ}}~32000000\+UL
+\item 
+\#define \mbox{\hyperlink{system_8h_afc1223fc26cddba5ffba1c5bd5def82f}{E\+R\+R\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}}~\mbox{\hyperlink{usb__device__hid_8c_ab898071398b359603a35c202e9c65f3b}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((interrupt, no\+\_\+auto\+\_\+psv))
+\item 
+\#define \mbox{\hyperlink{system_8h_ad551bedede36c4c0293e11c2cf117516}{E\+R\+R\+O\+R\+\_\+\+H\+A\+N\+D\+L\+E\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN}}~\mbox{\hyperlink{traps_8c_afc1223fc26cddba5ffba1c5bd5def82f}{E\+R\+R\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} \mbox{\hyperlink{usb__device__hid_8c_ab898071398b359603a35c202e9c65f3b}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((noreturn))
+\item 
+\#define \mbox{\hyperlink{system_8h_a8d6c626527a12311e8a698a87daae6f7}{F\+A\+I\+L\+S\+A\+F\+E\+\_\+\+S\+T\+A\+C\+K\+\_\+\+G\+U\+A\+R\+D\+S\+I\+ZE}}~8
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{system_8h_afeac06fb8e1e94bfba7df88a6e219d71}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+TE}} \{ \mbox{\hyperlink{system_8h_afeac06fb8e1e94bfba7df88a6e219d71a4e19037373b2783bd1d1b7257c07848d}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+S\+B\+\_\+\+S\+T\+A\+RT}}, 
+\mbox{\hyperlink{system_8h_afeac06fb8e1e94bfba7df88a6e219d71a2d4a10e897c06f5a6d5932474c233747}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+S\+B\+\_\+\+S\+U\+S\+P\+E\+ND}}, 
+\mbox{\hyperlink{system_8h_afeac06fb8e1e94bfba7df88a6e219d71a8679a555919231b6220746677403647b}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+S\+B\+\_\+\+R\+E\+S\+U\+ME}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{system_8h_a15f107ab087b79be2a369e6761fdf693}{S\+Y\+S\+T\+E\+M\+\_\+\+Initialize}} (\mbox{\hyperlink{system_8h_afeac06fb8e1e94bfba7df88a6e219d71}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+TE}} state)
+\item 
+void \mbox{\hyperlink{system_8h_a50357774183a136d9490f64ad0d5c6cb}{P\+I\+N\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+Initialize}} (void)
+\item 
+void \mbox{\hyperlink{system_8h_a4777dd92514a7e4ef803f9e869006f5d}{O\+S\+C\+I\+L\+L\+A\+T\+O\+R\+\_\+\+Initialize}} (void)
+\item 
+void \mbox{\hyperlink{system_8h_a6c40d2f45ec674f28815ad65b2c753d5}{E\+X\+T\+\_\+\+I\+N\+T\+\_\+\+Initialize}} (void)
+\item 
+void \mbox{\hyperlink{system_8h_a5c526129ee879458dff6755f5768a6e3}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+Initialize}} (void)
+\item 
+void \mbox{\hyperlink{system_8h_a1401d77a9442f19925d062be84174067}{T\+I\+M\+E\+R\+S\+\_\+\+Initialize}} (void)
+\item 
+void \mbox{\hyperlink{system_8h_aa263ea3258d9f0954845d6e199ad3ea7}{Other\+Tasks}} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{system_8h_a024148e99a7143db044a48216664d03d}\label{system_8h_a024148e99a7143db044a48216664d03d}} 
+\index{system.h@{system.h}!\_XTAL\_FREQ@{\_XTAL\_FREQ}}
+\index{\_XTAL\_FREQ@{\_XTAL\_FREQ}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{\_XTAL\_FREQ}{\_XTAL\_FREQ}}
+{\footnotesize\ttfamily \#define \+\_\+\+X\+T\+A\+L\+\_\+\+F\+R\+EQ~32000000\+UL}
+
+
+
+Definition at line 32 of file system.\+h.
+
+\mbox{\Hypertarget{system_8h_afc1223fc26cddba5ffba1c5bd5def82f}\label{system_8h_afc1223fc26cddba5ffba1c5bd5def82f}} 
+\index{system.h@{system.h}!ERROR\_HANDLER@{ERROR\_HANDLER}}
+\index{ERROR\_HANDLER@{ERROR\_HANDLER}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{ERROR\_HANDLER}{ERROR\_HANDLER}}
+{\footnotesize\ttfamily \#define E\+R\+R\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER~\mbox{\hyperlink{usb__device__hid_8c_ab898071398b359603a35c202e9c65f3b}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((interrupt, no\+\_\+auto\+\_\+psv))}
+
+
+
+Definition at line 34 of file system.\+h.
+
+\mbox{\Hypertarget{system_8h_ad551bedede36c4c0293e11c2cf117516}\label{system_8h_ad551bedede36c4c0293e11c2cf117516}} 
+\index{system.h@{system.h}!ERROR\_HANDLER\_NORETURN@{ERROR\_HANDLER\_NORETURN}}
+\index{ERROR\_HANDLER\_NORETURN@{ERROR\_HANDLER\_NORETURN}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{ERROR\_HANDLER\_NORETURN}{ERROR\_HANDLER\_NORETURN}}
+{\footnotesize\ttfamily \#define E\+R\+R\+O\+R\+\_\+\+H\+A\+N\+D\+L\+E\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN~\mbox{\hyperlink{traps_8c_afc1223fc26cddba5ffba1c5bd5def82f}{E\+R\+R\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} \mbox{\hyperlink{usb__device__hid_8c_ab898071398b359603a35c202e9c65f3b}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((noreturn))}
+
+
+
+Definition at line 35 of file system.\+h.
+
+\mbox{\Hypertarget{system_8h_a8d6c626527a12311e8a698a87daae6f7}\label{system_8h_a8d6c626527a12311e8a698a87daae6f7}} 
+\index{system.h@{system.h}!FAILSAFE\_STACK\_GUARDSIZE@{FAILSAFE\_STACK\_GUARDSIZE}}
+\index{FAILSAFE\_STACK\_GUARDSIZE@{FAILSAFE\_STACK\_GUARDSIZE}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{FAILSAFE\_STACK\_GUARDSIZE}{FAILSAFE\_STACK\_GUARDSIZE}}
+{\footnotesize\ttfamily \#define F\+A\+I\+L\+S\+A\+F\+E\+\_\+\+S\+T\+A\+C\+K\+\_\+\+G\+U\+A\+R\+D\+S\+I\+ZE~8}
+
+
+
+Definition at line 36 of file system.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{system_8h_afeac06fb8e1e94bfba7df88a6e219d71}\label{system_8h_afeac06fb8e1e94bfba7df88a6e219d71}} 
+\index{system.h@{system.h}!SYSTEM\_STATE@{SYSTEM\_STATE}}
+\index{SYSTEM\_STATE@{SYSTEM\_STATE}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{SYSTEM\_STATE}{SYSTEM\_STATE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{system_8h_afeac06fb8e1e94bfba7df88a6e219d71}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+TE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SYSTEM\_STATE\_USB\_START@{SYSTEM\_STATE\_USB\_START}!system.h@{system.h}}\index{system.h@{system.h}!SYSTEM\_STATE\_USB\_START@{SYSTEM\_STATE\_USB\_START}}}\mbox{\Hypertarget{system_8h_afeac06fb8e1e94bfba7df88a6e219d71a4e19037373b2783bd1d1b7257c07848d}\label{system_8h_afeac06fb8e1e94bfba7df88a6e219d71a4e19037373b2783bd1d1b7257c07848d}} 
+S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+S\+B\+\_\+\+S\+T\+A\+RT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SYSTEM\_STATE\_USB\_SUSPEND@{SYSTEM\_STATE\_USB\_SUSPEND}!system.h@{system.h}}\index{system.h@{system.h}!SYSTEM\_STATE\_USB\_SUSPEND@{SYSTEM\_STATE\_USB\_SUSPEND}}}\mbox{\Hypertarget{system_8h_afeac06fb8e1e94bfba7df88a6e219d71a2d4a10e897c06f5a6d5932474c233747}\label{system_8h_afeac06fb8e1e94bfba7df88a6e219d71a2d4a10e897c06f5a6d5932474c233747}} 
+S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+S\+B\+\_\+\+S\+U\+S\+P\+E\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SYSTEM\_STATE\_USB\_RESUME@{SYSTEM\_STATE\_USB\_RESUME}!system.h@{system.h}}\index{system.h@{system.h}!SYSTEM\_STATE\_USB\_RESUME@{SYSTEM\_STATE\_USB\_RESUME}}}\mbox{\Hypertarget{system_8h_afeac06fb8e1e94bfba7df88a6e219d71a8679a555919231b6220746677403647b}\label{system_8h_afeac06fb8e1e94bfba7df88a6e219d71a8679a555919231b6220746677403647b}} 
+S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+S\+B\+\_\+\+R\+E\+S\+U\+ME&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 40 of file system.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{system_8h_a6c40d2f45ec674f28815ad65b2c753d5}\label{system_8h_a6c40d2f45ec674f28815ad65b2c753d5}} 
+\index{system.h@{system.h}!EXT\_INT\_Initialize@{EXT\_INT\_Initialize}}
+\index{EXT\_INT\_Initialize@{EXT\_INT\_Initialize}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{EXT\_INT\_Initialize()}{EXT\_INT\_Initialize()}}
+{\footnotesize\ttfamily void E\+X\+T\+\_\+\+I\+N\+T\+\_\+\+Initialize (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 197 of file system.\+c.
+
+\mbox{\Hypertarget{system_8h_a5c526129ee879458dff6755f5768a6e3}\label{system_8h_a5c526129ee879458dff6755f5768a6e3}} 
+\index{system.h@{system.h}!INTERRUPT\_Initialize@{INTERRUPT\_Initialize}}
+\index{INTERRUPT\_Initialize@{INTERRUPT\_Initialize}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{INTERRUPT\_Initialize()}{INTERRUPT\_Initialize()}}
+{\footnotesize\ttfamily void I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+Initialize (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 191 of file system.\+c.
+
+\mbox{\Hypertarget{system_8h_a4777dd92514a7e4ef803f9e869006f5d}\label{system_8h_a4777dd92514a7e4ef803f9e869006f5d}} 
+\index{system.h@{system.h}!OSCILLATOR\_Initialize@{OSCILLATOR\_Initialize}}
+\index{OSCILLATOR\_Initialize@{OSCILLATOR\_Initialize}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{OSCILLATOR\_Initialize()}{OSCILLATOR\_Initialize()}}
+{\footnotesize\ttfamily void O\+S\+C\+I\+L\+L\+A\+T\+O\+R\+\_\+\+Initialize (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 178 of file system.\+c.
+
+\mbox{\Hypertarget{system_8h_aa263ea3258d9f0954845d6e199ad3ea7}\label{system_8h_aa263ea3258d9f0954845d6e199ad3ea7}} 
+\index{system.h@{system.h}!OtherTasks@{OtherTasks}}
+\index{OtherTasks@{OtherTasks}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{OtherTasks()}{OtherTasks()}}
+{\footnotesize\ttfamily void Other\+Tasks (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON Bits 
+
+Definition at line 62 of file system.\+c.
+
+\mbox{\Hypertarget{system_8h_a50357774183a136d9490f64ad0d5c6cb}\label{system_8h_a50357774183a136d9490f64ad0d5c6cb}} 
+\index{system.h@{system.h}!PIN\_MANAGER\_Initialize@{PIN\_MANAGER\_Initialize}}
+\index{PIN\_MANAGER\_Initialize@{PIN\_MANAGER\_Initialize}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{PIN\_MANAGER\_Initialize()}{PIN\_MANAGER\_Initialize()}}
+{\footnotesize\ttfamily void P\+I\+N\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+Initialize (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 113 of file system.\+c.
+
+\mbox{\Hypertarget{system_8h_a15f107ab087b79be2a369e6761fdf693}\label{system_8h_a15f107ab087b79be2a369e6761fdf693}} 
+\index{system.h@{system.h}!SYSTEM\_Initialize@{SYSTEM\_Initialize}}
+\index{SYSTEM\_Initialize@{SYSTEM\_Initialize}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{SYSTEM\_Initialize()}{SYSTEM\_Initialize()}}
+{\footnotesize\ttfamily void S\+Y\+S\+T\+E\+M\+\_\+\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{system_8h_afeac06fb8e1e94bfba7df88a6e219d71}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+TE}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Definition at line 67 of file system.\+c.
+
+\mbox{\Hypertarget{system_8h_a1401d77a9442f19925d062be84174067}\label{system_8h_a1401d77a9442f19925d062be84174067}} 
+\index{system.h@{system.h}!TIMERS\_Initialize@{TIMERS\_Initialize}}
+\index{TIMERS\_Initialize@{TIMERS\_Initialize}!system.h@{system.h}}
+\subsubsection{\texorpdfstring{TIMERS\_Initialize()}{TIMERS\_Initialize()}}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R\+S\+\_\+\+Initialize (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 212 of file system.\+c.
+

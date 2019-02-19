@@ -1,0 +1,331 @@
+\hypertarget{usb__device__hid_8h}{}\section{C\+:/\+Users/\+Marshall/\+M\+P\+L\+A\+B\+X\+Projects/mc\+\_\+firmware.X/usb/usb\+\_\+device\+\_\+hid.h File Reference}
+\label{usb__device__hid_8h}\index{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/usb/usb\_device\_hid.h@{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/usb/usb\_device\_hid.h}}
+{\ttfamily \#include \char`\"{}usb\+\_\+ch9.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct___u_s_b___h_i_d___d_s_c___h_e_a_d_e_r}{\+\_\+\+U\+S\+B\+\_\+\+H\+I\+D\+\_\+\+D\+S\+C\+\_\+\+H\+E\+A\+D\+ER}}
+\item 
+struct \mbox{\hyperlink{struct___u_s_b___h_i_d___d_s_c}{\+\_\+\+U\+S\+B\+\_\+\+H\+I\+D\+\_\+\+D\+SC}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_aec9b0c917ae70aff81322f2d721bbb16}{G\+E\+T\+\_\+\+R\+E\+P\+O\+RT}}~0x01
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a0f26d84d681fc95257f35c406c07903b}{G\+E\+T\+\_\+\+I\+D\+LE}}~0x02
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a41e17456a13f2c97f925fa8f526454fd}{G\+E\+T\+\_\+\+P\+R\+O\+T\+O\+C\+OL}}~0x03
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a43ea531ba036e94e9754dcfaf2ce1e56}{S\+E\+T\+\_\+\+R\+E\+P\+O\+RT}}~0x09
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a619da8498155cc851c445dca41b32dd4}{S\+E\+T\+\_\+\+I\+D\+LE}}~0x0A
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_aa08ce2c5a3e5dd390c6079c4ec998cc3}{S\+E\+T\+\_\+\+P\+R\+O\+T\+O\+C\+OL}}~0x0B
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_ab44191061dc89d3deeedac1138b1b8dd}{D\+S\+C\+\_\+\+H\+ID}}~0x21
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a4dda799ef1bff0cf21a21bf3ed5a14ab}{D\+S\+C\+\_\+\+R\+PT}}~0x22
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a52019928ef0101e4d73caf64576c306c}{D\+S\+C\+\_\+\+P\+HY}}~0x23
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_aafb69d9c2505f6e8910585e284a8d561}{B\+O\+O\+T\+\_\+\+P\+R\+O\+T\+O\+C\+OL}}~0x00
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a78d5d6c29e26bf7aec9cec7d1149503a}{R\+P\+T\+\_\+\+P\+R\+O\+T\+O\+C\+OL}}~0x01
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_af5c77c554d065e04ff5b343c05a53fe6}{H\+I\+D\+\_\+\+I\+N\+TF}}~0x03
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a32ee5330062b7d25ba9ed9be75276ef0}{B\+O\+O\+T\+\_\+\+I\+N\+T\+F\+\_\+\+S\+U\+B\+C\+L\+A\+SS}}~0x01
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a050926404254a7fa1d6b5253a79abc59}{H\+I\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+N\+O\+NE}}~0x00
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a059227938fbd1b45ce693d91d2856ca9}{H\+I\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+K\+E\+Y\+B\+O\+A\+RD}}~0x01
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_aeabcfc288ffa25ac6896d19e0642b104}{H\+I\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+O\+U\+SE}}~0x02
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a1e12a1ffede90ef301604c507344c427}{H\+I\+D\+Tx\+Handle\+Busy}}(handle)~\mbox{\hyperlink{usb__device_8h_af3f0daa9876548746127e8c2ef15c790}{U\+S\+B\+Handle\+Busy}}(handle)
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a21371467f39c3b935773bde1c81c768d}{H\+I\+D\+Rx\+Handle\+Busy}}(handle)~\mbox{\hyperlink{usb__device_8h_af3f0daa9876548746127e8c2ef15c790}{U\+S\+B\+Handle\+Busy}}(handle)
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a83ec8b61af7d69c3e52fc9e92949764b}{H\+I\+D\+Tx\+Packet}}~\mbox{\hyperlink{usb__device_8h_a0a64795afc19153fae238580dd26484c}{U\+S\+B\+Tx\+One\+Packet}}
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8h_a51903805a6cf95a33f689c5f95d9e915}{H\+I\+D\+Rx\+Packet}}~\mbox{\hyperlink{usb__device_8h_a1cedf7d48b8894ccc76b29a790e13639}{U\+S\+B\+Rx\+One\+Packet}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct___u_s_b___h_i_d___d_s_c___h_e_a_d_e_r}{\+\_\+\+U\+S\+B\+\_\+\+H\+I\+D\+\_\+\+D\+S\+C\+\_\+\+H\+E\+A\+D\+ER}} \mbox{\hyperlink{usb__device__hid_8h_a68ad3cd0e319f0a337bff9f38ebe12a6}{U\+S\+B\+\_\+\+H\+I\+D\+\_\+\+D\+S\+C\+\_\+\+H\+E\+A\+D\+ER}}
+\item 
+typedef struct \mbox{\hyperlink{struct___u_s_b___h_i_d___d_s_c}{\+\_\+\+U\+S\+B\+\_\+\+H\+I\+D\+\_\+\+D\+SC}} \mbox{\hyperlink{usb__device__hid_8h_aa165bb32d970e71cbca45be6e23340db}{U\+S\+B\+\_\+\+H\+I\+D\+\_\+\+D\+SC}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{usb__device__hid_8h_a5e0b02add954ecf19bcdef679a58988b}{U\+S\+B\+Check\+H\+I\+D\+Request}} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \mbox{\hyperlink{usb__ch9_8h_a15cc7fbb1fa621148405d99bcd66092b}{C\+T\+R\+L\+\_\+\+T\+R\+F\+\_\+\+S\+E\+T\+UP}} \mbox{\hyperlink{usb__device__hid_8h_a53fb51fd8f590f349a2703af36c04a57}{Setup\+Pkt}}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{usb__device__hid_8h_a496854ab3ac18058dd000a7c0c63ac63}{config\+Descriptor1}} \mbox{[}$\,$\mbox{]}
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{usb__device__hid_8h_a650a2867c46b3779cd782e5505426e78}{Ctrl\+Trf\+Data}} \mbox{[}\mbox{\hyperlink{usb__config_8h_ae0068b787dd02f5b2515756b2a0b14a4}{U\+S\+B\+\_\+\+E\+P0\+\_\+\+B\+U\+F\+F\+\_\+\+S\+I\+ZE}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{usb__device__hid_8h_a32ee5330062b7d25ba9ed9be75276ef0}\label{usb__device__hid_8h_a32ee5330062b7d25ba9ed9be75276ef0}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!BOOT\_INTF\_SUBCLASS@{BOOT\_INTF\_SUBCLASS}}
+\index{BOOT\_INTF\_SUBCLASS@{BOOT\_INTF\_SUBCLASS}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{BOOT\_INTF\_SUBCLASS}{BOOT\_INTF\_SUBCLASS}}
+{\footnotesize\ttfamily \#define B\+O\+O\+T\+\_\+\+I\+N\+T\+F\+\_\+\+S\+U\+B\+C\+L\+A\+SS~0x01}
+
+
+
+Definition at line 53 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_aafb69d9c2505f6e8910585e284a8d561}\label{usb__device__hid_8h_aafb69d9c2505f6e8910585e284a8d561}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!BOOT\_PROTOCOL@{BOOT\_PROTOCOL}}
+\index{BOOT\_PROTOCOL@{BOOT\_PROTOCOL}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{BOOT\_PROTOCOL}{BOOT\_PROTOCOL}}
+{\footnotesize\ttfamily \#define B\+O\+O\+T\+\_\+\+P\+R\+O\+T\+O\+C\+OL~0x00}
+
+
+
+Definition at line 46 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_ab44191061dc89d3deeedac1138b1b8dd}\label{usb__device__hid_8h_ab44191061dc89d3deeedac1138b1b8dd}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!DSC\_HID@{DSC\_HID}}
+\index{DSC\_HID@{DSC\_HID}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{DSC\_HID}{DSC\_HID}}
+{\footnotesize\ttfamily \#define D\+S\+C\+\_\+\+H\+ID~0x21}
+
+
+
+Definition at line 41 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a52019928ef0101e4d73caf64576c306c}\label{usb__device__hid_8h_a52019928ef0101e4d73caf64576c306c}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!DSC\_PHY@{DSC\_PHY}}
+\index{DSC\_PHY@{DSC\_PHY}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{DSC\_PHY}{DSC\_PHY}}
+{\footnotesize\ttfamily \#define D\+S\+C\+\_\+\+P\+HY~0x23}
+
+
+
+Definition at line 43 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a4dda799ef1bff0cf21a21bf3ed5a14ab}\label{usb__device__hid_8h_a4dda799ef1bff0cf21a21bf3ed5a14ab}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!DSC\_RPT@{DSC\_RPT}}
+\index{DSC\_RPT@{DSC\_RPT}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{DSC\_RPT}{DSC\_RPT}}
+{\footnotesize\ttfamily \#define D\+S\+C\+\_\+\+R\+PT~0x22}
+
+
+
+Definition at line 42 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a0f26d84d681fc95257f35c406c07903b}\label{usb__device__hid_8h_a0f26d84d681fc95257f35c406c07903b}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!GET\_IDLE@{GET\_IDLE}}
+\index{GET\_IDLE@{GET\_IDLE}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{GET\_IDLE}{GET\_IDLE}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+I\+D\+LE~0x02}
+
+
+
+Definition at line 34 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a41e17456a13f2c97f925fa8f526454fd}\label{usb__device__hid_8h_a41e17456a13f2c97f925fa8f526454fd}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!GET\_PROTOCOL@{GET\_PROTOCOL}}
+\index{GET\_PROTOCOL@{GET\_PROTOCOL}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{GET\_PROTOCOL}{GET\_PROTOCOL}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+P\+R\+O\+T\+O\+C\+OL~0x03}
+
+
+
+Definition at line 35 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_aec9b0c917ae70aff81322f2d721bbb16}\label{usb__device__hid_8h_aec9b0c917ae70aff81322f2d721bbb16}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!GET\_REPORT@{GET\_REPORT}}
+\index{GET\_REPORT@{GET\_REPORT}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{GET\_REPORT}{GET\_REPORT}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+R\+E\+P\+O\+RT~0x01}
+
+I\+N\+C\+L\+U\+D\+ES D\+E\+F\+I\+N\+I\+T\+I\+O\+NS 
+
+Definition at line 33 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_af5c77c554d065e04ff5b343c05a53fe6}\label{usb__device__hid_8h_af5c77c554d065e04ff5b343c05a53fe6}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!HID\_INTF@{HID\_INTF}}
+\index{HID\_INTF@{HID\_INTF}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{HID\_INTF}{HID\_INTF}}
+{\footnotesize\ttfamily \#define H\+I\+D\+\_\+\+I\+N\+TF~0x03}
+
+
+
+Definition at line 50 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a059227938fbd1b45ce693d91d2856ca9}\label{usb__device__hid_8h_a059227938fbd1b45ce693d91d2856ca9}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!HID\_PROTOCOL\_KEYBOARD@{HID\_PROTOCOL\_KEYBOARD}}
+\index{HID\_PROTOCOL\_KEYBOARD@{HID\_PROTOCOL\_KEYBOARD}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{HID\_PROTOCOL\_KEYBOARD}{HID\_PROTOCOL\_KEYBOARD}}
+{\footnotesize\ttfamily \#define H\+I\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+K\+E\+Y\+B\+O\+A\+RD~0x01}
+
+
+
+Definition at line 57 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_aeabcfc288ffa25ac6896d19e0642b104}\label{usb__device__hid_8h_aeabcfc288ffa25ac6896d19e0642b104}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!HID\_PROTOCOL\_MOUSE@{HID\_PROTOCOL\_MOUSE}}
+\index{HID\_PROTOCOL\_MOUSE@{HID\_PROTOCOL\_MOUSE}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{HID\_PROTOCOL\_MOUSE}{HID\_PROTOCOL\_MOUSE}}
+{\footnotesize\ttfamily \#define H\+I\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+O\+U\+SE~0x02}
+
+
+
+Definition at line 58 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a050926404254a7fa1d6b5253a79abc59}\label{usb__device__hid_8h_a050926404254a7fa1d6b5253a79abc59}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!HID\_PROTOCOL\_NONE@{HID\_PROTOCOL\_NONE}}
+\index{HID\_PROTOCOL\_NONE@{HID\_PROTOCOL\_NONE}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{HID\_PROTOCOL\_NONE}{HID\_PROTOCOL\_NONE}}
+{\footnotesize\ttfamily \#define H\+I\+D\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+N\+O\+NE~0x00}
+
+
+
+Definition at line 56 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a21371467f39c3b935773bde1c81c768d}\label{usb__device__hid_8h_a21371467f39c3b935773bde1c81c768d}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!HIDRxHandleBusy@{HIDRxHandleBusy}}
+\index{HIDRxHandleBusy@{HIDRxHandleBusy}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{HIDRxHandleBusy}{HIDRxHandleBusy}}
+{\footnotesize\ttfamily \#define H\+I\+D\+Rx\+Handle\+Busy(\begin{DoxyParamCaption}\item[{}]{handle }\end{DoxyParamCaption})~\mbox{\hyperlink{usb__device_8h_af3f0daa9876548746127e8c2ef15c790}{U\+S\+B\+Handle\+Busy}}(handle)}
+
+
+
+Definition at line 198 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a51903805a6cf95a33f689c5f95d9e915}\label{usb__device__hid_8h_a51903805a6cf95a33f689c5f95d9e915}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!HIDRxPacket@{HIDRxPacket}}
+\index{HIDRxPacket@{HIDRxPacket}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{HIDRxPacket}{HIDRxPacket}}
+{\footnotesize\ttfamily \#define H\+I\+D\+Rx\+Packet~\mbox{\hyperlink{usb__device_8h_a1cedf7d48b8894ccc76b29a790e13639}{U\+S\+B\+Rx\+One\+Packet}}}
+
+
+
+Definition at line 274 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a1e12a1ffede90ef301604c507344c427}\label{usb__device__hid_8h_a1e12a1ffede90ef301604c507344c427}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!HIDTxHandleBusy@{HIDTxHandleBusy}}
+\index{HIDTxHandleBusy@{HIDTxHandleBusy}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{HIDTxHandleBusy}{HIDTxHandleBusy}}
+{\footnotesize\ttfamily \#define H\+I\+D\+Tx\+Handle\+Busy(\begin{DoxyParamCaption}\item[{}]{handle }\end{DoxyParamCaption})~\mbox{\hyperlink{usb__device_8h_af3f0daa9876548746127e8c2ef15c790}{U\+S\+B\+Handle\+Busy}}(handle)}
+
+
+
+Definition at line 149 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a83ec8b61af7d69c3e52fc9e92949764b}\label{usb__device__hid_8h_a83ec8b61af7d69c3e52fc9e92949764b}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!HIDTxPacket@{HIDTxPacket}}
+\index{HIDTxPacket@{HIDTxPacket}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{HIDTxPacket}{HIDTxPacket}}
+{\footnotesize\ttfamily \#define H\+I\+D\+Tx\+Packet~\mbox{\hyperlink{usb__device_8h_a0a64795afc19153fae238580dd26484c}{U\+S\+B\+Tx\+One\+Packet}}}
+
+
+
+Definition at line 238 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a78d5d6c29e26bf7aec9cec7d1149503a}\label{usb__device__hid_8h_a78d5d6c29e26bf7aec9cec7d1149503a}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!RPT\_PROTOCOL@{RPT\_PROTOCOL}}
+\index{RPT\_PROTOCOL@{RPT\_PROTOCOL}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{RPT\_PROTOCOL}{RPT\_PROTOCOL}}
+{\footnotesize\ttfamily \#define R\+P\+T\+\_\+\+P\+R\+O\+T\+O\+C\+OL~0x01}
+
+
+
+Definition at line 47 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a619da8498155cc851c445dca41b32dd4}\label{usb__device__hid_8h_a619da8498155cc851c445dca41b32dd4}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!SET\_IDLE@{SET\_IDLE}}
+\index{SET\_IDLE@{SET\_IDLE}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{SET\_IDLE}{SET\_IDLE}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+I\+D\+LE~0x0A}
+
+
+
+Definition at line 37 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_aa08ce2c5a3e5dd390c6079c4ec998cc3}\label{usb__device__hid_8h_aa08ce2c5a3e5dd390c6079c4ec998cc3}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!SET\_PROTOCOL@{SET\_PROTOCOL}}
+\index{SET\_PROTOCOL@{SET\_PROTOCOL}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{SET\_PROTOCOL}{SET\_PROTOCOL}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+P\+R\+O\+T\+O\+C\+OL~0x0B}
+
+
+
+Definition at line 38 of file usb\+\_\+device\+\_\+hid.\+h.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a43ea531ba036e94e9754dcfaf2ce1e56}\label{usb__device__hid_8h_a43ea531ba036e94e9754dcfaf2ce1e56}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!SET\_REPORT@{SET\_REPORT}}
+\index{SET\_REPORT@{SET\_REPORT}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{SET\_REPORT}{SET\_REPORT}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+R\+E\+P\+O\+RT~0x09}
+
+
+
+Definition at line 36 of file usb\+\_\+device\+\_\+hid.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{usb__device__hid_8h_aa165bb32d970e71cbca45be6e23340db}\label{usb__device__hid_8h_aa165bb32d970e71cbca45be6e23340db}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!USB\_HID\_DSC@{USB\_HID\_DSC}}
+\index{USB\_HID\_DSC@{USB\_HID\_DSC}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{USB\_HID\_DSC}{USB\_HID\_DSC}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct___u_s_b___h_i_d___d_s_c}{\+\_\+\+U\+S\+B\+\_\+\+H\+I\+D\+\_\+\+D\+SC}}  \mbox{\hyperlink{usb__device__hid_8h_aa165bb32d970e71cbca45be6e23340db}{U\+S\+B\+\_\+\+H\+I\+D\+\_\+\+D\+SC}}}
+
+\mbox{\Hypertarget{usb__device__hid_8h_a68ad3cd0e319f0a337bff9f38ebe12a6}\label{usb__device__hid_8h_a68ad3cd0e319f0a337bff9f38ebe12a6}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!USB\_HID\_DSC\_HEADER@{USB\_HID\_DSC\_HEADER}}
+\index{USB\_HID\_DSC\_HEADER@{USB\_HID\_DSC\_HEADER}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{USB\_HID\_DSC\_HEADER}{USB\_HID\_DSC\_HEADER}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct___u_s_b___h_i_d___d_s_c___h_e_a_d_e_r}{\+\_\+\+U\+S\+B\+\_\+\+H\+I\+D\+\_\+\+D\+S\+C\+\_\+\+H\+E\+A\+D\+ER}}  \mbox{\hyperlink{usb__device__hid_8h_a68ad3cd0e319f0a337bff9f38ebe12a6}{U\+S\+B\+\_\+\+H\+I\+D\+\_\+\+D\+S\+C\+\_\+\+H\+E\+A\+D\+ER}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{usb__device__hid_8h_a5e0b02add954ecf19bcdef679a58988b}\label{usb__device__hid_8h_a5e0b02add954ecf19bcdef679a58988b}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!USBCheckHIDRequest@{USBCheckHIDRequest}}
+\index{USBCheckHIDRequest@{USBCheckHIDRequest}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{USBCheckHIDRequest()}{USBCheckHIDRequest()}}
+{\footnotesize\ttfamily void U\+S\+B\+Check\+H\+I\+D\+Request (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 153 of file usb\+\_\+device\+\_\+hid.\+c.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{usb__device__hid_8h_a496854ab3ac18058dd000a7c0c63ac63}\label{usb__device__hid_8h_a496854ab3ac18058dd000a7c0c63ac63}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!configDescriptor1@{configDescriptor1}}
+\index{configDescriptor1@{configDescriptor1}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{configDescriptor1}{configDescriptor1}}
+{\footnotesize\ttfamily const uint8\+\_\+t config\+Descriptor1\mbox{[}$\,$\mbox{]}}
+
+
+
+Definition at line 173 of file usb\+\_\+descriptors.\+c.
+
+\mbox{\Hypertarget{usb__device__hid_8h_a650a2867c46b3779cd782e5505426e78}\label{usb__device__hid_8h_a650a2867c46b3779cd782e5505426e78}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!CtrlTrfData@{CtrlTrfData}}
+\index{CtrlTrfData@{CtrlTrfData}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{CtrlTrfData}{CtrlTrfData}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t Ctrl\+Trf\+Data\mbox{[}\mbox{\hyperlink{usb__config_8h_ae0068b787dd02f5b2515756b2a0b14a4}{U\+S\+B\+\_\+\+E\+P0\+\_\+\+B\+U\+F\+F\+\_\+\+S\+I\+ZE}}\mbox{]}}
+
+\mbox{\Hypertarget{usb__device__hid_8h_a53fb51fd8f590f349a2703af36c04a57}\label{usb__device__hid_8h_a53fb51fd8f590f349a2703af36c04a57}} 
+\index{usb\_device\_hid.h@{usb\_device\_hid.h}!SetupPkt@{SetupPkt}}
+\index{SetupPkt@{SetupPkt}!usb\_device\_hid.h@{usb\_device\_hid.h}}
+\subsubsection{\texorpdfstring{SetupPkt}{SetupPkt}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{usb__ch9_8h_a15cc7fbb1fa621148405d99bcd66092b}{C\+T\+R\+L\+\_\+\+T\+R\+F\+\_\+\+S\+E\+T\+UP}} Setup\+Pkt}
+
+Section\+: E\+X\+T\+E\+R\+NS 

@@ -1,0 +1,51 @@
+\hypertarget{timer__interrupts_8c}{}\section{C\+:/\+Users/\+Marshall/\+M\+P\+L\+A\+B\+X\+Projects/mc\+\_\+firmware.X/interrupts/timer\+\_\+interrupts.c File Reference}
+\label{timer__interrupts_8c}\index{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/interrupts/timer\_interrupts.c@{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/interrupts/timer\_interrupts.c}}
+{\ttfamily \#include \char`\"{}timer\+\_\+interrupts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timer\+\_\+callbacks.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries Timer\+Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{timer__interrupts_8c_ae6d37903508ad26ec29a90d419b12a46}{Enable\+Disable\+Timer}} (\mbox{\hyperlink{timer__interrupts_8h_a5fe516773b3755c8907e0df43196a6e8}{T\+I\+M\+E\+R\+\_\+\+L\+I\+ST}} timer, bool on\+Off, uint8\+\_\+t priority)
+\item 
+void \mbox{\hyperlink{timer__interrupts_8c_a5fe4e56b8d40d3e7510d36fc46b255ef}{Strobe\+One\+Pin}} (\mbox{\hyperlink{dio__pins_8h_a20df4fa8f1eb8a98be0bac7cc3ccf3df}{D\+I\+O\+\_\+\+P\+I\+NS}} pin, \mbox{\hyperlink{timer__interrupts_8h_a5fe516773b3755c8907e0df43196a6e8}{T\+I\+M\+E\+R\+\_\+\+L\+I\+ST}} timer, uint32\+\_\+t period, uint16\+\_\+t cycles)
+\item 
+void \mbox{\hyperlink{timer__interrupts_8c_a226557d5e42f7e29ddaff30606138459}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((interrupt, no\+\_\+auto\+\_\+psv))
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{timer__interrupts_8c_a226557d5e42f7e29ddaff30606138459}\label{timer__interrupts_8c_a226557d5e42f7e29ddaff30606138459}} 
+\index{timer\_interrupts.c@{timer\_interrupts.c}!\_\_attribute\_\_@{\_\_attribute\_\_}}
+\index{\_\_attribute\_\_@{\_\_attribute\_\_}!timer\_interrupts.c@{timer\_interrupts.c}}
+\subsubsection{\texorpdfstring{\_\_attribute\_\_()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily void \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(interrupt, no\+\_\+auto\+\_\+psv)}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 125 of file timer\+\_\+interrupts.\+c.
+
+\mbox{\Hypertarget{timer__interrupts_8c_ae6d37903508ad26ec29a90d419b12a46}\label{timer__interrupts_8c_ae6d37903508ad26ec29a90d419b12a46}} 
+\index{timer\_interrupts.c@{timer\_interrupts.c}!EnableDisableTimer@{EnableDisableTimer}}
+\index{EnableDisableTimer@{EnableDisableTimer}!timer\_interrupts.c@{timer\_interrupts.c}}
+\subsubsection{\texorpdfstring{EnableDisableTimer()}{EnableDisableTimer()}}
+{\footnotesize\ttfamily void Enable\+Disable\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{timer__interrupts_8h_a5fe516773b3755c8907e0df43196a6e8}{T\+I\+M\+E\+R\+\_\+\+L\+I\+ST}}}]{timer,  }\item[{bool}]{on\+Off,  }\item[{uint8\+\_\+t}]{priority }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file timer\+\_\+interrupts.\+c.
+
+\mbox{\Hypertarget{timer__interrupts_8c_a5fe4e56b8d40d3e7510d36fc46b255ef}\label{timer__interrupts_8c_a5fe4e56b8d40d3e7510d36fc46b255ef}} 
+\index{timer\_interrupts.c@{timer\_interrupts.c}!StrobeOnePin@{StrobeOnePin}}
+\index{StrobeOnePin@{StrobeOnePin}!timer\_interrupts.c@{timer\_interrupts.c}}
+\subsubsection{\texorpdfstring{StrobeOnePin()}{StrobeOnePin()}}
+{\footnotesize\ttfamily void Strobe\+One\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dio__pins_8h_a20df4fa8f1eb8a98be0bac7cc3ccf3df}{D\+I\+O\+\_\+\+P\+I\+NS}}}]{pin,  }\item[{\mbox{\hyperlink{timer__interrupts_8h_a5fe516773b3755c8907e0df43196a6e8}{T\+I\+M\+E\+R\+\_\+\+L\+I\+ST}}}]{timer,  }\item[{uint32\+\_\+t}]{period,  }\item[{uint16\+\_\+t}]{cycles }\end{DoxyParamCaption})}
+
+
+
+Definition at line 88 of file timer\+\_\+interrupts.\+c.
+

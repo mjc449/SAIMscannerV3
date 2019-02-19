@@ -1,0 +1,69 @@
+\hypertarget{dio__pins_8c}{}\section{C\+:/\+Users/\+Marshall/\+M\+P\+L\+A\+B\+X\+Projects/mc\+\_\+firmware.X/peripherals/dio\+\_\+pins.c File Reference}
+\label{dio__pins_8c}\index{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/peripherals/dio\_pins.c@{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/peripherals/dio\_pins.c}}
+{\ttfamily \#include \char`\"{}dio\+\_\+pins.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{dio__pins_8c_a85f02f0da5323adc0535fb065a17ab88}{D\+I\+O\+\_\+\+Set\+Pin\+Direction}} (\mbox{\hyperlink{dio__pins_8h_a20df4fa8f1eb8a98be0bac7cc3ccf3df}{D\+I\+O\+\_\+\+P\+I\+NS}} pin, \mbox{\hyperlink{dio__pins_8h_a67930ce26c515d4436386a3aefaa3d65}{P\+I\+N\+\_\+\+F\+U\+N\+C\+T\+I\+ON}} direction)
+\item 
+void \mbox{\hyperlink{dio__pins_8c_af65e0e41d5c0d0da6cc4b8d2c7be1920}{D\+I\+O\+\_\+\+Write\+Pin}} (\mbox{\hyperlink{dio__pins_8h_a20df4fa8f1eb8a98be0bac7cc3ccf3df}{D\+I\+O\+\_\+\+P\+I\+NS}} pin, \mbox{\hyperlink{dio__pins_8h_a7b7a6f8fb64eca694ec6a997a8cd33e7}{P\+I\+N\+\_\+\+S\+T\+A\+TE}} state)
+\item 
+void \mbox{\hyperlink{dio__pins_8c_af5e8d87f97d627f54bb7e98c3bad4fb7}{D\+I\+O\+\_\+\+Toggle\+Pin}} (\mbox{\hyperlink{dio__pins_8h_a20df4fa8f1eb8a98be0bac7cc3ccf3df}{D\+I\+O\+\_\+\+P\+I\+NS}} pin)
+\item 
+void \mbox{\hyperlink{dio__pins_8c_a429a0b81bc6672e09d6bd182047e9de2}{D\+I\+O\+\_\+\+Write\+Port}} (\mbox{\hyperlink{dio__pins_8h_a957eac5cdf0a4e3d5f697f5c280b5ff5}{D\+I\+O\+\_\+\+P\+O\+RT}} port, uint16\+\_\+t mask)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{dio__pins_8c_a1bdfd2321b207b3b9f5a953bc7b83afb}{D\+I\+O\+\_\+\+Read\+Port}} (\mbox{\hyperlink{dio__pins_8h_a957eac5cdf0a4e3d5f697f5c280b5ff5}{D\+I\+O\+\_\+\+P\+O\+RT}} port)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{dio__pins_8c_a1bdfd2321b207b3b9f5a953bc7b83afb}\label{dio__pins_8c_a1bdfd2321b207b3b9f5a953bc7b83afb}} 
+\index{dio\_pins.c@{dio\_pins.c}!DIO\_ReadPort@{DIO\_ReadPort}}
+\index{DIO\_ReadPort@{DIO\_ReadPort}!dio\_pins.c@{dio\_pins.c}}
+\subsubsection{\texorpdfstring{DIO\_ReadPort()}{DIO\_ReadPort()}}
+{\footnotesize\ttfamily uint8\+\_\+t D\+I\+O\+\_\+\+Read\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dio__pins_8h_a957eac5cdf0a4e3d5f697f5c280b5ff5}{D\+I\+O\+\_\+\+P\+O\+RT}}}]{port }\end{DoxyParamCaption})}
+
+
+
+Definition at line 136 of file dio\+\_\+pins.\+c.
+
+\mbox{\Hypertarget{dio__pins_8c_a85f02f0da5323adc0535fb065a17ab88}\label{dio__pins_8c_a85f02f0da5323adc0535fb065a17ab88}} 
+\index{dio\_pins.c@{dio\_pins.c}!DIO\_SetPinDirection@{DIO\_SetPinDirection}}
+\index{DIO\_SetPinDirection@{DIO\_SetPinDirection}!dio\_pins.c@{dio\_pins.c}}
+\subsubsection{\texorpdfstring{DIO\_SetPinDirection()}{DIO\_SetPinDirection()}}
+{\footnotesize\ttfamily void D\+I\+O\+\_\+\+Set\+Pin\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dio__pins_8h_a20df4fa8f1eb8a98be0bac7cc3ccf3df}{D\+I\+O\+\_\+\+P\+I\+NS}}}]{pin,  }\item[{\mbox{\hyperlink{dio__pins_8h_a67930ce26c515d4436386a3aefaa3d65}{P\+I\+N\+\_\+\+F\+U\+N\+C\+T\+I\+ON}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file dio\+\_\+pins.\+c.
+
+\mbox{\Hypertarget{dio__pins_8c_af5e8d87f97d627f54bb7e98c3bad4fb7}\label{dio__pins_8c_af5e8d87f97d627f54bb7e98c3bad4fb7}} 
+\index{dio\_pins.c@{dio\_pins.c}!DIO\_TogglePin@{DIO\_TogglePin}}
+\index{DIO\_TogglePin@{DIO\_TogglePin}!dio\_pins.c@{dio\_pins.c}}
+\subsubsection{\texorpdfstring{DIO\_TogglePin()}{DIO\_TogglePin()}}
+{\footnotesize\ttfamily void D\+I\+O\+\_\+\+Toggle\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dio__pins_8h_a20df4fa8f1eb8a98be0bac7cc3ccf3df}{D\+I\+O\+\_\+\+P\+I\+NS}}}]{pin }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file dio\+\_\+pins.\+c.
+
+\mbox{\Hypertarget{dio__pins_8c_af65e0e41d5c0d0da6cc4b8d2c7be1920}\label{dio__pins_8c_af65e0e41d5c0d0da6cc4b8d2c7be1920}} 
+\index{dio\_pins.c@{dio\_pins.c}!DIO\_WritePin@{DIO\_WritePin}}
+\index{DIO\_WritePin@{DIO\_WritePin}!dio\_pins.c@{dio\_pins.c}}
+\subsubsection{\texorpdfstring{DIO\_WritePin()}{DIO\_WritePin()}}
+{\footnotesize\ttfamily void D\+I\+O\+\_\+\+Write\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dio__pins_8h_a20df4fa8f1eb8a98be0bac7cc3ccf3df}{D\+I\+O\+\_\+\+P\+I\+NS}}}]{pin,  }\item[{\mbox{\hyperlink{dio__pins_8h_a7b7a6f8fb64eca694ec6a997a8cd33e7}{P\+I\+N\+\_\+\+S\+T\+A\+TE}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file dio\+\_\+pins.\+c.
+
+\mbox{\Hypertarget{dio__pins_8c_a429a0b81bc6672e09d6bd182047e9de2}\label{dio__pins_8c_a429a0b81bc6672e09d6bd182047e9de2}} 
+\index{dio\_pins.c@{dio\_pins.c}!DIO\_WritePort@{DIO\_WritePort}}
+\index{DIO\_WritePort@{DIO\_WritePort}!dio\_pins.c@{dio\_pins.c}}
+\subsubsection{\texorpdfstring{DIO\_WritePort()}{DIO\_WritePort()}}
+{\footnotesize\ttfamily void D\+I\+O\+\_\+\+Write\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dio__pins_8h_a957eac5cdf0a4e3d5f697f5c280b5ff5}{D\+I\+O\+\_\+\+P\+O\+RT}}}]{port,  }\item[{uint16\+\_\+t}]{mask }\end{DoxyParamCaption})}
+
+
+
+Definition at line 121 of file dio\+\_\+pins.\+c.
+
