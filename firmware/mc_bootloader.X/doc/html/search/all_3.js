@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['cnt',['CNT',['../union_____b_d_t.html#a8dcbbc96a681e9aec7bcee3ba3a93254',1,'__BDT']]],
+  ['configdescriptor1',['configDescriptor1',['../usb__descriptors_8c.html#a496854ab3ac18058dd000a7c0c63ac63',1,'configDescriptor1():&#160;usb_descriptors.c'],['../usb__device__hid_8h.html#a496854ab3ac18058dd000a7c0c63ac63',1,'configDescriptor1():&#160;usb_descriptors.c']]],
+  ['configsprotected',['ConfigsProtected',['../app__hid__boot__loader_8c.html#aa3a6cbe27e50f1b7ebc119e73fddd619',1,'app_hid_boot_loader.c']]],
+  ['configured_5fstate',['CONFIGURED_STATE',['../usb__device_8h.html#afaf1ea0da8b5dbe4070f8246148a1797af120a64ec022d6f3eecc0e201e4e5d39',1,'usb_device.h']]],
+  ['controltransferstate',['controlTransferState',['../usb__device_8c.html#affcb1acb946f9ec103118ae9729e8b72',1,'usb_device.c']]],
+  ['converttophysicaladdress',['ConvertToPhysicalAddress',['../usb__hal__pic24f_8h.html#a538c09054ebff41eab11f18e2ef432a0',1,'usb_hal_pic24f.h']]],
+  ['converttovirtualaddress',['ConvertToVirtualAddress',['../usb__hal__pic24f_8h.html#a6b89cb667675a890e096aef2696d0f4c',1,'usb_hal_pic24f.h']]],
+  ['count',['count',['../union_____b_d_t.html#af6a39bfc7e1dc3b6f9c997c1c43fa996',1,'__BDT']]],
+  ['ctrl_5ftrf_5fdata_5faddr_5ftag',['CTRL_TRF_DATA_ADDR_TAG',['../usb__hal__pic24f_8h.html#a236a26233386d69e80a120aed9ab6af3',1,'CTRL_TRF_DATA_ADDR_TAG():&#160;usb_hal_pic24f.h'],['../usb__device_8c.html#ae18c175817b313a828d219329ac0c7e3',1,'CTRL_TRF_DATA_ADDR_TAG():&#160;usb_device.c']]],
+  ['ctrl_5ftrf_5fparams',['CTRL_TRF_PARAMS',['../usb__device_8h.html#a5fdf0a70fbbd8d8df45b9002096f93ff',1,'usb_device.h']]],
+  ['ctrl_5ftrf_5freturn',['CTRL_TRF_RETURN',['../usb__device_8h.html#a1994c6e4ecab9f080da267fcd4f5c682',1,'usb_device.h']]],
+  ['ctrl_5ftrf_5frx',['CTRL_TRF_RX',['../usb__device__local_8h.html#a4c889997921d3278ecae3443e0ee97e1',1,'usb_device_local.h']]],
+  ['ctrl_5ftrf_5fsetup',['CTRL_TRF_SETUP',['../usb__ch9_8h.html#a15cc7fbb1fa621148405d99bcd66092b',1,'usb_ch9.h']]],
+  ['ctrl_5ftrf_5fsetup_5faddr_5ftag',['CTRL_TRF_SETUP_ADDR_TAG',['../usb__hal__pic24f_8h.html#a999b338cc4bc795d5a4d831060db1196',1,'CTRL_TRF_SETUP_ADDR_TAG():&#160;usb_hal_pic24f.h'],['../usb__device_8c.html#a2abc474bcd8c2988c872ca10315a64b8',1,'CTRL_TRF_SETUP_ADDR_TAG():&#160;usb_device.c']]],
+  ['ctrl_5ftrf_5ftx',['CTRL_TRF_TX',['../usb__device__local_8h.html#a16b60ce09eb50205ebccae05827fca53',1,'usb_device_local.h']]],
+  ['ctrltrfdata',['CtrlTrfData',['../usb__device__hid_8h.html#a650a2867c46b3779cd782e5505426e78',1,'usb_device_hid.h']]],
+  ['current',['current',['../struct__vbus__power__data.html#a50f63c1ee4d6aebea66e795845c5aba5',1,'_vbus_power_data']]],
+  ['custom_5fdevice_5fhid_5fep',['CUSTOM_DEVICE_HID_EP',['../usb__config_8h.html#ad91f2711cd269fbc71d845e82e066f9e',1,'usb_config.h']]]
+];

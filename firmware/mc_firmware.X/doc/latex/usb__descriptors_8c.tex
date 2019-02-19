@@ -1,0 +1,281 @@
+\hypertarget{usb__descriptors_8c}{}\section{C\+:/\+Users/\+Marshall/\+M\+P\+L\+A\+B\+X\+Projects/mc\+\_\+firmware.X/usb/usb\+\_\+descriptors.c File Reference}
+\label{usb__descriptors_8c}\index{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/usb/usb\_descriptors.c@{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/usb/usb\_descriptors.c}}
+{\ttfamily \#include \char`\"{}usb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}usb\+\_\+device\+\_\+hid.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{usb__descriptors_8c_a3560a56ea16ae1e8c054244aa0f415ed}{\+\_\+\+\_\+\+U\+S\+B\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+O\+R\+S\+\_\+C}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{usb__ch9_8h_ad7ce0a3b2c181d57c0aa02db35e484ed}{U\+S\+B\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR}} \mbox{\hyperlink{usb__descriptors_8c_a2dfe97eba0344fa15f6ca8d1a43a44f0}{device\+\_\+dsc}}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{usb__descriptors_8c_a496854ab3ac18058dd000a7c0c63ac63}{config\+Descriptor1}} \mbox{[}$\,$\mbox{]}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{usb__descriptors_8c_a1deca1f1d6e5815b290e6e1015bce5b8}{bLength}}\\
+\>uint8\_t \mbox{\hyperlink{usb__descriptors_8c_a58b75b97fca0ec64a13eb8b587af01ce}{bDscType}}\\
+\>uint16\_t \mbox{\hyperlink{usb__descriptors_8c_aa4e1f6d497b3a1d59364fd4716b33809}{string}} \mbox{[}1\mbox{]}\\
+\} \mbox{\hyperlink{usb__descriptors_8c_a369845fc6d2d93b0f246269f58760b80}{sd000}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{usb__descriptors_8c_a1deca1f1d6e5815b290e6e1015bce5b8}{bLength}}\\
+\>uint8\_t \mbox{\hyperlink{usb__descriptors_8c_a58b75b97fca0ec64a13eb8b587af01ce}{bDscType}}\\
+\>uint16\_t \mbox{\hyperlink{usb__descriptors_8c_aa4e1f6d497b3a1d59364fd4716b33809}{string}} \mbox{[}19\mbox{]}\\
+\} \mbox{\hyperlink{usb__descriptors_8c_a8062b391cf947fa12be6d0f06197cd2d}{sd001}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{usb__descriptors_8c_a1deca1f1d6e5815b290e6e1015bce5b8}{bLength}}\\
+\>uint8\_t \mbox{\hyperlink{usb__descriptors_8c_a58b75b97fca0ec64a13eb8b587af01ce}{bDscType}}\\
+\>uint16\_t \mbox{\hyperlink{usb__descriptors_8c_aa4e1f6d497b3a1d59364fd4716b33809}{string}} \mbox{[}14\mbox{]}\\
+\} \mbox{\hyperlink{usb__descriptors_8c_a52d5f5abc33e8cc7c875aa499628711a}{sd002}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{usb__descriptors_8c_a1deca1f1d6e5815b290e6e1015bce5b8}{bLength}}\\
+\>uint8\_t \mbox{\hyperlink{usb__descriptors_8c_a58b75b97fca0ec64a13eb8b587af01ce}{bDscType}}\\
+\>uint16\_t \mbox{\hyperlink{usb__descriptors_8c_aa4e1f6d497b3a1d59364fd4716b33809}{string}} \mbox{[}6\mbox{]}\\
+\} \mbox{\hyperlink{usb__descriptors_8c_aec38235ce82991d5ba41062c3d6d27f7}{sd003}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{usb__descriptors_8c_a39da2eb0d709efef55227dad8cd63caf}{report}} \mbox{[}\mbox{\hyperlink{usb__config_8h_af3b6343cf8eb6e93e9bfd7f7a1c9e422}{HID\_RPT01\_SIZE}}\mbox{]}\\
+\} \mbox{\hyperlink{usb__descriptors_8c_a7c25b5f399977f98c72d05f929c51318}{hid\_rpt01}}\\
+
+\end{tabbing}\item 
+const uint8\+\_\+t $\ast$const \mbox{\hyperlink{usb__descriptors_8c_a23808fd12ccfba279e6a8a72f5945807}{U\+S\+B\+\_\+\+C\+D\+\_\+\+Ptr}} \mbox{[}$\,$\mbox{]}
+\item 
+const uint8\+\_\+t $\ast$const \mbox{\hyperlink{usb__descriptors_8c_a422ec36c05265bfc01f8348ff047cdac}{U\+S\+B\+\_\+\+S\+D\+\_\+\+Ptr}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{usb__descriptors_8c_a3560a56ea16ae1e8c054244aa0f415ed}\label{usb__descriptors_8c_a3560a56ea16ae1e8c054244aa0f415ed}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!\_\_USB\_DESCRIPTORS\_C@{\_\_USB\_DESCRIPTORS\_C}}
+\index{\_\_USB\_DESCRIPTORS\_C@{\_\_USB\_DESCRIPTORS\_C}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{\_\_USB\_DESCRIPTORS\_C}{\_\_USB\_DESCRIPTORS\_C}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+U\+S\+B\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+O\+R\+S\+\_\+C}
+
+
+
+Definition at line 142 of file usb\+\_\+descriptors.\+c.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{usb__descriptors_8c_a58b75b97fca0ec64a13eb8b587af01ce}\label{usb__descriptors_8c_a58b75b97fca0ec64a13eb8b587af01ce}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!bDscType@{bDscType}}
+\index{bDscType@{bDscType}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{bDscType}{bDscType}}
+{\footnotesize\ttfamily uint8\+\_\+t b\+Dsc\+Type}
+
+
+
+Definition at line 222 of file usb\+\_\+descriptors.\+c.
+
+\mbox{\Hypertarget{usb__descriptors_8c_a1deca1f1d6e5815b290e6e1015bce5b8}\label{usb__descriptors_8c_a1deca1f1d6e5815b290e6e1015bce5b8}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!bLength@{bLength}}
+\index{bLength@{bLength}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{bLength}{bLength}}
+{\footnotesize\ttfamily uint8\+\_\+t b\+Length}
+
+
+
+Definition at line 222 of file usb\+\_\+descriptors.\+c.
+
+\mbox{\Hypertarget{usb__descriptors_8c_a496854ab3ac18058dd000a7c0c63ac63}\label{usb__descriptors_8c_a496854ab3ac18058dd000a7c0c63ac63}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!configDescriptor1@{configDescriptor1}}
+\index{configDescriptor1@{configDescriptor1}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{configDescriptor1}{configDescriptor1}}
+{\footnotesize\ttfamily const uint8\+\_\+t config\+Descriptor1\mbox{[}$\,$\mbox{]}}
+
+
+
+Definition at line 173 of file usb\+\_\+descriptors.\+c.
+
+\mbox{\Hypertarget{usb__descriptors_8c_a2dfe97eba0344fa15f6ca8d1a43a44f0}\label{usb__descriptors_8c_a2dfe97eba0344fa15f6ca8d1a43a44f0}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!device\_dsc@{device\_dsc}}
+\index{device\_dsc@{device\_dsc}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{device\_dsc}{device\_dsc}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{usb__ch9_8h_ad7ce0a3b2c181d57c0aa02db35e484ed}{U\+S\+B\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR}} device\+\_\+dsc}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    0x12,    }
+\DoxyCodeLine{    \mbox{\hyperlink{usb__ch9_8h_ac6d0566773ed4549fe1a7a932e6c46de}{USB\_DESCRIPTOR\_DEVICE}},                }
+\DoxyCodeLine{    0x0200,                 }
+\DoxyCodeLine{    0x00,                   }
+\DoxyCodeLine{    0x00,                   }
+\DoxyCodeLine{    0x00,                   }
+\DoxyCodeLine{    \mbox{\hyperlink{usb__config_8h_ae0068b787dd02f5b2515756b2a0b14a4}{USB\_EP0\_BUFF\_SIZE}},          }
+\DoxyCodeLine{    0x04D8,                 }
+\DoxyCodeLine{    0xF11A,                 }
+\DoxyCodeLine{    0x0100,                 }
+\DoxyCodeLine{    0x01,                   }
+\DoxyCodeLine{    0x02,                   }
+\DoxyCodeLine{    0x03,                   }
+\DoxyCodeLine{    0x01                    }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+I\+N\+C\+L\+U\+D\+ES C\+O\+N\+S\+T\+A\+N\+TS 
+
+Definition at line 154 of file usb\+\_\+descriptors.\+c.
+
+\mbox{\Hypertarget{usb__descriptors_8c_a7c25b5f399977f98c72d05f929c51318}\label{usb__descriptors_8c_a7c25b5f399977f98c72d05f929c51318}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!hid\_rpt01@{hid\_rpt01}}
+\index{hid\_rpt01@{hid\_rpt01}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{hid\_rpt01}{hid\_rpt01}}
+{\footnotesize\ttfamily const \{ ... \}  hid\+\_\+rpt01}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    0x06, 0x00, 0xFF,       }
+\DoxyCodeLine{    0x09, 0x01,             }
+\DoxyCodeLine{    0xA1, 0x01,             }
+\DoxyCodeLine{    0x19, 0x01,             }
+\DoxyCodeLine{    0x29, 0x40,             }
+\DoxyCodeLine{    0x15, 0x00,             }
+\DoxyCodeLine{    0x26, 0xFF, 0x00,       }
+\DoxyCodeLine{    0x75, 0x08,             }
+\DoxyCodeLine{    0x95, 0x40,             }
+\DoxyCodeLine{    0x81, 0x00,             }
+\DoxyCodeLine{    0x19, 0x01,             }
+\DoxyCodeLine{    0x29, 0x40,             }
+\DoxyCodeLine{    0x91, 0x00,             }
+\DoxyCodeLine{    0xC0\}                   }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{usb__descriptors_8c_a39da2eb0d709efef55227dad8cd63caf}\label{usb__descriptors_8c_a39da2eb0d709efef55227dad8cd63caf}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!report@{report}}
+\index{report@{report}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{report}{report}}
+{\footnotesize\ttfamily uint8\+\_\+t report\mbox{[}\mbox{\hyperlink{usb__config_8h_af3b6343cf8eb6e93e9bfd7f7a1c9e422}{H\+I\+D\+\_\+\+R\+P\+T01\+\_\+\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Definition at line 245 of file usb\+\_\+descriptors.\+c.
+
+\mbox{\Hypertarget{usb__descriptors_8c_a369845fc6d2d93b0f246269f58760b80}\label{usb__descriptors_8c_a369845fc6d2d93b0f246269f58760b80}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!sd000@{sd000}}
+\index{sd000@{sd000}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{sd000}{sd000}}
+{\footnotesize\ttfamily const \{ ... \}  sd000}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{\textcolor{keyword}{sizeof}(\mbox{\hyperlink{usb__descriptors_8c_a369845fc6d2d93b0f246269f58760b80}{sd000}}),\mbox{\hyperlink{usb__ch9_8h_abbad38caa1ca9c52f47adccd3a850aed}{USB\_DESCRIPTOR\_STRING}},\{0x0409}
+\DoxyCodeLine{\}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{usb__descriptors_8c_a8062b391cf947fa12be6d0f06197cd2d}\label{usb__descriptors_8c_a8062b391cf947fa12be6d0f06197cd2d}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!sd001@{sd001}}
+\index{sd001@{sd001}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{sd001}{sd001}}
+{\footnotesize\ttfamily const \{ ... \}  sd001}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{\textcolor{keyword}{sizeof}(\mbox{\hyperlink{usb__descriptors_8c_a8062b391cf947fa12be6d0f06197cd2d}{sd001}}),\mbox{\hyperlink{usb__ch9_8h_abbad38caa1ca9c52f47adccd3a850aed}{USB\_DESCRIPTOR\_STRING}},}
+\DoxyCodeLine{\{\textcolor{charliteral}{'M'},\textcolor{charliteral}{'J'},\textcolor{charliteral}{'C'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'9'},\textcolor{charliteral}{'a'},\textcolor{charliteral}{'t'},\textcolor{charliteral}{'C'},\textcolor{charliteral}{'O'},\textcolor{charliteral}{'R'},\textcolor{charliteral}{'N'},\textcolor{charliteral}{'E'},\textcolor{charliteral}{'L'},\textcolor{charliteral}{'L'},\textcolor{charliteral}{'.'},\textcolor{charliteral}{'E'},\textcolor{charliteral}{'D'},\textcolor{charliteral}{'U'}}
+\DoxyCodeLine{\}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{usb__descriptors_8c_a52d5f5abc33e8cc7c875aa499628711a}\label{usb__descriptors_8c_a52d5f5abc33e8cc7c875aa499628711a}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!sd002@{sd002}}
+\index{sd002@{sd002}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{sd002}{sd002}}
+{\footnotesize\ttfamily const \{ ... \}  sd002}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{\textcolor{keyword}{sizeof}(\mbox{\hyperlink{usb__descriptors_8c_a52d5f5abc33e8cc7c875aa499628711a}{sd002}}),\mbox{\hyperlink{usb__ch9_8h_abbad38caa1ca9c52f47adccd3a850aed}{USB\_DESCRIPTOR\_STRING}},}
+\DoxyCodeLine{\{\textcolor{charliteral}{'O'},\textcolor{charliteral}{'p'},\textcolor{charliteral}{'e'},\textcolor{charliteral}{'n'},\textcolor{charliteral}{'M'},\textcolor{charliteral}{'i'},\textcolor{charliteral}{'c'},\textcolor{charliteral}{'r'},\textcolor{charliteral}{'o'},\textcolor{charliteral}{'B'},\textcolor{charliteral}{'o'},\textcolor{charliteral}{'a'},\textcolor{charliteral}{'r'},\textcolor{charliteral}{'d'}}
+\DoxyCodeLine{\}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{usb__descriptors_8c_aec38235ce82991d5ba41062c3d6d27f7}\label{usb__descriptors_8c_aec38235ce82991d5ba41062c3d6d27f7}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!sd003@{sd003}}
+\index{sd003@{sd003}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{sd003}{sd003}}
+{\footnotesize\ttfamily const \{ ... \}  sd003}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{\textcolor{keyword}{sizeof}(\mbox{\hyperlink{usb__descriptors_8c_aec38235ce82991d5ba41062c3d6d27f7}{sd003}}),\mbox{\hyperlink{usb__ch9_8h_abbad38caa1ca9c52f47adccd3a850aed}{USB\_DESCRIPTOR\_STRING}},}
+\DoxyCodeLine{\{\textcolor{charliteral}{'0'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'1'}}
+\DoxyCodeLine{\}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{usb__descriptors_8c_aa4e1f6d497b3a1d59364fd4716b33809}\label{usb__descriptors_8c_aa4e1f6d497b3a1d59364fd4716b33809}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!string@{string}}
+\index{string@{string}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{string}{string}}
+{\footnotesize\ttfamily uint16\+\_\+t string\mbox{[}6\mbox{]}}
+
+
+
+Definition at line 222 of file usb\+\_\+descriptors.\+c.
+
+\mbox{\Hypertarget{usb__descriptors_8c_a23808fd12ccfba279e6a8a72f5945807}\label{usb__descriptors_8c_a23808fd12ccfba279e6a8a72f5945807}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!USB\_CD\_Ptr@{USB\_CD\_Ptr}}
+\index{USB\_CD\_Ptr@{USB\_CD\_Ptr}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{USB\_CD\_Ptr}{USB\_CD\_Ptr}}
+{\footnotesize\ttfamily const uint8\+\_\+t$\ast$ const U\+S\+B\+\_\+\+C\+D\+\_\+\+Ptr\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    (\textcolor{keyword}{const} uint8\_t *\textcolor{keyword}{const})\&\mbox{\hyperlink{usb__descriptors_8c_a496854ab3ac18058dd000a7c0c63ac63}{configDescriptor1}}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 265 of file usb\+\_\+descriptors.\+c.
+
+\mbox{\Hypertarget{usb__descriptors_8c_a422ec36c05265bfc01f8348ff047cdac}\label{usb__descriptors_8c_a422ec36c05265bfc01f8348ff047cdac}} 
+\index{usb\_descriptors.c@{usb\_descriptors.c}!USB\_SD\_Ptr@{USB\_SD\_Ptr}}
+\index{USB\_SD\_Ptr@{USB\_SD\_Ptr}!usb\_descriptors.c@{usb\_descriptors.c}}
+\subsubsection{\texorpdfstring{USB\_SD\_Ptr}{USB\_SD\_Ptr}}
+{\footnotesize\ttfamily const uint8\+\_\+t$\ast$ const U\+S\+B\+\_\+\+S\+D\+\_\+\+Ptr\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    (\textcolor{keyword}{const} uint8\_t *\textcolor{keyword}{const})\&\mbox{\hyperlink{usb__descriptors_8c_a369845fc6d2d93b0f246269f58760b80}{sd000}},}
+\DoxyCodeLine{    (\textcolor{keyword}{const} uint8\_t *\textcolor{keyword}{const})\&\mbox{\hyperlink{usb__descriptors_8c_a8062b391cf947fa12be6d0f06197cd2d}{sd001}},}
+\DoxyCodeLine{    (\textcolor{keyword}{const} uint8\_t *\textcolor{keyword}{const})\&\mbox{\hyperlink{usb__descriptors_8c_a52d5f5abc33e8cc7c875aa499628711a}{sd002}},}
+\DoxyCodeLine{    (\textcolor{keyword}{const} uint8\_t *\textcolor{keyword}{const})\&\mbox{\hyperlink{usb__descriptors_8c_aec38235ce82991d5ba41062c3d6d27f7}{sd003}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 271 of file usb\+\_\+descriptors.\+c.
+

@@ -1,0 +1,106 @@
+\hypertarget{usb__device__hid_8c}{}\section{C\+:/\+Users/\+Marshall/\+M\+P\+L\+A\+B\+X\+Projects/omb\+\_\+bootloader.x/usb/usb\+\_\+device\+\_\+hid.c File Reference}
+\label{usb__device__hid_8c}\index{C:/Users/Marshall/MPLABXProjects/omb\_bootloader.x/usb/usb\_device\_hid.c@{C:/Users/Marshall/MPLABXProjects/omb\_bootloader.x/usb/usb\_device\_hid.c}}
+{\ttfamily \#include \char`\"{}usb\+\_\+config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}usb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}usb\+\_\+device\+\_\+hid.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{usb__device__hid_8c_af4e3713affd14e41b6b22ecebf2930b1}{U\+S\+B\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+H\+I\+D\+\_\+\+I\+D\+L\+E\+\_\+\+R\+A\+T\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK}}(report\+Id,  idle\+Rate)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{usb__device__hid_8c_ab898071398b359603a35c202e9c65f3b}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((packed))
+\item 
+void \mbox{\hyperlink{usb__device__hid_8c_a5e0b02add954ecf19bcdef679a58988b}{U\+S\+B\+Check\+H\+I\+D\+Request}} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{usb__device__hid_8c_a191cf95df409bd8b68df806ff602ffb4}{U\+S\+B\+\_\+\+S\+E\+T\+U\+P\+\_\+\+S\+E\+T\+\_\+\+I\+D\+L\+E\+\_\+\+R\+A\+TE}}
+\item 
+\mbox{\hyperlink{usb__device__hid_8c_abf9fafa65e66daa35a6bddce985c6ad9}{U\+S\+B\+\_\+\+S\+E\+T\+U\+P\+\_\+\+S\+E\+T\+\_\+\+P\+R\+O\+T\+O\+C\+OL}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{usb__device__hid_8c_a39da2eb0d709efef55227dad8cd63caf}{report}} \mbox{[}\mbox{\hyperlink{usb__config_8h_af3b6343cf8eb6e93e9bfd7f7a1c9e422}{HID\_RPT01\_SIZE}}\mbox{]}\\
+\} \mbox{\hyperlink{usb__device__hid_8c_a7c25b5f399977f98c72d05f929c51318}{hid\_rpt01}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{usb__device__hid_8c_af4e3713affd14e41b6b22ecebf2930b1}\label{usb__device__hid_8c_af4e3713affd14e41b6b22ecebf2930b1}} 
+\index{usb\_device\_hid.c@{usb\_device\_hid.c}!USB\_DEVICE\_HID\_IDLE\_RATE\_CALLBACK@{USB\_DEVICE\_HID\_IDLE\_RATE\_CALLBACK}}
+\index{USB\_DEVICE\_HID\_IDLE\_RATE\_CALLBACK@{USB\_DEVICE\_HID\_IDLE\_RATE\_CALLBACK}!usb\_device\_hid.c@{usb\_device\_hid.c}}
+\subsubsection{\texorpdfstring{USB\_DEVICE\_HID\_IDLE\_RATE\_CALLBACK}{USB\_DEVICE\_HID\_IDLE\_RATE\_CALLBACK}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+H\+I\+D\+\_\+\+I\+D\+L\+E\+\_\+\+R\+A\+T\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK(\begin{DoxyParamCaption}\item[{}]{report\+Id,  }\item[{}]{idle\+Rate }\end{DoxyParamCaption})}
+
+
+
+Definition at line 110 of file usb\+\_\+device\+\_\+hid.\+c.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{usb__device__hid_8c_ab898071398b359603a35c202e9c65f3b}\label{usb__device__hid_8c_ab898071398b359603a35c202e9c65f3b}} 
+\index{usb\_device\_hid.c@{usb\_device\_hid.c}!\_\_attribute\_\_@{\_\_attribute\_\_}}
+\index{\_\_attribute\_\_@{\_\_attribute\_\_}!usb\_device\_hid.c@{usb\_device\_hid.c}}
+\subsubsection{\texorpdfstring{\_\_attribute\_\_()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily struct \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(packed)}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file usb\+\_\+device\+\_\+hid.\+c.
+
+\mbox{\Hypertarget{usb__device__hid_8c_a5e0b02add954ecf19bcdef679a58988b}\label{usb__device__hid_8c_a5e0b02add954ecf19bcdef679a58988b}} 
+\index{usb\_device\_hid.c@{usb\_device\_hid.c}!USBCheckHIDRequest@{USBCheckHIDRequest}}
+\index{USBCheckHIDRequest@{USBCheckHIDRequest}!usb\_device\_hid.c@{usb\_device\_hid.c}}
+\subsubsection{\texorpdfstring{USBCheckHIDRequest()}{USBCheckHIDRequest()}}
+{\footnotesize\ttfamily void U\+S\+B\+Check\+H\+I\+D\+Request (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 153 of file usb\+\_\+device\+\_\+hid.\+c.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{usb__device__hid_8c_a7c25b5f399977f98c72d05f929c51318}\label{usb__device__hid_8c_a7c25b5f399977f98c72d05f929c51318}} 
+\index{usb\_device\_hid.c@{usb\_device\_hid.c}!hid\_rpt01@{hid\_rpt01}}
+\index{hid\_rpt01@{hid\_rpt01}!usb\_device\_hid.c@{usb\_device\_hid.c}}
+\subsubsection{\texorpdfstring{hid\_rpt01}{hid\_rpt01}}
+{\footnotesize\ttfamily const \{ ... \}  hid\+\_\+rpt01}
+
+\mbox{\Hypertarget{usb__device__hid_8c_a39da2eb0d709efef55227dad8cd63caf}\label{usb__device__hid_8c_a39da2eb0d709efef55227dad8cd63caf}} 
+\index{usb\_device\_hid.c@{usb\_device\_hid.c}!report@{report}}
+\index{report@{report}!usb\_device\_hid.c@{usb\_device\_hid.c}}
+\subsubsection{\texorpdfstring{report}{report}}
+{\footnotesize\ttfamily uint8\+\_\+t report\mbox{[}\mbox{\hyperlink{usb__config_8h_af3b6343cf8eb6e93e9bfd7f7a1c9e422}{H\+I\+D\+\_\+\+R\+P\+T01\+\_\+\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Definition at line 82 of file usb\+\_\+device\+\_\+hid.\+c.
+
+\mbox{\Hypertarget{usb__device__hid_8c_a191cf95df409bd8b68df806ff602ffb4}\label{usb__device__hid_8c_a191cf95df409bd8b68df806ff602ffb4}} 
+\index{usb\_device\_hid.c@{usb\_device\_hid.c}!USB\_SETUP\_SET\_IDLE\_RATE@{USB\_SETUP\_SET\_IDLE\_RATE}}
+\index{USB\_SETUP\_SET\_IDLE\_RATE@{USB\_SETUP\_SET\_IDLE\_RATE}!usb\_device\_hid.c@{usb\_device\_hid.c}}
+\subsubsection{\texorpdfstring{USB\_SETUP\_SET\_IDLE\_RATE}{USB\_SETUP\_SET\_IDLE\_RATE}}
+{\footnotesize\ttfamily U\+S\+B\+\_\+\+S\+E\+T\+U\+P\+\_\+\+S\+E\+T\+\_\+\+I\+D\+L\+E\+\_\+\+R\+A\+TE}
+
+
+
+Definition at line 65 of file usb\+\_\+device\+\_\+hid.\+c.
+
+\mbox{\Hypertarget{usb__device__hid_8c_abf9fafa65e66daa35a6bddce985c6ad9}\label{usb__device__hid_8c_abf9fafa65e66daa35a6bddce985c6ad9}} 
+\index{usb\_device\_hid.c@{usb\_device\_hid.c}!USB\_SETUP\_SET\_PROTOCOL@{USB\_SETUP\_SET\_PROTOCOL}}
+\index{USB\_SETUP\_SET\_PROTOCOL@{USB\_SETUP\_SET\_PROTOCOL}!usb\_device\_hid.c@{usb\_device\_hid.c}}
+\subsubsection{\texorpdfstring{USB\_SETUP\_SET\_PROTOCOL}{USB\_SETUP\_SET\_PROTOCOL}}
+{\footnotesize\ttfamily U\+S\+B\+\_\+\+S\+E\+T\+U\+P\+\_\+\+S\+E\+T\+\_\+\+P\+R\+O\+T\+O\+C\+OL}
+
+
+
+Definition at line 72 of file usb\+\_\+device\+\_\+hid.\+c.
+

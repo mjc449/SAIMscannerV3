@@ -1,0 +1,109 @@
+\hypertarget{classSSV3_1_1Manager}{}\section{S\+S\+V3\+:\+:Manager Class Reference}
+\label{classSSV3_1_1Manager}\index{S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}}
+
+
+{\ttfamily \#include $<$S\+A\+I\+M\+Scanner\+V3.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classSSV3_1_1Manager_a29b6ac14b348cc4676523f74f8d0a8e1}{S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR} \{ {\bfseries S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+OK}, 
+{\bfseries S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+I\+T\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+\_\+\+D\+E\+V\+I\+C\+ES}, 
+{\bfseries S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+N\+V\+A\+L\+ID}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classSSV3_1_1Manager_af81c512bd20f24b3759834062f9c1287}{Destroy} ()=0
+\item 
+virtual \hyperlink{classSSV3_1_1Manager_a29b6ac14b348cc4676523f74f8d0a8e1}{S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR} \hyperlink{classSSV3_1_1Manager_abbcf07ea9aee51a09a6035086da0df6e}{Enumerate} (int $\ast$n\+Devs)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Manager_a29b6ac14b348cc4676523f74f8d0a8e1}{S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR} \hyperlink{classSSV3_1_1Manager_ab8628bbde656c4fda84685bca801606a}{Device\+Count} (int $\ast$n\+Devs)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Manager_a29b6ac14b348cc4676523f74f8d0a8e1}{S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR} \hyperlink{classSSV3_1_1Manager_a20142bb2d1df235738ff5e651eea7331}{Get\+Device\+Info} (const int dev, wchar\+\_\+t $\ast$man, wchar\+\_\+t $\ast$prod, wchar\+\_\+t $\ast$sn)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Manager_a29b6ac14b348cc4676523f74f8d0a8e1}{S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR} \hyperlink{classSSV3_1_1Manager_a1839a87d09246a89b15e3da91c57be6e}{Refresh\+Devices} (int $\ast$n\+Devs)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple wrapper around the hidapi library to add specificity for the S\+Sv3 device. Makes attaching and tracking multiple devices easier. 
+
+\subsection{Member Enumeration Documentation}
+\index{S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}!S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR@{S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR}}
+\index{S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR@{S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR}!S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}}
+\subsubsection[{\texorpdfstring{S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR}{SSV3MANAGER_ERROR}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\+S\+V3\+::\+Manager\+::\+S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR}\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{classSSV3_1_1Manager_a29b6ac14b348cc4676523f74f8d0a8e1}{}\label{classSSV3_1_1Manager_a29b6ac14b348cc4676523f74f8d0a8e1}
+Return error codes 
+
+\subsection{Member Function Documentation}
+\index{S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}}
+\subsubsection[{\texorpdfstring{Destroy()=0}{Destroy()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void S\+S\+V3\+::\+Manager\+::\+Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classSSV3_1_1Manager_af81c512bd20f24b3759834062f9c1287}{}\label{classSSV3_1_1Manager_af81c512bd20f24b3759834062f9c1287}
+Disconnects the manager and frees the enumerated devices. It is the caller\textquotesingle{}s responsibility to ensure that the manager is no longer referenced \index{S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}!Device\+Count@{Device\+Count}}
+\index{Device\+Count@{Device\+Count}!S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}}
+\subsubsection[{\texorpdfstring{Device\+Count(int $\ast$n\+Devs)=0}{DeviceCount(int *nDevs)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR} S\+S\+V3\+::\+Manager\+::\+Device\+Count (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n\+Devs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classSSV3_1_1Manager_ab8628bbde656c4fda84685bca801606a}{}\label{classSSV3_1_1Manager_ab8628bbde656c4fda84685bca801606a}
+Get the number of attached devices 
+\begin{DoxyParams}{Parameters}
+{\em n\+Devs} & = number of devices found \\
+\hline
+\end{DoxyParams}
+\index{S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}!Enumerate@{Enumerate}}
+\index{Enumerate@{Enumerate}!S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}}
+\subsubsection[{\texorpdfstring{Enumerate(int $\ast$n\+Devs)=0}{Enumerate(int *nDevs)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR} S\+S\+V3\+::\+Manager\+::\+Enumerate (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n\+Devs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classSSV3_1_1Manager_abbcf07ea9aee51a09a6035086da0df6e}{}\label{classSSV3_1_1Manager_abbcf07ea9aee51a09a6035086da0df6e}
+Initializes the S\+Sv3 device manager 
+\begin{DoxyParams}{Parameters}
+{\em n\+Devs} & = number of detected devices \\
+\hline
+\end{DoxyParams}
+\index{S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}!Get\+Device\+Info@{Get\+Device\+Info}}
+\index{Get\+Device\+Info@{Get\+Device\+Info}!S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Device\+Info(const int dev, wchar\+\_\+t $\ast$man, wchar\+\_\+t $\ast$prod, wchar\+\_\+t $\ast$sn)=0}{GetDeviceInfo(const int dev, wchar_t *man, wchar_t *prod, wchar_t *sn)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR} S\+S\+V3\+::\+Manager\+::\+Get\+Device\+Info (
+\begin{DoxyParamCaption}
+\item[{const int}]{dev, }
+\item[{wchar\+\_\+t $\ast$}]{man, }
+\item[{wchar\+\_\+t $\ast$}]{prod, }
+\item[{wchar\+\_\+t $\ast$}]{sn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classSSV3_1_1Manager_a20142bb2d1df235738ff5e651eea7331}{}\label{classSSV3_1_1Manager_a20142bb2d1df235738ff5e651eea7331}
+Query the device ID 
+\begin{DoxyParams}{Parameters}
+{\em dev} & = device number \\
+\hline
+{\em man} & = manufacturer string \\
+\hline
+{\em prod} & = product string \\
+\hline
+{\em sn} & = serial number string \\
+\hline
+\end{DoxyParams}
+\index{S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}!Refresh\+Devices@{Refresh\+Devices}}
+\index{Refresh\+Devices@{Refresh\+Devices}!S\+S\+V3\+::\+Manager@{S\+S\+V3\+::\+Manager}}
+\subsubsection[{\texorpdfstring{Refresh\+Devices(int $\ast$n\+Devs)=0}{RefreshDevices(int *nDevs)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\+S\+V3\+M\+A\+N\+A\+G\+E\+R\+\_\+\+E\+R\+R\+OR} S\+S\+V3\+::\+Manager\+::\+Refresh\+Devices (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n\+Devs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classSSV3_1_1Manager_a1839a87d09246a89b15e3da91c57be6e}{}\label{classSSV3_1_1Manager_a1839a87d09246a89b15e3da91c57be6e}
+Refreshes the device list. Previous device counts and information may no longer be valid 
+\begin{DoxyParams}{Parameters}
+{\em n\+Devs} & = number of devices found \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+A\+I\+M\+Scanner\+V3.\+h\end{DoxyCompactItemize}

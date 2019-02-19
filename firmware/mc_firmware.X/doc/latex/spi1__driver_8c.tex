@@ -1,0 +1,102 @@
+\hypertarget{spi1__driver_8c}{}\section{C\+:/\+Users/\+Marshall/\+M\+P\+L\+A\+B\+X\+Projects/mc\+\_\+firmware.X/peripherals/spi1\+\_\+driver.c File Reference}
+\label{spi1__driver_8c}\index{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/peripherals/spi1\_driver.c@{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/peripherals/spi1\_driver.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}mcc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spi1\+\_\+driver.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structspi1__configuration__t}{spi1\+\_\+configuration\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{spi1__driver_8c_a1a3124df22fc1c1bcf69e0e885c5f10a}{spi1\+\_\+close}} (void)
+\item 
+bool \mbox{\hyperlink{spi1__driver_8c_aac5b08f7dd63a1a4e90161700754f4cb}{spi1\+\_\+master\+\_\+open}} (\mbox{\hyperlink{spi1__types_8h_a6b9d6d393bfbc75dcbeab8395b676daf}{spi1\+\_\+modes}} spi\+Unique\+Configuration)
+\item 
+bool \mbox{\hyperlink{spi1__driver_8c_a22bc12592843f09d570f6d4c9d3d6610}{spi1\+\_\+slave\+\_\+open}} (\mbox{\hyperlink{spi1__types_8h_a6b9d6d393bfbc75dcbeab8395b676daf}{spi1\+\_\+modes}} spi\+Unique\+Configuration)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{spi1__driver_8c_aaf9216ce68e1bf3ec6e44b6e95d48602}{spi1\+\_\+exchange\+Byte}} (uint8\+\_\+t b)
+\item 
+void \mbox{\hyperlink{spi1__driver_8c_a421cfb3f48912d1deb5d7f91a77f546d}{spi1\+\_\+exchange\+Block}} (void $\ast$block, size\+\_\+t block\+Size)
+\item 
+void \mbox{\hyperlink{spi1__driver_8c_ab4cddba47600faaba8a0259c92a32937}{spi1\+\_\+write\+Block}} (void $\ast$block, size\+\_\+t block\+Size)
+\item 
+void \mbox{\hyperlink{spi1__driver_8c_a89bc8bdd2f183b98db29b09d29ddd740}{spi1\+\_\+read\+Block}} (void $\ast$block, size\+\_\+t block\+Size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{spi1__driver_8c_a1a3124df22fc1c1bcf69e0e885c5f10a}\label{spi1__driver_8c_a1a3124df22fc1c1bcf69e0e885c5f10a}} 
+\index{spi1\_driver.c@{spi1\_driver.c}!spi1\_close@{spi1\_close}}
+\index{spi1\_close@{spi1\_close}!spi1\_driver.c@{spi1\_driver.c}}
+\subsubsection{\texorpdfstring{spi1\_close()}{spi1\_close()}}
+{\footnotesize\ttfamily void spi1\+\_\+close (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 30 of file spi1\+\_\+driver.\+c.
+
+\mbox{\Hypertarget{spi1__driver_8c_a421cfb3f48912d1deb5d7f91a77f546d}\label{spi1__driver_8c_a421cfb3f48912d1deb5d7f91a77f546d}} 
+\index{spi1\_driver.c@{spi1\_driver.c}!spi1\_exchangeBlock@{spi1\_exchangeBlock}}
+\index{spi1\_exchangeBlock@{spi1\_exchangeBlock}!spi1\_driver.c@{spi1\_driver.c}}
+\subsubsection{\texorpdfstring{spi1\_exchangeBlock()}{spi1\_exchangeBlock()}}
+{\footnotesize\ttfamily void spi1\+\_\+exchange\+Block (\begin{DoxyParamCaption}\item[{void $\ast$}]{block,  }\item[{size\+\_\+t}]{block\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 77 of file spi1\+\_\+driver.\+c.
+
+\mbox{\Hypertarget{spi1__driver_8c_aaf9216ce68e1bf3ec6e44b6e95d48602}\label{spi1__driver_8c_aaf9216ce68e1bf3ec6e44b6e95d48602}} 
+\index{spi1\_driver.c@{spi1\_driver.c}!spi1\_exchangeByte@{spi1\_exchangeByte}}
+\index{spi1\_exchangeByte@{spi1\_exchangeByte}!spi1\_driver.c@{spi1\_driver.c}}
+\subsubsection{\texorpdfstring{spi1\_exchangeByte()}{spi1\_exchangeByte()}}
+{\footnotesize\ttfamily uint8\+\_\+t spi1\+\_\+exchange\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{b }\end{DoxyParamCaption})}
+
+
+
+Definition at line 70 of file spi1\+\_\+driver.\+c.
+
+\mbox{\Hypertarget{spi1__driver_8c_aac5b08f7dd63a1a4e90161700754f4cb}\label{spi1__driver_8c_aac5b08f7dd63a1a4e90161700754f4cb}} 
+\index{spi1\_driver.c@{spi1\_driver.c}!spi1\_master\_open@{spi1\_master\_open}}
+\index{spi1\_master\_open@{spi1\_master\_open}!spi1\_driver.c@{spi1\_driver.c}}
+\subsubsection{\texorpdfstring{spi1\_master\_open()}{spi1\_master\_open()}}
+{\footnotesize\ttfamily bool spi1\+\_\+master\+\_\+open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{spi1__types_8h_a6b9d6d393bfbc75dcbeab8395b676daf}{spi1\+\_\+modes}}}]{spi\+Unique\+Configuration }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file spi1\+\_\+driver.\+c.
+
+\mbox{\Hypertarget{spi1__driver_8c_a89bc8bdd2f183b98db29b09d29ddd740}\label{spi1__driver_8c_a89bc8bdd2f183b98db29b09d29ddd740}} 
+\index{spi1\_driver.c@{spi1\_driver.c}!spi1\_readBlock@{spi1\_readBlock}}
+\index{spi1\_readBlock@{spi1\_readBlock}!spi1\_driver.c@{spi1\_driver.c}}
+\subsubsection{\texorpdfstring{spi1\_readBlock()}{spi1\_readBlock()}}
+{\footnotesize\ttfamily void spi1\+\_\+read\+Block (\begin{DoxyParamCaption}\item[{void $\ast$}]{block,  }\item[{size\+\_\+t}]{block\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 97 of file spi1\+\_\+driver.\+c.
+
+\mbox{\Hypertarget{spi1__driver_8c_a22bc12592843f09d570f6d4c9d3d6610}\label{spi1__driver_8c_a22bc12592843f09d570f6d4c9d3d6610}} 
+\index{spi1\_driver.c@{spi1\_driver.c}!spi1\_slave\_open@{spi1\_slave\_open}}
+\index{spi1\_slave\_open@{spi1\_slave\_open}!spi1\_driver.c@{spi1\_driver.c}}
+\subsubsection{\texorpdfstring{spi1\_slave\_open()}{spi1\_slave\_open()}}
+{\footnotesize\ttfamily bool spi1\+\_\+slave\+\_\+open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{spi1__types_8h_a6b9d6d393bfbc75dcbeab8395b676daf}{spi1\+\_\+modes}}}]{spi\+Unique\+Configuration }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file spi1\+\_\+driver.\+c.
+
+\mbox{\Hypertarget{spi1__driver_8c_ab4cddba47600faaba8a0259c92a32937}\label{spi1__driver_8c_ab4cddba47600faaba8a0259c92a32937}} 
+\index{spi1\_driver.c@{spi1\_driver.c}!spi1\_writeBlock@{spi1\_writeBlock}}
+\index{spi1\_writeBlock@{spi1\_writeBlock}!spi1\_driver.c@{spi1\_driver.c}}
+\subsubsection{\texorpdfstring{spi1\_writeBlock()}{spi1\_writeBlock()}}
+{\footnotesize\ttfamily void spi1\+\_\+write\+Block (\begin{DoxyParamCaption}\item[{void $\ast$}]{block,  }\item[{size\+\_\+t}]{block\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 88 of file spi1\+\_\+driver.\+c.
+

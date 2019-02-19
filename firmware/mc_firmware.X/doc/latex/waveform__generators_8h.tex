@@ -1,0 +1,192 @@
+\hypertarget{waveform__generators_8h}{}\section{C\+:/\+Users/\+Marshall/\+M\+P\+L\+A\+B\+X\+Projects/mc\+\_\+firmware.X/peripherals/waveform\+\_\+generators.h File Reference}
+\label{waveform__generators_8h}\index{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/peripherals/waveform\_generators.h@{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/peripherals/waveform\_generators.h}}
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{waveform__generators_8h_a30319e5cd71831e8c0434cd51df43b04}{P\+H\+A\+S\+E\+\_\+90}}~0x0400
+\item 
+\#define \mbox{\hyperlink{waveform__generators_8h_a83a8a7ce19474e03b7f488f5c77ab6f8}{O\+N\+E\+\_\+\+K\+HZ}}~0x000029\+F1
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18}{W\+A\+V\+E\+F\+O\+R\+M\+\_\+\+T\+Y\+P\+ES}} \{ \mbox{\hyperlink{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18aeef00bf2219185cf475dc3ee00edffe3}{S\+I\+N\+E\+\_\+\+O\+U\+T\+P\+UT}} = 0, 
+\mbox{\hyperlink{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18aace545a50c3538d1caf4f4360b18027a}{T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+O\+U\+T\+P\+UT}} = 1, 
+\mbox{\hyperlink{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18a2ccf142e0c182d4a17a03fdc854ca4b2}{S\+Q\+U\+A\+R\+E\+\_\+\+O\+U\+T\+P\+UT}} = 2, 
+\mbox{\hyperlink{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18a829fddd3e85bcc50c31764fe964b8e26}{S\+Q\+U\+A\+R\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+D\+I\+V2}} = 3
+ \}
+\item 
+enum \mbox{\hyperlink{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20}{W\+A\+V\+E\+F\+O\+R\+M\+\_\+\+A\+X\+IS}} \{ \mbox{\hyperlink{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20a93ed1386222f87948b972889ad82cd33}{X\+\_\+\+A\+X\+IS}} = 0, 
+\mbox{\hyperlink{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20aa1ec9649c0a631b27ad7280af3522dd0}{Y\+\_\+\+A\+X\+IS}} = 1, 
+\mbox{\hyperlink{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20aecc82f671c6671f1b439b883074a9f2a}{B\+O\+T\+H\+\_\+\+A\+X\+IS}} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{waveform__generators_8h_a3f459de36968abafa90fb281cdbcd78e}{Initialize\+Waveform\+Generators}} (void)
+\item 
+void \mbox{\hyperlink{waveform__generators_8h_ae807056d5fd03b4c0c4d8ca08b19a40e}{Waveform\+Output\+Enable}} (\mbox{\hyperlink{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20}{W\+A\+V\+E\+F\+O\+R\+M\+\_\+\+A\+X\+IS}} axis, uint8\+\_\+t on\+Off)
+\item 
+void \mbox{\hyperlink{waveform__generators_8h_a8c40da3d5da50de91756183a5e3b2826}{Set\+Phase}} (uint16\+\_\+t phase)
+\item 
+void \mbox{\hyperlink{waveform__generators_8h_a518c7ef04626026035e56408251ef925}{Set\+Same\+Freq}} (uint32\+\_\+t frequency)
+\item 
+void \mbox{\hyperlink{waveform__generators_8h_aee2e4c1cbd4fbcafe82d6fc3672c5729}{Set\+X\+Freq}} (uint32\+\_\+t frequency)
+\item 
+void \mbox{\hyperlink{waveform__generators_8h_ad512f1a3d81a483d54d940f07e4176cf}{Set\+Y\+Freq}} (uint32\+\_\+t frequency)
+\item 
+void \mbox{\hyperlink{waveform__generators_8h_a8900ed4959600a9d375e282ce12df5f8}{Set\+Output\+Types}} (\mbox{\hyperlink{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18}{W\+A\+V\+E\+F\+O\+R\+M\+\_\+\+T\+Y\+P\+ES}} x\+Output, \mbox{\hyperlink{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18}{W\+A\+V\+E\+F\+O\+R\+M\+\_\+\+T\+Y\+P\+ES}} y\+Output)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{waveform__generators_8h_a83a8a7ce19474e03b7f488f5c77ab6f8}\label{waveform__generators_8h_a83a8a7ce19474e03b7f488f5c77ab6f8}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!ONE\_KHZ@{ONE\_KHZ}}
+\index{ONE\_KHZ@{ONE\_KHZ}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{ONE\_KHZ}{ONE\_KHZ}}
+{\footnotesize\ttfamily \#define O\+N\+E\+\_\+\+K\+HZ~0x000029\+F1}
+
+
+
+Definition at line 33 of file waveform\+\_\+generators.\+h.
+
+\mbox{\Hypertarget{waveform__generators_8h_a30319e5cd71831e8c0434cd51df43b04}\label{waveform__generators_8h_a30319e5cd71831e8c0434cd51df43b04}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!PHASE\_90@{PHASE\_90}}
+\index{PHASE\_90@{PHASE\_90}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{PHASE\_90}{PHASE\_90}}
+{\footnotesize\ttfamily \#define P\+H\+A\+S\+E\+\_\+90~0x0400}
+
+
+
+Definition at line 32 of file waveform\+\_\+generators.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20}\label{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!WAVEFORM\_AXIS@{WAVEFORM\_AXIS}}
+\index{WAVEFORM\_AXIS@{WAVEFORM\_AXIS}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{WAVEFORM\_AXIS}{WAVEFORM\_AXIS}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20}{W\+A\+V\+E\+F\+O\+R\+M\+\_\+\+A\+X\+IS}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X\_AXIS@{X\_AXIS}!waveform\_generators.h@{waveform\_generators.h}}\index{waveform\_generators.h@{waveform\_generators.h}!X\_AXIS@{X\_AXIS}}}\mbox{\Hypertarget{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20a93ed1386222f87948b972889ad82cd33}\label{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20a93ed1386222f87948b972889ad82cd33}} 
+X\+\_\+\+A\+X\+IS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y\_AXIS@{Y\_AXIS}!waveform\_generators.h@{waveform\_generators.h}}\index{waveform\_generators.h@{waveform\_generators.h}!Y\_AXIS@{Y\_AXIS}}}\mbox{\Hypertarget{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20aa1ec9649c0a631b27ad7280af3522dd0}\label{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20aa1ec9649c0a631b27ad7280af3522dd0}} 
+Y\+\_\+\+A\+X\+IS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BOTH\_AXIS@{BOTH\_AXIS}!waveform\_generators.h@{waveform\_generators.h}}\index{waveform\_generators.h@{waveform\_generators.h}!BOTH\_AXIS@{BOTH\_AXIS}}}\mbox{\Hypertarget{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20aecc82f671c6671f1b439b883074a9f2a}\label{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20aecc82f671c6671f1b439b883074a9f2a}} 
+B\+O\+T\+H\+\_\+\+A\+X\+IS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 42 of file waveform\+\_\+generators.\+h.
+
+\mbox{\Hypertarget{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18}\label{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!WAVEFORM\_TYPES@{WAVEFORM\_TYPES}}
+\index{WAVEFORM\_TYPES@{WAVEFORM\_TYPES}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{WAVEFORM\_TYPES}{WAVEFORM\_TYPES}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18}{W\+A\+V\+E\+F\+O\+R\+M\+\_\+\+T\+Y\+P\+ES}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SINE\_OUTPUT@{SINE\_OUTPUT}!waveform\_generators.h@{waveform\_generators.h}}\index{waveform\_generators.h@{waveform\_generators.h}!SINE\_OUTPUT@{SINE\_OUTPUT}}}\mbox{\Hypertarget{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18aeef00bf2219185cf475dc3ee00edffe3}\label{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18aeef00bf2219185cf475dc3ee00edffe3}} 
+S\+I\+N\+E\+\_\+\+O\+U\+T\+P\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TRIANGLE\_OUTPUT@{TRIANGLE\_OUTPUT}!waveform\_generators.h@{waveform\_generators.h}}\index{waveform\_generators.h@{waveform\_generators.h}!TRIANGLE\_OUTPUT@{TRIANGLE\_OUTPUT}}}\mbox{\Hypertarget{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18aace545a50c3538d1caf4f4360b18027a}\label{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18aace545a50c3538d1caf4f4360b18027a}} 
+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+O\+U\+T\+P\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SQUARE\_OUTPUT@{SQUARE\_OUTPUT}!waveform\_generators.h@{waveform\_generators.h}}\index{waveform\_generators.h@{waveform\_generators.h}!SQUARE\_OUTPUT@{SQUARE\_OUTPUT}}}\mbox{\Hypertarget{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18a2ccf142e0c182d4a17a03fdc854ca4b2}\label{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18a2ccf142e0c182d4a17a03fdc854ca4b2}} 
+S\+Q\+U\+A\+R\+E\+\_\+\+O\+U\+T\+P\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SQUARE\_OUTPUT\_DIV2@{SQUARE\_OUTPUT\_DIV2}!waveform\_generators.h@{waveform\_generators.h}}\index{waveform\_generators.h@{waveform\_generators.h}!SQUARE\_OUTPUT\_DIV2@{SQUARE\_OUTPUT\_DIV2}}}\mbox{\Hypertarget{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18a829fddd3e85bcc50c31764fe964b8e26}\label{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18a829fddd3e85bcc50c31764fe964b8e26}} 
+S\+Q\+U\+A\+R\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+D\+I\+V2&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 35 of file waveform\+\_\+generators.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{waveform__generators_8h_a3f459de36968abafa90fb281cdbcd78e}\label{waveform__generators_8h_a3f459de36968abafa90fb281cdbcd78e}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!InitializeWaveformGenerators@{InitializeWaveformGenerators}}
+\index{InitializeWaveformGenerators@{InitializeWaveformGenerators}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{InitializeWaveformGenerators()}{InitializeWaveformGenerators()}}
+{\footnotesize\ttfamily void Initialize\+Waveform\+Generators (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 128 of file waveform\+\_\+generators.\+c.
+
+\mbox{\Hypertarget{waveform__generators_8h_a8900ed4959600a9d375e282ce12df5f8}\label{waveform__generators_8h_a8900ed4959600a9d375e282ce12df5f8}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!SetOutputTypes@{SetOutputTypes}}
+\index{SetOutputTypes@{SetOutputTypes}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{SetOutputTypes()}{SetOutputTypes()}}
+{\footnotesize\ttfamily void Set\+Output\+Types (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18}{W\+A\+V\+E\+F\+O\+R\+M\+\_\+\+T\+Y\+P\+ES}}}]{x\+Output,  }\item[{\mbox{\hyperlink{waveform__generators_8h_a42ab6f1614197b71df84939122ed9c18}{W\+A\+V\+E\+F\+O\+R\+M\+\_\+\+T\+Y\+P\+ES}}}]{y\+Output }\end{DoxyParamCaption})}
+
+
+
+Definition at line 212 of file waveform\+\_\+generators.\+c.
+
+\mbox{\Hypertarget{waveform__generators_8h_a8c40da3d5da50de91756183a5e3b2826}\label{waveform__generators_8h_a8c40da3d5da50de91756183a5e3b2826}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!SetPhase@{SetPhase}}
+\index{SetPhase@{SetPhase}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{SetPhase()}{SetPhase()}}
+{\footnotesize\ttfamily void Set\+Phase (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{phase }\end{DoxyParamCaption})}
+
+
+
+Definition at line 175 of file waveform\+\_\+generators.\+c.
+
+\mbox{\Hypertarget{waveform__generators_8h_a518c7ef04626026035e56408251ef925}\label{waveform__generators_8h_a518c7ef04626026035e56408251ef925}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!SetSameFreq@{SetSameFreq}}
+\index{SetSameFreq@{SetSameFreq}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{SetSameFreq()}{SetSameFreq()}}
+{\footnotesize\ttfamily void Set\+Same\+Freq (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{frequency }\end{DoxyParamCaption})}
+
+
+
+Definition at line 182 of file waveform\+\_\+generators.\+c.
+
+\mbox{\Hypertarget{waveform__generators_8h_aee2e4c1cbd4fbcafe82d6fc3672c5729}\label{waveform__generators_8h_aee2e4c1cbd4fbcafe82d6fc3672c5729}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!SetXFreq@{SetXFreq}}
+\index{SetXFreq@{SetXFreq}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{SetXFreq()}{SetXFreq()}}
+{\footnotesize\ttfamily void Set\+X\+Freq (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{frequency }\end{DoxyParamCaption})}
+
+
+
+Definition at line 192 of file waveform\+\_\+generators.\+c.
+
+\mbox{\Hypertarget{waveform__generators_8h_ad512f1a3d81a483d54d940f07e4176cf}\label{waveform__generators_8h_ad512f1a3d81a483d54d940f07e4176cf}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!SetYFreq@{SetYFreq}}
+\index{SetYFreq@{SetYFreq}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{SetYFreq()}{SetYFreq()}}
+{\footnotesize\ttfamily void Set\+Y\+Freq (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{frequency }\end{DoxyParamCaption})}
+
+
+
+Definition at line 202 of file waveform\+\_\+generators.\+c.
+
+\mbox{\Hypertarget{waveform__generators_8h_ae807056d5fd03b4c0c4d8ca08b19a40e}\label{waveform__generators_8h_ae807056d5fd03b4c0c4d8ca08b19a40e}} 
+\index{waveform\_generators.h@{waveform\_generators.h}!WaveformOutputEnable@{WaveformOutputEnable}}
+\index{WaveformOutputEnable@{WaveformOutputEnable}!waveform\_generators.h@{waveform\_generators.h}}
+\subsubsection{\texorpdfstring{WaveformOutputEnable()}{WaveformOutputEnable()}}
+{\footnotesize\ttfamily void Waveform\+Output\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{waveform__generators_8h_a1fb81893eae1189a1897aadc0b032b20}{W\+A\+V\+E\+F\+O\+R\+M\+\_\+\+A\+X\+IS}}}]{axis,  }\item[{uint8\+\_\+t}]{on\+Off }\end{DoxyParamCaption})}
+
+
+
+Definition at line 155 of file waveform\+\_\+generators.\+c.
+

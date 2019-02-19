@@ -1,0 +1,88 @@
+\hypertarget{ext__interrupts_8c}{}\section{C\+:/\+Users/\+Marshall/\+M\+P\+L\+A\+B\+X\+Projects/mc\+\_\+firmware.X/interrupts/ext\+\_\+interrupts.c File Reference}
+\label{ext__interrupts_8c}\index{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/interrupts/ext\_interrupts.c@{C:/Users/Marshall/MPLABXProjects/mc\_firmware.X/interrupts/ext\_interrupts.c}}
+{\ttfamily \#include $<$p24\+F\+J256\+G\+B210.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}ext\+\_\+interrupts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ext\+\_\+callbacks.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries Ext\+Int\+Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ext__interrupts_8c_ab3c7b3e343c6cb556bcb3b24e5e2543a}{Enable\+Disable\+Trigger}} (\mbox{\hyperlink{ext__interrupts_8h_a905396890b5a9872923596ba748bbdcb}{E\+X\+T\+\_\+\+I\+N\+T\+\_\+\+L\+I\+ST}} trigger, \mbox{\hyperlink{ext__interrupts_8h_a3f968099658e89493d13f0ce05e3789e}{I\+N\+T\+\_\+\+S\+T\+A\+TE}} state, \mbox{\hyperlink{ext__interrupts_8h_a312e58bcbcbe532b0b86074506b14145}{I\+N\+T\+\_\+\+P\+O\+L\+A\+R\+I\+TY}} polarity, uint8\+\_\+t priority)
+\item 
+void \mbox{\hyperlink{ext__interrupts_8c_a974c24b6dbdad719bda7c10ff6d6b1e7}{Toggle\+Pins\+On\+Trigger}} (\mbox{\hyperlink{ext__interrupts_8h_a905396890b5a9872923596ba748bbdcb}{E\+X\+T\+\_\+\+I\+N\+T\+\_\+\+L\+I\+ST}} trigger, uint8\+\_\+t pinmask)
+\item 
+void \mbox{\hyperlink{ext__interrupts_8c_a67350cc916c5777574e963a6907dc46d}{Enable\+Disable\+Timer\+On\+Trigger}} (\mbox{\hyperlink{ext__interrupts_8h_a905396890b5a9872923596ba748bbdcb}{E\+X\+T\+\_\+\+I\+N\+T\+\_\+\+L\+I\+ST}} trigger, \mbox{\hyperlink{timer__interrupts_8h_a5fe516773b3755c8907e0df43196a6e8}{T\+I\+M\+E\+R\+\_\+\+L\+I\+ST}} timer, bool on\+Off)
+\item 
+void \mbox{\hyperlink{ext__interrupts_8c_a004f8c112fbf0a74f45c8b5f934bcd75}{Toggle\+Timer\+On\+Trigger}} (\mbox{\hyperlink{ext__interrupts_8h_a905396890b5a9872923596ba748bbdcb}{E\+X\+T\+\_\+\+I\+N\+T\+\_\+\+L\+I\+ST}} trigger, \mbox{\hyperlink{timer__interrupts_8h_a5fe516773b3755c8907e0df43196a6e8}{T\+I\+M\+E\+R\+\_\+\+L\+I\+ST}} timer)
+\item 
+void \mbox{\hyperlink{ext__interrupts_8c_a226557d5e42f7e29ddaff30606138459}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((interrupt, no\+\_\+auto\+\_\+psv))
+\item 
+void \mbox{\hyperlink{ext__interrupts_8c_ad9071c325adca3c5473fcafab2c07faf}{Check\+Ext\+Int4}} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ext__interrupts_8c_a226557d5e42f7e29ddaff30606138459}\label{ext__interrupts_8c_a226557d5e42f7e29ddaff30606138459}} 
+\index{ext\_interrupts.c@{ext\_interrupts.c}!\_\_attribute\_\_@{\_\_attribute\_\_}}
+\index{\_\_attribute\_\_@{\_\_attribute\_\_}!ext\_interrupts.c@{ext\_interrupts.c}}
+\subsubsection{\texorpdfstring{\_\_attribute\_\_()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily void \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(interrupt, no\+\_\+auto\+\_\+psv)}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 142 of file ext\+\_\+interrupts.\+c.
+
+\mbox{\Hypertarget{ext__interrupts_8c_ad9071c325adca3c5473fcafab2c07faf}\label{ext__interrupts_8c_ad9071c325adca3c5473fcafab2c07faf}} 
+\index{ext\_interrupts.c@{ext\_interrupts.c}!CheckExtInt4@{CheckExtInt4}}
+\index{CheckExtInt4@{CheckExtInt4}!ext\_interrupts.c@{ext\_interrupts.c}}
+\subsubsection{\texorpdfstring{CheckExtInt4()}{CheckExtInt4()}}
+{\footnotesize\ttfamily void Check\+Ext\+Int4 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 219 of file ext\+\_\+interrupts.\+c.
+
+\mbox{\Hypertarget{ext__interrupts_8c_a67350cc916c5777574e963a6907dc46d}\label{ext__interrupts_8c_a67350cc916c5777574e963a6907dc46d}} 
+\index{ext\_interrupts.c@{ext\_interrupts.c}!EnableDisableTimerOnTrigger@{EnableDisableTimerOnTrigger}}
+\index{EnableDisableTimerOnTrigger@{EnableDisableTimerOnTrigger}!ext\_interrupts.c@{ext\_interrupts.c}}
+\subsubsection{\texorpdfstring{EnableDisableTimerOnTrigger()}{EnableDisableTimerOnTrigger()}}
+{\footnotesize\ttfamily void Enable\+Disable\+Timer\+On\+Trigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ext__interrupts_8h_a905396890b5a9872923596ba748bbdcb}{E\+X\+T\+\_\+\+I\+N\+T\+\_\+\+L\+I\+ST}}}]{trigger,  }\item[{\mbox{\hyperlink{timer__interrupts_8h_a5fe516773b3755c8907e0df43196a6e8}{T\+I\+M\+E\+R\+\_\+\+L\+I\+ST}}}]{timer,  }\item[{bool}]{on\+Off }\end{DoxyParamCaption})}
+
+
+
+Definition at line 109 of file ext\+\_\+interrupts.\+c.
+
+\mbox{\Hypertarget{ext__interrupts_8c_ab3c7b3e343c6cb556bcb3b24e5e2543a}\label{ext__interrupts_8c_ab3c7b3e343c6cb556bcb3b24e5e2543a}} 
+\index{ext\_interrupts.c@{ext\_interrupts.c}!EnableDisableTrigger@{EnableDisableTrigger}}
+\index{EnableDisableTrigger@{EnableDisableTrigger}!ext\_interrupts.c@{ext\_interrupts.c}}
+\subsubsection{\texorpdfstring{EnableDisableTrigger()}{EnableDisableTrigger()}}
+{\footnotesize\ttfamily void Enable\+Disable\+Trigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ext__interrupts_8h_a905396890b5a9872923596ba748bbdcb}{E\+X\+T\+\_\+\+I\+N\+T\+\_\+\+L\+I\+ST}}}]{trigger,  }\item[{\mbox{\hyperlink{ext__interrupts_8h_a3f968099658e89493d13f0ce05e3789e}{I\+N\+T\+\_\+\+S\+T\+A\+TE}}}]{state,  }\item[{\mbox{\hyperlink{ext__interrupts_8h_a312e58bcbcbe532b0b86074506b14145}{I\+N\+T\+\_\+\+P\+O\+L\+A\+R\+I\+TY}}}]{polarity,  }\item[{uint8\+\_\+t}]{priority }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file ext\+\_\+interrupts.\+c.
+
+\mbox{\Hypertarget{ext__interrupts_8c_a974c24b6dbdad719bda7c10ff6d6b1e7}\label{ext__interrupts_8c_a974c24b6dbdad719bda7c10ff6d6b1e7}} 
+\index{ext\_interrupts.c@{ext\_interrupts.c}!TogglePinsOnTrigger@{TogglePinsOnTrigger}}
+\index{TogglePinsOnTrigger@{TogglePinsOnTrigger}!ext\_interrupts.c@{ext\_interrupts.c}}
+\subsubsection{\texorpdfstring{TogglePinsOnTrigger()}{TogglePinsOnTrigger()}}
+{\footnotesize\ttfamily void Toggle\+Pins\+On\+Trigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ext__interrupts_8h_a905396890b5a9872923596ba748bbdcb}{E\+X\+T\+\_\+\+I\+N\+T\+\_\+\+L\+I\+ST}}}]{trigger,  }\item[{uint8\+\_\+t}]{pinmask }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file ext\+\_\+interrupts.\+c.
+
+\mbox{\Hypertarget{ext__interrupts_8c_a004f8c112fbf0a74f45c8b5f934bcd75}\label{ext__interrupts_8c_a004f8c112fbf0a74f45c8b5f934bcd75}} 
+\index{ext\_interrupts.c@{ext\_interrupts.c}!ToggleTimerOnTrigger@{ToggleTimerOnTrigger}}
+\index{ToggleTimerOnTrigger@{ToggleTimerOnTrigger}!ext\_interrupts.c@{ext\_interrupts.c}}
+\subsubsection{\texorpdfstring{ToggleTimerOnTrigger()}{ToggleTimerOnTrigger()}}
+{\footnotesize\ttfamily void Toggle\+Timer\+On\+Trigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ext__interrupts_8h_a905396890b5a9872923596ba748bbdcb}{E\+X\+T\+\_\+\+I\+N\+T\+\_\+\+L\+I\+ST}}}]{trigger,  }\item[{\mbox{\hyperlink{timer__interrupts_8h_a5fe516773b3755c8907e0df43196a6e8}{T\+I\+M\+E\+R\+\_\+\+L\+I\+ST}}}]{timer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 114 of file ext\+\_\+interrupts.\+c.
+
