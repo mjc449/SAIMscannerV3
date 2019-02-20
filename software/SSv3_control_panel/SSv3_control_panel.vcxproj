@@ -158,7 +158,7 @@
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_USE_TBB;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB;QT_MULTIMEDIAWIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(OPENCV320_DIR)/../../include;$(BOOST_1_66_0_DIR);$(SolutionDir);.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtMultimediaWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\opencv\build\include;$(BOOST_1_66_0_DIR);$(SolutionDir);.\GeneratedFiles;.;D:\Qt\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\include\QtCore;D:\Qt\include\QtGui;D:\Qt\include\QtANGLE;D:\Qt\include\QtWidgets;D:\Qt\include\QtCharts;D:\Qt\include\QtMultimediaWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -167,19 +167,21 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>$(OPENCV320_DIR)/lib;$(BOOST_1_66_0_DIR)stage_x64\lib;$(SolutionDir)x64\Debug\SSv3_driver;$(SolutionDir)x64\Debug\PGCam;$(SolutionDir)x64\Debug\1D_fitter;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\opencv\build\x64\vc15\lib;$(BOOST_1_66_0_DIR)\stage_x64\lib;$(SolutionDir)x64\Debug\SSv3_driver;$(SolutionDir)x64\Debug\PGCam;$(SolutionDir)x64\Debug\1D_fitter;D:\Qt\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>1D_fitter_d.lib;PGCam_d.lib;opencv_world320d.lib;SSv3_driver_d.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Multimediad.lib;Qt5Chartsd.lib;Qt5MultimediaWidgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <QtMoc>
       <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
       <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
-      <IncludePath>$(OPENCV320_DIR)/../../include;$(BOOST_1_66_0_DIR);$(SolutionDir);.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtMultimediaWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <IncludePath>C:\opencv\build\include;$(BOOST_1_66_0_DIR);$(SolutionDir);.\GeneratedFiles;.;D:\Qt\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\include\QtCore;D:\Qt\include\QtGui;D:\Qt\include\QtANGLE;D:\Qt\include\QtWidgets;D:\Qt\include\QtCharts;D:\Qt\include\QtMultimediaWidgets;%(AdditionalIncludeDirectories)</IncludePath>
       <Define>_USE_TBB;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CHARTS_LIB;QT_MULTIMEDIAWIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+      <QTDIR>D:\Qt</QTDIR>
     </QtMoc>
     <QtUic>
       <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
       <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+      <QTDIR>D:\Qt</QTDIR>
     </QtUic>
     <QtRcc>
       <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
