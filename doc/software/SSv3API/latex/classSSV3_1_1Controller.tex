@@ -1,0 +1,625 @@
+\hypertarget{classSSV3_1_1Controller}{\section{S\-S\-V3\-:\-:Controller Class Reference}
+\label{classSSV3_1_1Controller}\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}}
+}
+
+
+{\ttfamily \#include $<$S\-A\-I\-M\-Scanner\-V3.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \{ \\*
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-O\-K}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-N\-O\-\_\-\-D\-E\-V\-I\-C\-E\-S\-\_\-\-F\-O\-U\-N\-D}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-U\-N\-A\-V\-A\-I\-L\-A\-B\-L\-E}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-N\-O\-\_\-\-R\-E\-S\-P\-O\-N\-S\-E}, 
+\\*
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-U\-N\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-R\-E\-T\-U\-R\-N}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-X\-M\-I\-T\-\_\-\-F\-A\-I\-L}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-R\-E\-A\-D\-\_\-\-T\-O\-O\-\_\-\-S\-H\-O\-R\-T}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-E\-X\-C\-I\-T\-A\-T\-I\-O\-N\-\_\-\-F\-U\-L\-L}, 
+\\*
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-A\-L\-L\-O\-C\-\_\-\-F\-A\-I\-L}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-E\-X\-C\-I\-T\-A\-T\-I\-O\-N\-\_\-\-P\-R\-O\-F\-I\-L\-E\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-R\-A\-N\-G\-E}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-E\-X\-C\-I\-T\-A\-T\-I\-O\-N\-\_\-\-P\-R\-O\-F\-I\-L\-E\-\_\-\-D\-O\-E\-S\-N\-T\-\_\-\-E\-X\-I\-S\-T}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-S\-E\-Q\-U\-E\-N\-C\-E\-S\-\_\-\-F\-U\-L\-L}, 
+\\*
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-S\-E\-Q\-U\-E\-N\-C\-E\-\_\-\-A\-L\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-F\-A\-I\-L}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-S\-E\-Q\-U\-E\-N\-C\-E\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-Z\-E\-R\-O}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-S\-E\-Q\-U\-E\-N\-C\-E\-\_\-\-D\-O\-E\-S\-N\-T\-\_\-\-E\-X\-I\-S\-T}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-S\-E\-Q\-U\-E\-N\-C\-E\-\_\-\-L\-O\-A\-D\-\_\-\-F\-A\-I\-L\-E\-D}, 
+\\*
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-N\-O\-\_\-\-E\-X\-P\-E\-R\-I\-M\-E\-N\-T}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-L\-O\-O\-P}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-S\-T\-E\-P\-\_\-\-O\-U\-T\-S\-I\-D\-E\-\_\-\-E\-X\-P\-E\-R\-I\-M\-E\-N\-T\-\_\-\-R\-A\-N\-G\-E}, 
+{\bfseries S\-S\-V3\-E\-R\-R\-O\-R\-\_\-\-C\-O\-U\-L\-D\-N\-T\-\_\-\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-L\-O\-G}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classSSV3_1_1Controller_a04e0349b6adf3231bc57e6d7777861e6}{Destroy} ()=0
+\item 
+virtual const wchar\-\_\-t $\ast$ \hyperlink{classSSV3_1_1Controller_afa08d143fcf2c1e9974ac212fc816ed2}{Hid\-Error} ()=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a09aad77f26ef4f1ae27746234188e9f1}{Initialize} ()=0
+\item 
+virtual void \hyperlink{classSSV3_1_1Controller_a44aa242157905527164269a57f4c0156}{Timeout} (unsigned int ms)=0
+\item 
+virtual void \hyperlink{classSSV3_1_1Controller_a8d1f7d629d46b94e92e0c580bc5ae24f}{Read\-Retries} (unsigned int attempts)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a8abc66a0ff313b8689a716b43ce696d2}{Visor} ()=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a4d2e70f3ffd7fe0e00dcaeaa9981cd9f}{Center\-Park} ()=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_aa40583d5f5c907efc09a76256516b7d4}{Location\-Park} (unsigned short $\ast$location)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a1000e02a14b2ca598a9f2f851a05c4ed}{Shutter} (bool state)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a72eeeb9dec872bbcb230bb251c8439a4}{A\-O\-T\-F\-Blank} (bool state)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_abd7191a0acc48689c737ec9cb820de58}{Single\-Laser\-Power} (unsigned char line, unsigned short value)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_ab487017fe12dd264eb13ed5a22ea5234}{Make\-Excitation\-Profile} (const unsigned char profile, unsigned short $\ast$values=nullptr)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a86dec212a202c8fae4eed2ab5251075d}{Set\-Profile\-Power} (const unsigned char profile, const unsigned char line, const unsigned short value)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a556fcce5eaf8e0858b5eb05d305ec2d8}{Load\-Excitation\-Profile} (const unsigned char profile)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a9de63a8ca846a49c3a7d4e988f887d73}{Make\-Profile\-From\-Current\-Excitation} (const unsigned char profile)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a2e5dde8cc685bede99147a25bc8f70a8}{Fire} (bool state)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_aeb92ffd0489932c59f7cf8454b9141b2}{Clear\-Excitation} ()=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a467ae341e71de80ab18bb5c0a8ed8f4f}{Adjust\-Phase} (unsigned short phase)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a752ede3242af22ba7ccc1a332c65f195}{Adjust\-Frequency} (unsigned short frequency)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_af3db85c32975f6756e03bb2d8a21ca45}{Y\-Amp\-Correction} (unsigned short value)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a9b01383dc0fde626988c9c08e10bd537}{Scan\-Radius} (unsigned short radius)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_adc4a8e3358176f977dfb37e1cb5bce86}{Scan\-Center} (bool axis, unsigned short value)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a3536d65f5a029b2794c8ebb50554c1f7}{T\-I\-R\-F} (unsigned short value=0)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a0717132af0002b8a4d1b21e591de1ca1}{Load\-Angles} (const unsigned char sequence, const unsigned short length, unsigned short $\ast$values)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_af85ec395eb6d84916bb855088e294e06}{Add\-Experiment\-Step} (const unsigned char sequence, const unsigned char excitation, const int step=-\/1)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_aa64e9f3148bfde53ac0d7169e308a696}{Clear\-Experiment} ()=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_aaeab781100d4fab7f921d1fbc22ea8e1}{Loop} (bool on\-Off, const unsigned int loop\-To=0)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a502e4fbb762a16a860b89836b3c1b402}{Start\-Experiment} ()=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a418c6f3bee822914f68a4e4a75470aa3}{Stop\-Experiment} ()=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a9e0bb5a0a1b4ebbf29ffdb21dc81f1b2}{Send\-S\-W\-Trigger} (unsigned short period=0xffff)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a421c2b50d9fe3bc93f8ec7e900a9d79a}{Send\-Array} (unsigned char $\ast$msg, const size\-\_\-t length=0)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a3208aca4a9d3ee6bdf0643b22a1f6e67}{Query\-Internal\-Settings} (unsigned short $\ast$x\-Center, unsigned short $\ast$y\-Center, unsigned short $\ast$tir\-Radius, unsigned short $\ast$phase, unsigned short $\ast$frequency)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_a52d3025e408a6e502a72c5bb522e3de3}{Query\-Dev\-Ver} (unsigned char $\ast$brd\-Major, unsigned char $\ast$brd\-Minor, unsigned char $\ast$fw\-Major, unsigned char $\ast$fw\-Minor)=0
+\item 
+virtual \hyperlink{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{S\-S\-V3\-E\-R\-R\-O\-R} \hyperlink{classSSV3_1_1Controller_ab74e7164b2640607140e19a98fc6ac63}{Detailed\-Error\-Reporting} (bool on\-Off)=0
+\item 
+virtual const char $\ast$ \hyperlink{classSSV3_1_1Controller_a1983242e211ad34cacc91a4e38d42f13}{Get\-Last\-Error} ()=0
+\item 
+virtual void \hyperlink{classSSV3_1_1Controller_ae3f168a6e03c1bf9dec1df16dd83d113}{Reset} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base S\-Sv3 controller class wraps the H\-I\-D communications into opaque\par
+function calls facilitating rapid, easy integration 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!S\-S\-V3\-E\-R\-R\-O\-R@{S\-S\-V3\-E\-R\-R\-O\-R}}
+\index{S\-S\-V3\-E\-R\-R\-O\-R@{S\-S\-V3\-E\-R\-R\-O\-R}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{S\-S\-V3\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\-S\-V3\-::\-Controller\-::\-S\-S\-V3\-E\-R\-R\-O\-R}\hspace{0.3cm}{\ttfamily [strong]}}}\label{classSSV3_1_1Controller_a8ff24a92ec373aa1257dcfe2aa2e5406}
+Return error codes 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSSV3_1_1Controller_af85ec395eb6d84916bb855088e294e06}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Add\-Experiment\-Step@{Add\-Experiment\-Step}}
+\index{Add\-Experiment\-Step@{Add\-Experiment\-Step}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Add\-Experiment\-Step}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Add\-Experiment\-Step (
+\begin{DoxyParamCaption}
+\item[{const unsigned char}]{sequence, }
+\item[{const unsigned char}]{excitation, }
+\item[{const int}]{step = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_af85ec395eb6d84916bb855088e294e06}
+Add an angle sequence and a excitation setting to the end of the\par
+experiment.\par
+
+\begin{DoxyParams}{Parameters}
+{\em sequence} & = set of angles to add\par
+\\
+\hline
+{\em excitation} & = excitation profile to add\par
+\\
+\hline
+{\em step} & = the step number in the sequence if step $<$ 0 step will be inserted at the end if a step already exists it will be overwritten \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a752ede3242af22ba7ccc1a332c65f195}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Adjust\-Frequency@{Adjust\-Frequency}}
+\index{Adjust\-Frequency@{Adjust\-Frequency}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Adjust\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Adjust\-Frequency (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{frequency}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a752ede3242af22ba7ccc1a332c65f195}
+Adjust the scan frequency\par
+0 Hz = 0x00, 1 k\-Hz = 0x29f1\par
+Maximum allowed value is 1 k\-Hz\par
+
+\begin{DoxyParams}{Parameters}
+{\em frequency} & = circle scan frequency \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a467ae341e71de80ab18bb5c0a8ed8f4f}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Adjust\-Phase@{Adjust\-Phase}}
+\index{Adjust\-Phase@{Adjust\-Phase}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Adjust\-Phase}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Adjust\-Phase (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{phase}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a467ae341e71de80ab18bb5c0a8ed8f4f}
+Adjust the phase value\par
+0 deg = 0x000, 90 deg $\sim$0x400, 180 deg $\sim$0x800\par
+
+\begin{DoxyParams}{Parameters}
+{\em phase} & = waveform phase offset \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a72eeeb9dec872bbcb230bb251c8439a4}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!A\-O\-T\-F\-Blank@{A\-O\-T\-F\-Blank}}
+\index{A\-O\-T\-F\-Blank@{A\-O\-T\-F\-Blank}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{A\-O\-T\-F\-Blank}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-A\-O\-T\-F\-Blank (
+\begin{DoxyParamCaption}
+\item[{bool}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a72eeeb9dec872bbcb230bb251c8439a4}
+Blanks all laser lines via the A\-O\-T\-F\par
+
+\begin{DoxyParams}{Parameters}
+{\em state} & = false blanks lasers (off), true enables lasers (on) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a4d2e70f3ffd7fe0e00dcaeaa9981cd9f}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Center\-Park@{Center\-Park}}
+\index{Center\-Park@{Center\-Park}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Center\-Park}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Center\-Park (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a4d2e70f3ffd7fe0e00dcaeaa9981cd9f}
+Centers the beam, stops scanning, and closes the shutter \hypertarget{classSSV3_1_1Controller_aeb92ffd0489932c59f7cf8454b9141b2}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Clear\-Excitation@{Clear\-Excitation}}
+\index{Clear\-Excitation@{Clear\-Excitation}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Clear\-Excitation}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Clear\-Excitation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_aeb92ffd0489932c59f7cf8454b9141b2}
+Zeros all 8 laser lines without changing any of the stored profiles \hypertarget{classSSV3_1_1Controller_aa64e9f3148bfde53ac0d7169e308a696}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Clear\-Experiment@{Clear\-Experiment}}
+\index{Clear\-Experiment@{Clear\-Experiment}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Clear\-Experiment}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Clear\-Experiment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_aa64e9f3148bfde53ac0d7169e308a696}
+Clears the experiment of all steps \hypertarget{classSSV3_1_1Controller_a04e0349b6adf3231bc57e6d7777861e6}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void S\-S\-V3\-::\-Controller\-::\-Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a04e0349b6adf3231bc57e6d7777861e6}
+Disconnects the controller and destroys the instance.\par
+Handle must not be used after calling Destroy\par
+To reattach the controller create a new instance \hypertarget{classSSV3_1_1Controller_ab74e7164b2640607140e19a98fc6ac63}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Detailed\-Error\-Reporting@{Detailed\-Error\-Reporting}}
+\index{Detailed\-Error\-Reporting@{Detailed\-Error\-Reporting}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Detailed\-Error\-Reporting}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Detailed\-Error\-Reporting (
+\begin{DoxyParamCaption}
+\item[{bool}]{on\-Off}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_ab74e7164b2640607140e19a98fc6ac63}
+Detailed error logging for debugging. This adds overhead to A\-P\-I function calls so should be left off in normal operation \hypertarget{classSSV3_1_1Controller_a2e5dde8cc685bede99147a25bc8f70a8}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Fire@{Fire}}
+\index{Fire@{Fire}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Fire}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Fire (
+\begin{DoxyParamCaption}
+\item[{bool}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a2e5dde8cc685bede99147a25bc8f70a8}
+Turn on or off the camera triggered excitation\par
+
+\begin{DoxyParams}{Parameters}
+{\em state} & = true for on, false for off \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a1983242e211ad34cacc91a4e38d42f13}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Get\-Last\-Error@{Get\-Last\-Error}}
+\index{Get\-Last\-Error@{Get\-Last\-Error}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Get\-Last\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ S\-S\-V3\-::\-Controller\-::\-Get\-Last\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a1983242e211ad34cacc91a4e38d42f13}
+Get the last error description, returns null if there are no errors \hypertarget{classSSV3_1_1Controller_afa08d143fcf2c1e9974ac212fc816ed2}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Hid\-Error@{Hid\-Error}}
+\index{Hid\-Error@{Hid\-Error}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Hid\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual const wchar\-\_\-t$\ast$ S\-S\-V3\-::\-Controller\-::\-Hid\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_afa08d143fcf2c1e9974ac212fc816ed2}
+Check for hidapi errors\par
+Returns a descriptive string of the error or N\-U\-L\-L \hypertarget{classSSV3_1_1Controller_a09aad77f26ef4f1ae27746234188e9f1}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a09aad77f26ef4f1ae27746234188e9f1}
+Sets the controller to a safe beginning state\par
+and prints the manufacturer and product strings to the command out \hypertarget{classSSV3_1_1Controller_a0717132af0002b8a4d1b21e591de1ca1}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Load\-Angles@{Load\-Angles}}
+\index{Load\-Angles@{Load\-Angles}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Load\-Angles}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Load\-Angles (
+\begin{DoxyParamCaption}
+\item[{const unsigned char}]{sequence, }
+\item[{const unsigned short}]{length, }
+\item[{unsigned short $\ast$}]{values}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a0717132af0002b8a4d1b21e591de1ca1}
+Load a set of radii into the controller memory\par
+The radii are specified as a 2-\/byte D\-A\-C value corresponding to the\par
+x-\/galvo amplitude. The y-\/offset will be used to calculate\par
+the y-\/galvo amplitude internally.\par
+Returns an error the number parameter is specified and sequence\par
+doesn't exist\par
+
+\begin{DoxyParams}{Parameters}
+{\em sequence} & = sequence number in internal memory\par
+\\
+\hline
+{\em length} & = size of the sequence (number of steps)\par
+\\
+\hline
+{\em values} & = array of values to be loaded \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a556fcce5eaf8e0858b5eb05d305ec2d8}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Load\-Excitation\-Profile@{Load\-Excitation\-Profile}}
+\index{Load\-Excitation\-Profile@{Load\-Excitation\-Profile}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Load\-Excitation\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Load\-Excitation\-Profile (
+\begin{DoxyParamCaption}
+\item[{const unsigned char}]{profile}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a556fcce5eaf8e0858b5eb05d305ec2d8}
+Load an excitation profile\par
+
+\begin{DoxyParams}{Parameters}
+{\em profile} & = excitation settings handle to load \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_aa40583d5f5c907efc09a76256516b7d4}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Location\-Park@{Location\-Park}}
+\index{Location\-Park@{Location\-Park}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Location\-Park}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Location\-Park (
+\begin{DoxyParamCaption}
+\item[{unsigned short $\ast$}]{location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_aa40583d5f5c907efc09a76256516b7d4}
+Stops scanning and parks the beam\par
+location\mbox{[}0\mbox{]} = x inclination, location\mbox{[}1\mbox{]} = y inclination\par
+
+\begin{DoxyParams}{Parameters}
+{\em location} & = park location in D\-A\-C units \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_aaeab781100d4fab7f921d1fbc22ea8e1}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Loop@{Loop}}
+\index{Loop@{Loop}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Loop}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Loop (
+\begin{DoxyParamCaption}
+\item[{bool}]{on\-Off, }
+\item[{const unsigned int}]{loop\-To = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_aaeab781100d4fab7f921d1fbc22ea8e1}
+Create or destroy a loop in the experiment.\par
+When the end of the experiment list is reached it will loop back to the\par
+step specified.\par
+
+\begin{DoxyParams}{Parameters}
+{\em on\-Off} & = turn the loop on or off\par
+\\
+\hline
+{\em loop\-To} & = number of the experiment step to loop to \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_ab487017fe12dd264eb13ed5a22ea5234}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Make\-Excitation\-Profile@{Make\-Excitation\-Profile}}
+\index{Make\-Excitation\-Profile@{Make\-Excitation\-Profile}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Make\-Excitation\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Make\-Excitation\-Profile (
+\begin{DoxyParamCaption}
+\item[{const unsigned char}]{profile, }
+\item[{unsigned short $\ast$}]{values = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_ab487017fe12dd264eb13ed5a22ea5234}
+Create an excitation profile object\par
+The newly initialized profile will be all 0s (all lasers off)\par
+If no number for the profile is specified the next available\par
+number will be used,\par
+If all profiles are full and no number is specified the call will fail\par
+
+\begin{DoxyParams}{Parameters}
+{\em profile} & = the number I\-D of the profile being created\par
+\\
+\hline
+{\em values} & = optional pointer to array of 8 laser values\par
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a9de63a8ca846a49c3a7d4e988f887d73}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Make\-Profile\-From\-Current\-Excitation@{Make\-Profile\-From\-Current\-Excitation}}
+\index{Make\-Profile\-From\-Current\-Excitation@{Make\-Profile\-From\-Current\-Excitation}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Make\-Profile\-From\-Current\-Excitation}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Make\-Profile\-From\-Current\-Excitation (
+\begin{DoxyParamCaption}
+\item[{const unsigned char}]{profile}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a9de63a8ca846a49c3a7d4e988f887d73}
+Create a new profile with the current laser settings\par
+If profile already exists the settings will be overwritten\par
+
+\begin{DoxyParams}{Parameters}
+{\em profile} & = handle to the new excitation profile \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a52d3025e408a6e502a72c5bb522e3de3}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Query\-Dev\-Ver@{Query\-Dev\-Ver}}
+\index{Query\-Dev\-Ver@{Query\-Dev\-Ver}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Query\-Dev\-Ver}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Query\-Dev\-Ver (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{brd\-Major, }
+\item[{unsigned char $\ast$}]{brd\-Minor, }
+\item[{unsigned char $\ast$}]{fw\-Major, }
+\item[{unsigned char $\ast$}]{fw\-Minor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a52d3025e408a6e502a72c5bb522e3de3}
+Queries the harware and firmware versions of the controller 
+\begin{DoxyParams}{Parameters}
+{\em brd\-Major} & = major hardware revision \\
+\hline
+{\em brd\-Minor} & = minor hardware revision \\
+\hline
+{\em fw\-Major} & = firmware major revision \\
+\hline
+{\em fw\-Minor} & = firmware minor revision \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a3208aca4a9d3ee6bdf0643b22a1f6e67}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Query\-Internal\-Settings@{Query\-Internal\-Settings}}
+\index{Query\-Internal\-Settings@{Query\-Internal\-Settings}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Query\-Internal\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Query\-Internal\-Settings (
+\begin{DoxyParamCaption}
+\item[{unsigned short $\ast$}]{x\-Center, }
+\item[{unsigned short $\ast$}]{y\-Center, }
+\item[{unsigned short $\ast$}]{tir\-Radius, }
+\item[{unsigned short $\ast$}]{phase, }
+\item[{unsigned short $\ast$}]{frequency}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a3208aca4a9d3ee6bdf0643b22a1f6e67}
+Queries the device for the current scan settings from the controller onboard memory. All parameters are returned in D\-A\-C units. This is particularly useful at startup so that the current state of the controller can be indentified. 
+\begin{DoxyParams}{Parameters}
+{\em x\-Center} & = scan center x value (D\-C offset of waveform) \\
+\hline
+{\em y\-Center} & = scan center y value (D\-C offset of waveform) \\
+\hline
+{\em tir\-Radius} & = stored T\-I\-R value \\
+\hline
+{\em phase} & = stored phase difference between the output waveforms \\
+\hline
+{\em frequency} & = stored scan (waveform generator) frequency \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a8d1f7d629d46b94e92e0c580bc5ae24f}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Read\-Retries@{Read\-Retries}}
+\index{Read\-Retries@{Read\-Retries}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Read\-Retries}]{\setlength{\rightskip}{0pt plus 5cm}virtual void S\-S\-V3\-::\-Controller\-::\-Read\-Retries (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{attempts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a8d1f7d629d46b94e92e0c580bc5ae24f}
+Set the maximum number of retries on read calls 
+\begin{DoxyParams}{Parameters}
+{\em attempts} & = number or attemps before failure, default is 2 \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_ae3f168a6e03c1bf9dec1df16dd83d113}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Reset@{Reset}}
+\index{Reset@{Reset}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void S\-S\-V3\-::\-Controller\-::\-Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_ae3f168a6e03c1bf9dec1df16dd83d113}
+Resets the device erasing all data and calls the deleter \hyperlink{classSSV3_1_1Controller_a04e0349b6adf3231bc57e6d7777861e6}{Destroy()}.\par
+The controller instance is no longer valid after call.\par
+It is the caller's responsibility to destroy any references. \hypertarget{classSSV3_1_1Controller_adc4a8e3358176f977dfb37e1cb5bce86}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Scan\-Center@{Scan\-Center}}
+\index{Scan\-Center@{Scan\-Center}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Scan\-Center}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Scan\-Center (
+\begin{DoxyParamCaption}
+\item[{bool}]{axis, }
+\item[{unsigned short}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_adc4a8e3358176f977dfb37e1cb5bce86}
+Changes the D\-C bias on one of the galvos\par
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & = axis to move, true for x, false for y\par
+\\
+\hline
+{\em value} & = center (0 bias) is 0x7fff \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a9b01383dc0fde626988c9c08e10bd537}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Scan\-Radius@{Scan\-Radius}}
+\index{Scan\-Radius@{Scan\-Radius}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Scan\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Scan\-Radius (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{radius}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a9b01383dc0fde626988c9c08e10bd537}
+Update the current scan radius\par
+Radius is limited to 0x4200 to protect the galvos from being overdriven\par
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & = desired scan radius in D\-A\-C units \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a421c2b50d9fe3bc93f8ec7e900a9d79a}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Send\-Array@{Send\-Array}}
+\index{Send\-Array@{Send\-Array}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Send\-Array}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Send\-Array (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{msg, }
+\item[{const size\-\_\-t}]{length = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a421c2b50d9fe3bc93f8ec7e900a9d79a}
+Send the input array to the controller.\par
+Low level direct access to the controller functions.\par
+Not meant for general use\par
+No check is made on the response other than that it was received\par
+The $\ast$msg argument is overwritten with the returned values\par
+
+\begin{DoxyParams}{Parameters}
+{\em array} & = byte array to be sent\par
+\\
+\hline
+{\em length} & = length of the packet, must not be greater than 64 \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a9e0bb5a0a1b4ebbf29ffdb21dc81f1b2}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Send\-S\-W\-Trigger@{Send\-S\-W\-Trigger}}
+\index{Send\-S\-W\-Trigger@{Send\-S\-W\-Trigger}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Send\-S\-W\-Trigger}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Send\-S\-W\-Trigger (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{period = {\ttfamily 0xffff}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a9e0bb5a0a1b4ebbf29ffdb21dc81f1b2}
+Send a single pulse to simulate a camera frame (positive polarity)\par
+
+\begin{DoxyParams}{Parameters}
+{\em period} & = the pulse length (0x00 $\sim$80 us, 0xff $\sim$32 ms) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a86dec212a202c8fae4eed2ab5251075d}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Set\-Profile\-Power@{Set\-Profile\-Power}}
+\index{Set\-Profile\-Power@{Set\-Profile\-Power}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Set\-Profile\-Power}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Set\-Profile\-Power (
+\begin{DoxyParamCaption}
+\item[{const unsigned char}]{profile, }
+\item[{const unsigned char}]{line, }
+\item[{const unsigned short}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a86dec212a202c8fae4eed2ab5251075d}
+Set the value of a line in a excitation profile and switch to\par
+the profile\par
+
+\begin{DoxyParams}{Parameters}
+{\em profile} & = handle for the profile being changed\par
+\\
+\hline
+{\em line} & = laser line number\par
+\\
+\hline
+{\em value} & = new value (max 1023)\par
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a1000e02a14b2ca598a9f2f851a05c4ed}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Shutter@{Shutter}}
+\index{Shutter@{Shutter}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Shutter}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Shutter (
+\begin{DoxyParamCaption}
+\item[{bool}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a1000e02a14b2ca598a9f2f851a05c4ed}
+Open or close the mechanical shutter\par
+
+\begin{DoxyParams}{Parameters}
+{\em state} & -\/ true for open, false for close \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_abd7191a0acc48689c737ec9cb820de58}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Single\-Laser\-Power@{Single\-Laser\-Power}}
+\index{Single\-Laser\-Power@{Single\-Laser\-Power}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Single\-Laser\-Power}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Single\-Laser\-Power (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{line, }
+\item[{unsigned short}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_abd7191a0acc48689c737ec9cb820de58}
+Set the absolute intensity for a specific laser line\par
+
+\begin{DoxyParams}{Parameters}
+{\em line} & = laser to be adjusted\par
+\\
+\hline
+{\em value} & = power (max 1023) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a502e4fbb762a16a860b89836b3c1b402}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Start\-Experiment@{Start\-Experiment}}
+\index{Start\-Experiment@{Start\-Experiment}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Start\-Experiment}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Start\-Experiment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a502e4fbb762a16a860b89836b3c1b402}
+Begin the currently programmed experiment. \hypertarget{classSSV3_1_1Controller_a418c6f3bee822914f68a4e4a75470aa3}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Stop\-Experiment@{Stop\-Experiment}}
+\index{Stop\-Experiment@{Stop\-Experiment}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Stop\-Experiment}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Stop\-Experiment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a418c6f3bee822914f68a4e4a75470aa3}
+Stop the current experiment and return to the state at the beginning\par
+of the experiment \hypertarget{classSSV3_1_1Controller_a44aa242157905527164269a57f4c0156}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Timeout@{Timeout}}
+\index{Timeout@{Timeout}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Timeout}]{\setlength{\rightskip}{0pt plus 5cm}virtual void S\-S\-V3\-::\-Controller\-::\-Timeout (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a44aa242157905527164269a57f4c0156}
+Change the response timeout value 
+\begin{DoxyParams}{Parameters}
+{\em ms} & = timeout value in ms \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a3536d65f5a029b2794c8ebb50554c1f7}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!T\-I\-R\-F@{T\-I\-R\-F}}
+\index{T\-I\-R\-F@{T\-I\-R\-F}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{T\-I\-R\-F}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-T\-I\-R\-F (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a3536d65f5a029b2794c8ebb50554c1f7}
+Change the T\-I\-R scan value\par
+Also update current scan radius to new T\-I\-R value\par
+If value == 0 or default T\-I\-R value is not update and the scan\par
+radius is set to the current T\-I\-R value\par
+
+\begin{DoxyParams}{Parameters}
+{\em value} & = new scan radius (limitied to 0x4000) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSSV3_1_1Controller_a8abc66a0ff313b8689a716b43ce696d2}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Visor@{Visor}}
+\index{Visor@{Visor}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Visor}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Visor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_a8abc66a0ff313b8689a716b43ce696d2}
+Runs a quick visor across the status L\-E\-D\-S on the front\par
+of the controller \hypertarget{classSSV3_1_1Controller_af3db85c32975f6756e03bb2d8a21ca45}{\index{S\-S\-V3\-::\-Controller@{S\-S\-V3\-::\-Controller}!Y\-Amp\-Correction@{Y\-Amp\-Correction}}
+\index{Y\-Amp\-Correction@{Y\-Amp\-Correction}!SSV3::Controller@{S\-S\-V3\-::\-Controller}}
+\subsubsection[{Y\-Amp\-Correction}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf S\-S\-V3\-E\-R\-R\-O\-R} S\-S\-V3\-::\-Controller\-::\-Y\-Amp\-Correction (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSSV3_1_1Controller_af3db85c32975f6756e03bb2d8a21ca45}
+Set scan amplitude offset in the y axis.\par
+Used to correct elipticity in the scan profile.\par
+0x7fff corresponds to 0 offset\par
+
+\begin{DoxyParams}{Parameters}
+{\em value} & = relative scaling of the Y-\/axis \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+S\-A\-I\-M\-Scanner\-V3.\-h\end{DoxyCompactItemize}

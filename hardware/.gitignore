@@ -2,13 +2,15 @@
 ## Ignore everything
 *
 
-##Except the board, schematic, library, and PDFs
+##Except the board, schematic, library, and documentation
 !.gitignore
 !*.brd
 !*.sch
 !*.lbr
 !*.pdf
 !*.fpd
+!*.csv
+!*.xlsx
 
 ##include subdirs
 !*/

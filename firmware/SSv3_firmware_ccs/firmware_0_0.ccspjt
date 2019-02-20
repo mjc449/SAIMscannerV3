@@ -14,13 +14,13 @@ Type=4
 1=firmware_0_0.c
 
 [ProjectLog]
-Days=90
+Days=91
 D1=18-06-2016
 D1_L=9
 D1_L1=[59281]Project Opened.
 D1_L2=[59386]Started Editing.
 D1_L3=[59767]Stopped Editing.
-TotalEdit=5137
+TotalEdit=5155
 TotalDebug=578
 D1_E=2
 D1_D=0
@@ -1037,19 +1037,36 @@ D90_L10=[67299]Project Closed.
 D90_L11=[67690]Project Opened.
 D90_L12=[67697]Project Closed.
 D90_L13=[67702]Project Opened.
+D91=30-01-2019
+D91_L=13
+D91_L1=[53686]Started Editing.
+D91_L2=[53986]Stopped Editing.
+D91_L3=[61799]Started Editing.
+D91_L4=[62099]Stopped Editing.
+D91_L5=[63281]Started Editing.
+D91_L6=[63581]Stopped Editing.
+D91_L7=[63860]Started Editing.
+D91_L8=[64227]Stopped Editing.
+D91_L9=[69428]Started Editing.
+D91_L10=[70682]Stopped Editing.
+D91_L11=[71122]Started Editing.
+D91_L12=[71425]Stopped Editing.
+D91_E=18
+D91_D=0
+D91_L13=[71692]Project Closed.
 
 [Opened Files]
 1=firmware_0_0.c
-t1=1
+t1=723
 2=firmware_0_0.h
-t2=1
-Count=2
-3=SAIM_utilities.c
-t3=1
+t2=723
+Count=5
+3=AD5547_dual_drvr.c
+t3=77
 4=AD9833_dual_drvr.c
-t4=1
-5=AD5547_dual_drvr.c
-t5=1
+t4=29
+5=C:\Program Files (x86)\PICC\Drivers\usb_desc_hid.h
+t5=277
 6=AD5547_dual_drvr.c
 t6=687
 7=firmware_0_0.sym
@@ -1066,7 +1083,7 @@ t11=16
 Type=4
 
 [defines]
-buildcount=332
+buildcount=342
 
 [debugperif]
 selected=Analog to Digital Converter 1

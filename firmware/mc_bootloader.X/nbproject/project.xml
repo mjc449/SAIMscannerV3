@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>mc_bootloader</name>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>gld,h</header-extensions>
+            <sourceEncoding>UTF-8</sourceEncoding>
+            <asminc-extensions/>
+            <creation-uuid>e503ee45-26d9-4441-953d-10251dddd6e1</creation-uuid>
+            <make-dep-projects/>
+        </data>
+    </configuration>
+</project>

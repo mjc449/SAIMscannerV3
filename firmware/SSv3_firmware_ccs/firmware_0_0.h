@@ -45,13 +45,14 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #define USB_CONFIG_VID 0x04D8
 #define USB_CONFIG_PID 0xF11A
-#define USB_STRINGS_OVERWRITTEN
 
 #define USB_CONFIG_HID_TX_SIZE 64
 #define USB_CONFIG_HID_RX_SIZE 64
 
 #define USB_CONFIG_HID_TX_POLL 1
 #define USB_CONFIG_HID_RX_POLL 1
+
+#define USB_STRINGS_OVERWRITTEN
 
 char USB_STRING_DESC_OFFSET[]={0,4,12,22};
 
@@ -81,12 +82,13 @@ const char const USB_STRING_DESC[]={
       '0',0,
       '0',0,
       '0',0,
-      '5',0
+      '7',0
 };
 
 
 #include <pic24_usb.h>
 #include <usb_desc_hid.h>
+
 #include <usb.c>
 #include <stdlib.h>
 #include <stddef.h>

@@ -516,48 +516,7 @@ void cp::AboutDevice()
    GeneralDialog dialog;
    int hw1{ _hwVer[0] }, hw2{ _hwVer[1] }, fw1{ _fwVer[0] }, fw2{ _fwVer[1] };
    std::stringstream s;
-   s << "SSv3 controller is an embedded hardware synchronization" << std::endl
-      << "platform for prototype super resoltion optical" << std::endl
-      << "microscopy. Currently it is targeted for Scanning Angle" << std::endl
-      << "Interference Microscopy (SAIM) using azimuthal beam" << std::endl
-      << "scanning. The hardware has a wide array of capabilities" << std::endl
-      << "and was developed with flexibility and expandability" << std::endl
-      << "as major project goals." << std::endl
-      << std::endl
-      << "Copyright(c) 2018, Marshall Colville mjc449@cornell.edu" << std::endl
-      << "All rights reserved." << std::endl
-      << std::endl
-      << "Redistribution and use in source and binary forms," << std::endl
-      << "with or without modification, are permitted provided" << std::endl
-      << "that the following conditions are met :" << std::endl
-      << std::endl
-      << "1. Redistributions of source code must retain the" << std::endl
-      << "above copyright notice, this list of conditions and" << std::endl
-      << "the following disclaimer." << std::endl 
-      << std::endl
-      << "2. Redistributions in binary form must reproduce the" << std::endl
-      << "above copyright notice, this list of conditions and" << std::endl
-      << "the following disclaimer in the documentation and/or" << std::endl
-      << "other materials provided with the distribution." << std::endl
-      << std::endl
-      << "THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND" << std::endl
-      << "CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED" << std::endl
-      << "WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED" << std::endl
-      << "WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A" << std::endl
-      << "PARTICULAR PURPOSE ARE DISCLAIMED.IN NO EVENT SHALL" << std::endl
-      << "THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY" << std::endl
-      << "DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR" << std::endl
-      << "CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO," << std::endl
-      << "PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF" << std::endl
-      << "USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)" << std::endl
-      << "HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER" << std::endl
-      << "IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING" << std::endl
-      << "NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE" << std::endl
-      << "USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE" << std::endl
-      << "POSSIBILITY OF SUCH DAMAGE." << std::endl
-      << std::endl
-      << "Hardware revision: " << hw1 << "." << hw2 << std::endl
-      << "Firmware revision: " << fw1 << "." << fw2;
+   s << "SSv3 controller is an embedded hardware synchronization platform\nfor prototype super resoltion optical microscopy.  Currently it is\ntargeted for Scanning Angle Interference Microscopy (SAIM) using azimuthal\nbeam scanning.  The hardware has a wide array of capabilities and\nwas developed with flexibility and expandability as a major project\ngoal.\n\nThis project is licensed under the GPLv3.  See the attached license\nfile for details.\n\nHardware revision: " << hw1 << "." << hw2 << "\nFirmware revision: " << fw1 << "." << fw2;
    dialog.SetText(s.str());
    dialog.setWindowTitle(tr("About SSv3 device"));
    dialog.SetButtonText("Ok");
@@ -608,47 +567,7 @@ void cp::AboutSoftware()
    GeneralDialog dialog;
    int sw1{ _swVer[0] }, sw2{ _swVer[1] };
    std::stringstream s;
-   s << "SSv3 controller is an embedded hardware synchronization" << std::endl
-      << "platform for prototype super resoltion optical" << std::endl
-      << "microscopy. Currently it is targeted for Scanning Angle" << std::endl
-      << "Interference Microscopy (SAIM) using azimuthal beam" << std::endl
-      << "scanning. The hardware has a wide array of capabilities" << std::endl
-      << "and was developed with flexibility and expandability" << std::endl
-      << "as major project goals." << std::endl
-      << std::endl
-      << "Copyright(c) 2018, Marshall Colville mjc449@cornell.edu" << std::endl
-      << "All rights reserved." << std::endl
-      << std::endl
-      << "Redistribution and use in source and binary forms," << std::endl
-      << "with or without modification, are permitted provided" << std::endl
-      << "that the following conditions are met :" << std::endl
-      << std::endl
-      << "1. Redistributions of source code must retain the" << std::endl
-      << "above copyright notice, this list of conditions and" << std::endl
-      << "the following disclaimer." << std::endl
-      << std::endl
-      << "2. Redistributions in binary form must reproduce the" << std::endl
-      << "above copyright notice, this list of conditions and" << std::endl
-      << "the following disclaimer in the documentation and/or" << std::endl
-      << "other materials provided with the distribution." << std::endl
-      << std::endl
-      << "THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND" << std::endl
-      << "CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED" << std::endl
-      << "WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED" << std::endl
-      << "WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A" << std::endl
-      << "PARTICULAR PURPOSE ARE DISCLAIMED.IN NO EVENT SHALL" << std::endl
-      << "THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY" << std::endl
-      << "DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR" << std::endl
-      << "CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO," << std::endl
-      << "PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF" << std::endl
-      << "USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)" << std::endl
-      << "HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER" << std::endl
-      << "IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING" << std::endl
-      << "NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE" << std::endl
-      << "USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE" << std::endl
-      << "POSSIBILITY OF SUCH DAMAGE." << std::endl
-      << std::endl
-      << "Software version: " << sw1 << "." << sw2;
+   s << "SSv3 control panel is designed to be an intuitive UI for operating the SSv3 controller.\nProvides flexible SAIM experiment design as well as real-time control for other imaging modalities.\n\nThis software is licensed under the 2-Clause BSD License:\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met :\n\n1. Redistributions of source code must retain the above copyright notice,this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.See the attached license file for details.\n\nSSv3 Control Panel v" << sw1 << "." << sw2;
    dialog.SetText(s.str());
    dialog.setWindowTitle(tr("About SSv3 Control Panel"));
    dialog.SetButtonText("Ok");
