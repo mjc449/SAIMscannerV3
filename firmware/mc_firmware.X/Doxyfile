@@ -8,7 +8,7 @@ PROJECT_NAME            = mc_firmware
 PROJECT_NUMBER         = 
 PROJECT_BRIEF          = An open-source hardware synchronization platform for microscopy
 PROJECT_LOGO           = 
-OUTPUT_DIRECTORY       = C:\Users\Marshall\MPLABXProjects\mc_firmware.X\doc
+OUTPUT_DIRECTORY       = ./doc
 CREATE_SUBDIRS         = NO
 ALLOW_UNICODE_NAMES    = NO
 OUTPUT_LANGUAGE        = English
@@ -112,7 +112,7 @@ WARN_LOGFILE           =
 #---------------------------------------------------------------------------
 # Configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = C:/Users/Marshall/MPLABXProjects/mc_firmware.X
+INPUT                  = E:/SSv3/firmware/mc_firmware.X
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          = *.c \
                          *.cc \
