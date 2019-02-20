@@ -69,14 +69,4 @@ void ScanlineSpeed(int lineSpeed)
     scanChanged = true;
 }
 
-void SnapRaster(void)
-{
-    if(scanChanged)
-        CalculateScanWaveform;
-    for(int i = 0; i < scanHeight; i++)
-    {
-        
-    }
-}
-
 
