@@ -94,11 +94,12 @@ void SYSTEM_Initialize(SYSTEM_STATE state) {
             //toggle the pins a few times
             bool gotoBootloader = true;
             int i;
-            for (i = 0; i < 16; i++) {
-                _LATC13 = i % 2;
-                _LATC14 = ~(i % 2);
+            _TRISB0 = 0;
+            _TRISB1 = 1;
+            for (i = 0; i < 8; i++) {
+                _LATB0 = i % 2;
                 Nop();
-                if ((_RA14 != _LATC13) || (_RA15 != _LATC14)) {
+                if (_RB1 != _LATB0) {
                     gotoBootloader = false;
                     break;
                 }
