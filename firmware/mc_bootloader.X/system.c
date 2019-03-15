@@ -92,33 +92,43 @@ void SYSTEM_Initialize(SYSTEM_STATE state) {
 
             //To enter the bootloader via hardware we jump A14 to C13 and 
             //toggle the pins a few times
-            bool gotoBootloader = true;
+            volatile bool gotoBootloader = false;
             int i;
-            for (i = 0; i < 16; i++) {
-                _LATC13 = i % 2;
-                _LATC14 = ~(i % 2);
+            /*
+            _TRISB0 = 0;
+            _TRISB1 = 1;
+            for (i = 0; i < 8; i++) {
+                _LATB0 = i % 2;
                 Nop();
-                if ((_RA14 != _LATC13) || (_RA15 != _LATC14)) {
-                    gotoBootloader = false;
+                if (_RB1 != _LATB0) {
+                    gotoBootloader = true;
                     break;
                 }
             }
+            */
 
             //Otherwise the bootloader can be entered by setting a flag in
             //program memory (last word == 0xFFFFFE)
             //Next check for the software flag
-            uint16_t keyVal;
+            volatile uint16_t keyValL;
+            volatile uint16_t keyValH;
             TBLPAG = 0x0002;
-            keyVal = __builtin_tblrdl(0xA7FE);
-
-            if (keyVal == 0xFFFE) {
+            keyValL = __builtin_tblrdl(0xABF6);
+            keyValH = __builtin_tblrdh(0xABF6);
+            if ((keyValL & 0x0001) == 0xFFFF) {
                 gotoBootloader = true;
-                
-                _erase_flash(0x02A7FE);
-                _write_flash_word24(0x02A7FE, 0xFFFFFF);
-                
             }
-
+            
+            //Check the first flash word in application memory space
+            //If it is NOPR (has been erased) go to bootloader
+            TBLPAG = 0x0000;
+            keyValL = __builtin_tblrdl(0x1910);
+            keyValH = __builtin_tblrdh(0x1910);
+            if( (keyValL & 0xFFFF == 0xFFFF) && (keyValH & 0x00FF == 0x00FF)){
+                gotoBootloader = true;
+            }
+            
+            //If all of the above conditions are satisfied go to application
             if ((gotoBootloader == false) && ((RCON & 0x83) != 0)) {
                 //Switch to app standare IVT for non boot mode
                 INTCON2bits.ALTIVT = 0;
@@ -157,7 +167,7 @@ void PIN_MANAGER_Initialize(void) {
     /****************************************************************************
      * Setting the Output Latch SFR(s)
      ***************************************************************************/
-    LATA = 0x0002;
+    LATA = 0x0007;
     LATB = 0x7FFF;
     LATC = 0x0010;
     LATD = 0x7000;
@@ -279,6 +289,3 @@ void __attribute__((interrupt, auto_psv)) _AltUSB1Interrupt() {
     USBDeviceTasks();
 }
 #endif
-
-
-

@@ -32,7 +32,7 @@ please contact mla_licensing@microchip.com
 #define _XTAL_FREQ 32000000UL
 #define MAIN_RETURN int
 
-#define LED_USB_DEVICE_STATE                    _LATA2
+#define LED_USB_DEVICE_STATE                    _LATA7
 
 /*** System States **************************************************/
 typedef enum

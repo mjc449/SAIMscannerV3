@@ -22,6 +22,7 @@ please contact mla_licensing@microchip.com
 #include <usb.h>
 #include <usb_device_hid.h>
 #include <boot.h>
+#include <libpic30.h>
 
 
 /** C O N S T A N T S **********************************************************/
@@ -361,6 +362,29 @@ void APP_HIDBootLoaderTasks(void)
                 {
                     Nop();
                 }
+                
+                //Clear the goto bootloader flag prior to resetting
+                //Start by reading the flash block into RAM
+                uint32_t programBlockBegin = 0x02A7FE;
+                uint16_t memIdx;
+                uint32_t wMemSave[512];
+                //Blocks are 512 instructions = 1024 words
+                //Read the entire block into RAM
+                for(memIdx = 0; memIdx < 512; memIdx++){
+                    wMemSave[memIdx] = ReadProgramMemory(programBlockBegin + 2 * memIdx) & 0x00FFFFFF;
+                }
+                //Make sure to clear the bootloader bit
+                wMemSave[511] |= 0x00000001;
+                //Erase the entire block
+                _erase_flash(0x02A7FE);
+                //Write back the program memory
+                for(memIdx = 0; memIdx < 512; memIdx++){
+                    //If there is something other than NOPR, write it back
+                    if(wMemSave[memIdx] & 0x00FFFFFF != 0x00FFFFFF){
+                        _write_flash_word24(programBlockBegin + 2 * memIdx, wMemSave[memIdx]);
+                    }
+                }
+                
                 asm("reset");
                 break;
             }

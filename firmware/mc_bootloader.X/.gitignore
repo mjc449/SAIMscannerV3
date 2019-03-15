@@ -1,2 +1,5 @@
 build/
 dist/
+Makefile-*
+Package-*
+private/

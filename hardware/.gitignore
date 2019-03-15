@@ -11,6 +11,9 @@
 !*.fpd
 !*.csv
 !*.xlsx
+!*.ai
+!*.png
+
 
 ##include subdirs
 !*/
