@@ -115,7 +115,7 @@ void SYSTEM_Initialize(SYSTEM_STATE state) {
             TBLPAG = 0x0002;
             keyValL = __builtin_tblrdl(0xABF6);
             keyValH = __builtin_tblrdh(0xABF6);
-            if ((keyValL & 0x0001) == 0xFFFF) {
+            if ((keyValL & 0x0001) == 0x0000) {
                 gotoBootloader = true;
             }
             
